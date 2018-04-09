@@ -1,6 +1,0 @@
-send-trap guru enp0s25:0 bgp4-mib:bgpEstablished:bgpEstablished
-send-trap guru enp0s25:0 bgp4-mib:bgpEstablished:bgpEstablished-v1
-send-trap guru enp0s25:0 bgp4-mib:bgpEstablished-New:bgpEstablished-New
-send-trap guru enp0s25:0 bgp4-mib:bgpEstablished-New:bgpEstablished-v1-New
-send-trap guru enp0s25:0 generic-traps:linkUp:linkUp-v1
-send-trap guru enp0s25:0 generic-traps:linkUp:linkUp-v2c
