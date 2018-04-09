@@ -1,0 +1,10 @@
+
+    </pm-metric-groups>
+
+    <pm-threshold-policies type="String">
+    </pm-threshold-policies>
+
+  </perf-template>
+
+</objects>
+

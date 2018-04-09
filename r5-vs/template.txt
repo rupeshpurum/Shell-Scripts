@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE objects PUBLIC "pm/templates/pmTemplate.dtd" "pmTemplate.dtd">
+
+<objects version="UNCLEAN">
+
+  <perf-template name="template">
+  
+       <description></description>
+   
+    <templateType>PLUGIN</templateType>
+
+    <pm-metric-groups type="String">
