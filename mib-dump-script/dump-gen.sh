@@ -35,7 +35,7 @@ a=$(echo $value| awk -F "=" '{print$1}')
 	then
 		oid=$(echo $value | awk -F "\"" '{print$2}')
 			hand=1
-			for t in `egrep "$oid" "$HOME"/myworkspace/mib-dump-script/"$pluginname"-varbind.txt | sort -u`
+			for t in `egrep "$oid" "$HOME"/Shell-Scripts/mib-dump-script/"$pluginname"-varbind.txt | sort -u`
 			do
 			var=$(echo $t | awk -F "$oid" '{print$2}')
 			variable=$(echo $var | sed 's/^.[0-9]*//')
@@ -176,7 +176,7 @@ sed 's/^$//g' -i temp.txt
 sort -u temp.txt |sort -V >>mibdump.txt
 sort -V mibdump.txt >"$temppm".txt
 
-for i in `cat $HOME/myworkspace/mib-dump-script/"$temppm".txt | sed 's/ //g'`; do a=$(shuf -i 1-10 -n 10); b=$(echo $a | sed 's/ /,/g'); echo $i | sed "s/PMTAG/VALUES:\"INTEGER:$b\"/g"; done >"$pluginname".txt
+for i in `cat $HOME/Shell-Scripts/mib-dump-script/"$temppm".txt | sed 's/ //g'`; do a=$(shuf -i 1-10 -n 10); b=$(echo $a | sed 's/ /,/g'); echo $i | sed "s/PMTAG/VALUES:\"INTEGER:$b\"/g"; done >"$pluginname".txt
 echo -e "\n\n\n\n\n\nResponse is in file: $path/$pluginname.txt\n\n\n\n"
 sed -i 's/=/ = /g' $pluginname.txt
 sed -i 's/:/: /g' $pluginname.txt
