@@ -59,6 +59,15 @@ a=$(echo $value| awk -F "=" '{print$1}')
 			do
 				#echo "$pm$index1 = INTEGER: 1" >>temp.txt
 				echo "$pm$index1 = PMTAG" >>temp.txt
+					for((addingtrapresponse=1;addingtrapresponse<"$take";addingtrapresponse++))
+						{
+							if [ -z "$addingtrapresponse" ]
+							then
+							echo "Abnormal"
+							else
+								echo  "$pm${array[$addingtrapresponse]} = STRING: $columnname" >>temp.txt
+							fi
+						}
 			done
 	elif [ $a = column ]
 	then
