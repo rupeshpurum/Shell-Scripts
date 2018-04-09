@@ -1,2 +1,2 @@
 # Shell-Scripts
-contains shell scripts
+Contains shell scripts to process different files in different folders
