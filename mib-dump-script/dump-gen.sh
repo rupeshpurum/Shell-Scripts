@@ -27,7 +27,6 @@ index1=.1
 
 #This command Gets all the OID's which are present in PM xml's and stores them in file1.txt which is used in Tag-1
 grep -o '<file path="pm/.*' "$HOME"/"$repo"/"$pluginname".xml | grep -v '<file path="pm/templates' | awk -F "\"" '{print$2}' | xargs -n1 -I {}  grep -o 'oid="[0-9.]*"' "$HOME"/"$repo"/{} | awk -F "\"" '{print$2}' | sed 's/\s*//g'>file1.txt
-#Tag-1
 for value in `grep -o 'inventory/.*' ""$HOME"/"$repo"/$pluginname.xml" | awk -F "/" '{print$2}' | awk -F "\"" '{print$1}' | grep -v 'if-mib.xml\|entity'|xargs -n1 -I {} cat "$HOME"/"$repo"/snmp/inventory/{} | sed -e 's/oid="/\noid="/g' -e 's/^.*appends="node.*$//g' -e 's/suffix/\nsuffix/g' | grep -o 'oid="[0-9.]*"\|suffix="[0-9]*"\|<table name=".* \| <table appends=".*\|<column name=.*' | sed -e 's/<table appends/name/g' -e 's/<table name/name/g' -e 's/<column name/column/g' | sed 's/\s*//g'`
 do
 a=$(echo $value| awk -F "=" '{print$1}')
@@ -158,6 +157,7 @@ done
 #Loop which adds responses of Node metrics
 for node in `cat "$HOME"/"$repo"/"$pluginname".xml | grep '<file path="pm/'| awk -F "\"" '{print$2}' | grep -v 'pm/templates/\|.dtd\|if' | xargs -n1 -I {} cat "$HOME"/"$repo"/{} | grep 'indexed="false"' | grep -o 'oid="[0-9.]*"' | awk -F "\"" '{print$2}'`
 do
+	#code for node metrics
 	#a=$(echo $node | awk -F "." '{print$NF}')
 		#if [ "$a" = 0 ]
 		#then
@@ -171,8 +171,6 @@ do
 done
 cp if-response.txt mibdump.txt
 sed 's/^$//g' -i temp.txt
-#echo -e "\nThe responses required for plugin are below:"
-#cat temp.txt | sort -u | sort -V
 sort -u temp.txt |sort -V >>mibdump.txt
 sort -V mibdump.txt >"$temppm".txt
 
@@ -183,8 +181,7 @@ sed -i 's/:/: /g' $pluginname.txt
 echo "plugin name is $pluginname"
 sed "s/tag\-pluginname/$pluginname/" $pluginname.txt -i
 sed "s/tag\-nodename/$pluginname-gen/" $pluginname.txt -i
-rm -f temp.txt file1.txt "$pluginname"-varbind.txt "$temppm".txt
+rm -f temp.txt file1.txt "$pluginname"-varbind.txt "$temppm".txt mibdump.txt
 path=$(pwd)
-#echo -e "\n\n\n\n\n\nOutput is in file: $path/$pluginname.txt\n\n\n\n"
 xdg-open "$path/$pluginname.txt"
 
