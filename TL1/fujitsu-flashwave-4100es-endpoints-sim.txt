@@ -1,0 +1,76 @@
+Response for Sim
+	<command name="RTRV-EQPT">
+	   <type>EQPT</type>
+	</command>
+	<command name="RTRV-OSSI">
+	   <type>OSSI</type>
+	</command>
+	<command name="RTRV-SDCC">
+	   <type>SDCC</type>
+	</command>
+	<command name="RTRV-OC3">
+	   <type>OC3</type>
+	</command>
+	<command name="RTRV-OC12">
+	   <type>OC12</type>
+	</command>
+	<command name="RTRV-OC48">
+	   <type>OC48</type>
+	</command>
+	<command name="RTRV-OC192">
+	   <type>OC192</type>
+	</command>
+	<command name="RTRV-STS1">
+	   <type>STS1</type>
+	</command>
+	<command name="RTRV-STS12C">
+	   <type>STS12C</type>
+	</command>
+	<command name="RTRV-STS3C">
+	   <type>STS3C</type>
+	</command>
+	<command name="RTRV-STS48C">
+	   <type>STS48C</type>
+	</command>
+	<command name="RTRV-T1">
+	   <type>T1</type>
+	</command>
+	<command name="RTRV-T3">
+	   <type>T3</type>
+	</command>
+	<command name="RTRV-VT1">
+	   <type>VT1</type>
+	</command>
+	<command name="RTRV-T1CLK">
+	   <type>T1CLK</type>
+	</command>
+	<command name="RTRV-ETHERLAN">
+	   <type>ETHERLAN</type>
+	</command>
+	<command name="RTRV-ETH">
+	   <type>ETH</type>
+	</command>
+	<command name="RTRV-EPORT">
+	   <type>EPORT</type>
+	</command>
+	<command name="RTRV-RPRPORT">
+	   <type>RPRPORT</type>
+	</command>
+	<command name="RTRV-LAG">
+	   <type>LAG</type>
+	</command>
+	<command name="RTRV-RPRSPAN">
+	   <type>RPRSPAN</type>
+	</command>
+	<command name="RTRV-EC1">
+	   <type>EC1</type>
+	</command>
+	<command name="RTRV-FACLINK">
+	   <type>FACLINK</type>
+	</command>
+	<command name="RTRV-LIF">
+	   <type>LIF</type>
+	</command>
+	<command name="RTRV-FP">
+	   <type>FP</type>
+	</command>

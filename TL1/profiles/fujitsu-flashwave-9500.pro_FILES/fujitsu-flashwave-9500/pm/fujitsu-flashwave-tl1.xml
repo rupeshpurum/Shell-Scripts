@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd">
+
+<pmProfile name="fujitsu-flashwave-tl1" version="UNCLEAN">
+  <metricGroup id="fujitsu-flashwave-tl1.fp" name="Fujitsu FP" protocol="TL1" displayType="Normal">
+    <metric id="Fujitsu FP.GRFR.ne.rx" name="Fujitsu Rx FP GRFR" desc="Service ingress green frames received" protocol="TL1" parmType="COE_GRN_RX_FRAMES" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-G.ne.tx" name="Fujitsu Tx LIF TDFR-G" desc="Service Class G frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-G" collector="TL1" oid="TDFR-G" type="COUNTER"/>
+      <value parameter="TDFR-G"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR.ne.tx" name="Fujitsu Tx FP GRFR" desc="Service green frames destined for the interface" protocol="TL1" parmType="COE_GRN_TX_FRAMES" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-A.ne.rx" name="Fujitsu Rx FP GRFR-A" desc="Service Class A green frames received" protocol="TL1" parmType="" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-A" collector="TL1" oid="GRFR-A" type="COUNTER"/>
+      <value parameter="GRFR-A"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-B.ne.rx" name="Fujitsu Rx FP GRFR-B" desc="Service Class B green frames received" protocol="TL1" parmType="" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-B" collector="TL1" oid="GRFR-B" type="COUNTER"/>
+      <value parameter="GRFR-B"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-C.ne.rx" name="Fujitsu Rx FP GRFR-C" desc="Service Class C green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-C" collector="TL1" oid="GRFR-C" type="COUNTER"/>
+      <value parameter="GRFR-C"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-D.ne.rx" name="Fujitsu Rx FP GRFR-D" desc="Service Class D green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-D" collector="TL1" oid="GRFR-D" type="COUNTER"/>
+      <value parameter="GRFR-D"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-E.ne.rx" name="Fujitsu Rx FP GRFR-E" desc="Service Class E green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-E" collector="TL1" oid="GRFR-E" type="COUNTER"/>
+      <value parameter="GRFR-E"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-F.ne.rx" name="Fujitsu Rx FP GRFR-F" desc="Service Class F green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-F" collector="TL1" oid="GRFR-F" type="COUNTER"/>
+      <value parameter="GRFR-F"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-G.ne.rx" name="Fujitsu Rx FP GRFR-G" desc="Service Class G green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-G" collector="TL1" oid="GRFR-G" type="COUNTER"/>
+      <value parameter="GRFR-G"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFR-H.ne.rx" name="Fujitsu Rx FP GRFR-H" desc="Service Class H green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-H" collector="TL1" oid="GRFR-H" type="COUNTER"/>
+      <value parameter="GRFR-H"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFRDISC.ne.rx" name="Fujitsu Rx FP GRFRDISC" desc="Green frames received that were discarded due to congestion" protocol="TL1" parmType="" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFRDISC" collector="TL1" oid="GRFRDISC" type="COUNTER"/>
+      <value parameter="GRFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.GRFRDISC.ne.tx" name="Fujitsu Tx FP GRFRDISC" desc="Green frames destined for the interface that were discarded due to congestion" protocol="TL1" parmType="" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="GRFRDISC" collector="TL1" oid="GRFRDISC" type="COUNTER"/>
+      <value parameter="GRFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT.ne.rx" name="Fujitsu Rx FP GROCT" desc="Service ingress green octets received" protocol="TL1" parmType="COE_GRN_RX_OCTETS" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCTbps.ne.rx" name="Fujitsu Rx FP bps Rx" desc="Service ingress green bits per second" protocol="TL1" parmType="ETH_RX_BANDWIDTH" units="Octets" conversion-function="PER_PERIOD_PER_SECOND" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCTbps" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value rpn="GROCTbps,8,*"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCTtxbps.ne.tx" name="Fujitsu Rx FP bps Tx" desc="Service ingress green bits per second transmitted" protocol="TL1" parmType="ETH_TX_BANDWIDTH" units="bps" conversion-function="PER_PERIOD_PER_SECOND" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="GROCTtxbps" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value rpn="GROCTtxbps,8,*"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT.ne.tx" name="Fujitsu Tx FP GROCT" desc="Service green octet destined for the interface" protocol="TL1" parmType="COE_GRN_TX_OCTETS" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-A.ne.rx" name="Fujitsu Rx FP GROCT-A" desc="Service Class A green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-A" collector="TL1" oid="GROCT-A" type="COUNTER"/>
+      <value parameter="GROCT-A"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-B.ne.rx" name="Fujitsu Rx FP GROCT-B" desc="Service Class B green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-B" collector="TL1" oid="GROCT-B" type="COUNTER"/>
+      <value parameter="GROCT-B"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-C.ne.rx" name="Fujitsu Rx FP GROCT-C" desc="Service Class C green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-C" collector="TL1" oid="GROCT-C" type="COUNTER"/>
+      <value parameter="GROCT-C"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-D.ne.rx" name="Fujitsu Rx FP GROCT-D" desc="Service Class D green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-D" collector="TL1" oid="GROCT-D" type="COUNTER"/>
+      <value parameter="GROCT-D"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-E.ne.rx" name="Fujitsu Rx FP GROCT-E" desc="Service Class E green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-E" collector="TL1" oid="GROCT-E" type="COUNTER"/>
+      <value parameter="GROCT-E"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-F.ne.rx" name="Fujitsu Rx FP GROCT-F" desc="Service Class F green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-F" collector="TL1" oid="GROCT-F" type="COUNTER"/>
+      <value parameter="GROCT-F"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-G.ne.rx" name="Fujitsu Rx FP GROCT-G" desc="Service Class G green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-G" collector="TL1" oid="GROCT-G" type="COUNTER"/>
+      <value parameter="GROCT-G"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCT-H.ne.rx" name="Fujitsu Rx FP GROCT-H" desc="Service Class H green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-H" collector="TL1" oid="GROCT-H" type="COUNTER"/>
+      <value parameter="GROCT-H"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCTFRDISC.ne.rx" name="Fujitsu Rx FP GROCTFRDISC" desc="Green octets received on the interface that were discarded due to congestion" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCTFRDISC" collector="TL1" oid="GROCTFRDISC" type="COUNTER"/>
+      <value parameter="GROCTFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.GROCTFRDISC.ne.tx" name="Fujitsu Tx FP GROCTFRDISC" desc="Green octets destined for the interface that were discarded due to congestion" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="GROCTFRDISC" collector="TL1" oid="GROCTFRDISC" type="COUNTER"/>
+      <value parameter="GROCTFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR.ne.rx" name="Fujitsu Rx FP RDFR" desc="Service red frames discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR" collector="TL1" oid="RDFR" type="COUNTER"/>
+      <value parameter="RDFR"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-A.ne.rx" name="Fujitsu Rx FP RDFR-A" desc="Service Class A red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-A" collector="TL1" oid="RDFR-A" type="COUNTER"/>
+      <value parameter="RDFR-A"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-B.ne.rx" name="Fujitsu Rx FP RDFR-B" desc="Service Class B red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-B" collector="TL1" oid="RDFR-B" type="COUNTER"/>
+      <value parameter="RDFR-B"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-C.ne.rx" name="Fujitsu Rx FP RDFR-C" desc="Service Class C red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-C" collector="TL1" oid="RDFR-C" type="COUNTER"/>
+      <value parameter="RDFR-C"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-D.ne.rx" name="Fujitsu Rx FP RDFR-D" desc="Service Class D red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-D" collector="TL1" oid="RDFR-D" type="COUNTER"/>
+      <value parameter="RDFR-D"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-E.ne.rx" name="Fujitsu Rx FP RDFR-E" desc="Service Class E red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-E" collector="TL1" oid="RDFR-E" type="COUNTER"/>
+      <value parameter="RDFR-E"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-F.ne.rx" name="Fujitsu Rx FP RDFR-F" desc="Service Class F red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-F" collector="TL1" oid="RDFR-F" type="COUNTER"/>
+      <value parameter="RDFR-F"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-G.ne.rx" name="Fujitsu Rx FP RDFR-G" desc="Service Class G red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-G" collector="TL1" oid="RDFR-G" type="COUNTER"/>
+      <value parameter="RDFR-G"/>
+    </metric>
+    <metric id="Fujitsu FP.RDFR-H.ne.rx" name="Fujitsu Rx FP RDFR-H" desc="Service Class H red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-H" collector="TL1" oid="RDFR-H" type="COUNTER"/>
+      <value parameter="RDFR-H"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT.ne.rx" name="Fujitsu Rx FP RDOCT" desc="Service red octets discarded" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT" collector="TL1" oid="RDOCT" type="COUNTER"/>
+      <value parameter="RDOCT"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-A.ne.rx" name="Fujitsu Rx FP RDOCT-A" desc="Service Class A red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-A" collector="TL1" oid="RDOCT-A" type="COUNTER"/>
+      <value parameter="RDOCT-A"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-B.ne.rx" name="Fujitsu Rx FP RDOCT-B" desc="Service Class B red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-B" collector="TL1" oid="RDOCT-B" type="COUNTER"/>
+      <value parameter="RDOCT-B"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-C.ne.rx" name="Fujitsu Rx FP RDOCT-C" desc="Service Class C red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-C" collector="TL1" oid="RDOCT-C" type="COUNTER"/>
+      <value parameter="RDOCT-C"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-D.ne.rx" name="Fujitsu Rx FP RDOCT-D" desc="Service Class D red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-D" collector="TL1" oid="RDOCT-D" type="COUNTER"/>
+      <value parameter="RDOCT-D"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-E.ne.rx" name="Fujitsu Rx FP RDOCT-E" desc="Service Class E red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-E" collector="TL1" oid="RDOCT-E" type="COUNTER"/>
+      <value parameter="RDOCT-E"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-F.ne.rx" name="Fujitsu Rx FP RDOCT-F" desc="Service Class F red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-F" collector="TL1" oid="RDOCT-F" type="COUNTER"/>
+      <value parameter="RDOCT-F"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-G.ne.rx" name="Fujitsu Rx FP RDOCT-G" desc="Service Class G red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-G" collector="TL1" oid="RDOCT-G" type="COUNTER"/>
+      <value parameter="RDOCT-G"/>
+    </metric>
+    <metric id="Fujitsu FP.RDOCT-H.ne.rx" name="Fujitsu Rx FP RDOCT-H" desc="Service Class H red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-H" collector="TL1" oid="RDOCT-H" type="COUNTER"/>
+      <value parameter="RDOCT-H"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-A.ne.tx" name="Fujitsu Tx FP TDFR-A" desc="Service Class A frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-A" collector="TL1" oid="TDFR-A" type="COUNTER"/>
+      <value parameter="TDFR-A"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-B.ne.tx" name="Fujitsu Tx FP TDFR-B" desc="Service Class B frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-B" collector="TL1" oid="TDFR-B" type="COUNTER"/>
+      <value parameter="TDFR-B"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-C.ne.tx" name="Fujitsu Tx FP TDFR-C" desc="Service Class C frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-C" collector="TL1" oid="TDFR-C" type="COUNTER"/>
+      <value parameter="TDFR-C"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-D.ne.tx" name="Fujitsu Tx FP TDFR-D" desc="Service Class D frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-D" collector="TL1" oid="TDFR-D" type="COUNTER"/>
+      <value parameter="TDFR-D"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-E.ne.tx" name="Fujitsu Tx FP TDFR-E" desc="Service Class E frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-E" collector="TL1" oid="TDFR-E" type="COUNTER"/>
+      <value parameter="TDFR-E"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-F.ne.tx" name="Fujitsu Tx FP TDFR-F" desc="Service Class F frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-F" collector="TL1" oid="TDFR-F" type="COUNTER"/>
+      <value parameter="TDFR-F"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-G.ne.tx" name="Fujitsu Tx FP TDFR-G" desc="Service Class G frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-G" collector="TL1" oid="TDFR-G" type="COUNTER"/>
+      <value parameter="TDFR-G"/>
+    </metric>
+    <metric id="Fujitsu FP.TDFR-H.ne.tx" name="Fujitsu Tx FP TDFR-H" desc="Service Class H frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-H" collector="TL1" oid="TDFR-H" type="COUNTER"/>
+      <value parameter="TDFR-H"/>
+    </metric>
+    <metric id="Fujitsu FP.TFR.ne.rx" name="Fujitsu Rx FP TFR" desc="Total number of service ingress frames received on the interface" protocol="TL1" parmType="COE_ETH_RX_FRAMES" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR" collector="TL1" oid="TFR" type="COUNTER"/>
+      <value parameter="TFR"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-A.ne.tx" name="Fujtisu Tx FP TFR-A" desc="Service Class A frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-A" collector="TL1" oid="TRF-A" type="COUNTER"/>
+      <value parameter="TRF-A"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-B.ne.tx" name="Fujtisu Tx FP TFR-B" desc="Service Class B frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-B" collector="TL1" oid="TRF-B" type="COUNTER"/>
+      <value parameter="TRF-B"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-C.ne.tx" name="Fujtisu Tx FP TFR-C" desc="Service Class C frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-C" collector="TL1" oid="TRF-C" type="COUNTER"/>
+      <value parameter="TRF-C"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-D.ne.tx" name="Fujtisu Tx FP TFR-D" desc="Service Class D frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-D" collector="TL1" oid="TRF-D" type="COUNTER"/>
+      <value parameter="TRF-D"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-E.ne.tx" name="Fujtisu Tx FP TFR-E" desc="Service Class E frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-E" collector="TL1" oid="TRF-E" type="COUNTER"/>
+      <value parameter="TRF-E"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-F.ne.tx" name="Fujtisu Tx FP TFR-F" desc="Service Class F frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-F" collector="TL1" oid="TRF-F" type="COUNTER"/>
+      <value parameter="TRF-F"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-G.ne.tx" name="Fujtisu Tx FP TFR-G" desc="Service Class G frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-G" collector="TL1" oid="TRF-G" type="COUNTER"/>
+      <value parameter="TRF-G"/>
+    </metric>
+    <metric id="Fujitsu FP.TRF-H.ne.tx" name="Fujtisu Tx FP TFR-H" desc="Service Class H frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TRF-H" collector="TL1" oid="TRF-H" type="COUNTER"/>
+      <value parameter="TRF-H"/>
+    </metric>
+    <metric id="Fujitsu FP.TOCT.ne.rx" name="Fujitsu Rx FP TOCT" desc="Total number of service ingress octets received on the interface" protocol="TL1" parmType="COE_ETH_RX_OCTETS" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TOCT" collector="TL1" oid="TOCT" type="COUNTER"/>
+      <value parameter="TOCT"/>
+    </metric>
+    <metric id="Fujitsu FP.YLFR.ne.rx" name="Fujitsu Rx FP YLFR" desc="Service yellow frames received" protocol="TL1" parmType="COE_YLW_RX_FRAMES" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLFR" collector="TL1" oid="YLFR" type="COUNTER"/>
+      <value parameter="YLFR"/>
+    </metric>
+    <metric id="Fujitsu FP.YLFR.ne.tx" name="Fujitsu Tx FP YLFR" desc="Service yellow frames destined for the interface" protocol="TL1" parmType="COE_YLW_TX_FRAMES" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="YLFR" collector="TL1" oid="YLFR" type="COUNTER"/>
+      <value parameter="YLFR"/>
+    </metric>
+    <metric id="Fujitsu FP.YLFRDISC.ne.rx" name="Fujitsu Rx FP YLFRDISC" desc="Yellow frames received on the interface that were discarded due to congestion" protocol="TL1" parmType="COE_YLW_RX_FRAME_DISCARDS" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLFRDISC" collector="TL1" oid="YLFRDISC" type="COUNTER"/>
+      <value parameter="YLFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.YLFRDISC.ne.tx" name="Fujtisu Tx FP YLFRDISC" desc="Yellow frames destined on the interface that were discarded due to congestion" protocol="TL1" parmType="COE_YLW_TX_FRAME_DISCARDS" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="YLFRDISC" collector="TL1" oid="YLFRDISC" type="COUNTER"/>
+      <value parameter="YLFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.YLOCT.ne.rx" name="Fujitsu Rx FP YLOCT" desc="Service yellow octets received" protocol="TL1" parmType="COE_YLW_RX_OCTETS" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLOCT" collector="TL1" oid="YLOCT" type="COUNTER"/>
+      <value parameter="YLOCT"/>
+    </metric>
+    <metric id="Fujitsu FP.YLOCT.ne.tx" name="Fujitsu Tx FP YLOCT" desc="Service yellow octets destined for the interface" protocol="TL1" parmType="COE_YLW_TX_OCTETS" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="YLOCT" collector="TL1" oid="YLOCT" type="COUNTER"/>
+      <value parameter="YLOCT"/>
+    </metric>
+    <metric id="Fujitsu FP.YLOCTFRDISC.ne.rx" name="Fujitsu Rx FP YLOCTFRDISC" desc="Yellow octets received on the interface that were discarded due to congestion" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLOCTFRDISC" collector="TL1" oid="YLOCTFRDISC" type="COUNTER"/>
+      <value parameter="YLOCTFRDISC"/>
+    </metric>
+    <metric id="Fujitsu FP.YLOCTFRDISC.ne.tx" name="Fujitsu Tx FP YLOCTFRDISC" desc="Yellow octets destined on the interface that were discarded due to congestion" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="YLOCTFRDISC" collector="TL1" oid="YLOCTFRDISC" type="COUNTER"/>
+      <value parameter="YLOCTFRDISC"/>
+    </metric>
+    <!--sla mon-->
+    <metric id="Fujitsu FP.SLMSEC.ne.rx" name="Fujitsu Rx FP SLMSEC" desc="Number of seconds elapsed in the current Frame Loss Measurement interval" protocol="TL1" parmType="" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SLMSEC" collector="TL1" oid="SLMSEC" type="COUNTER"/>
+      <value parameter="SLMSEC"/>
+    </metric>
+    <metric id="Fujitsu FP.SLMRX.ne.rx" name="Fujitsu Rx FP SLMRX" desc="Number of SLMs received" protocol="TL1" parmType="" units="SLMs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SLMRX" collector="TL1" oid="SLMRX" type="COUNTER"/>
+      <value parameter="SLMRX"/>
+    </metric>
+    <metric id="Fujitsu FP.SLMTX.ne.rx" name="Fujitsu Tx FP SLMTX" desc="Number of SLMs sent" protocol="TL1" parmType="" units="SLMs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="SLMTX" collector="TL1" oid="SLMTX" type="COUNTER"/>
+      <value parameter="SLMTX"/>
+    </metric>
+    <metric id="Fujitsu FP.SLRRX.ne.rx" name="Fujitsu Rx FP SLRRX" desc="Number of SLRs received" protocol="TL1" parmType="" units="SLMs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SLRRX" collector="TL1" oid="SLRRX" type="COUNTER"/>
+      <value parameter="SLRRX"/>
+    </metric>
+    <metric id="Fujitsu FP.SLRTX.ne.rx" name="Fujitsu Rx FP SLRTX" desc="Number of SLRs sent" protocol="TL1" parmType="" units="SLMs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SLRTX" collector="TL1" oid="SLRTX" type="COUNTER"/>
+      <value parameter="SLRTX"/>
+    </metric>
+    <metric id="Fujitsu FP.FLB.ne.rx" name="Fujitsu Rx FP FLB" desc="Frame Losses in the Backward Direction" protocol="TL1" parmType="" units="Frames" conversion-function="PER_PERIOD_PER_SECOND" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FLB" collector="TL1" oid="FLB" type="COUNTER"/>
+      <value parameter="FLB"/>
+    </metric>
+    <metric id="Fujitsu FP.FLF.ne.rx" name="Fujitsu Tx FP FLF" desc="Frame Losses in the Forward Direction" protocol="TL1" parmType="" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FLF" collector="TL1" oid="FLF" type="COUNTER"/>
+      <value parameter="FLF"/>
+    </metric>
+    <metric id="Fujitsu FP.FLRB.ne.rx" name="Fujitsu Rx FP FLRB" desc="Percenatage of Frame Loss in the Backward Direction" protocol="TL1" parmType="" units="Ratio" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="FLRB" collector="TL1" oid="FLRB" type="GAUGE"/>
+      <value parameter="FLRB"/>
+    </metric>
+    <metric id="Fujitsu FP.FLRF.ne.rx" name="Fujitsu Tx FP FLRF" desc="Percenatage of Frame Loss in the Forward Direction" protocol="TL1" parmType="IP_SLA_FRAMELOSS_RATIO" units="%" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="FLRF" collector="TL1" oid="FLRF" type="GAUGE"/>
+      <value parameter="FLRF"/>
+    </metric>
+    <metric id="Fujitsu FP.DMMSEC.ne.rx" name="Fujitsu Rx FP DMMSEC" desc="Number of seconds elapsed in the current Frame Delay Measurement interval" protocol="TL1" parmType="" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="DMMSEC" collector="TL1" oid="DMMSEC" type="COUNTER"/>
+      <value parameter="DMMSEC"/>
+    </metric>
+    <metric id="Fujitsu FP.DMMRX.ne.rx" name="Fujitsu Rx FP DMMRX" desc="Number of DMMs received" protocol="TL1" parmType="" units="DMMs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="DMMRX" collector="TL1" oid="DMMRX" type="COUNTER"/>
+      <value parameter="DMMRX"/>
+    </metric>
+    <metric id="Fujitsu FP.DMMTX.ne.rx" name="Fujitsu Tx FP DMMTX" desc="Number of DMMs sent" protocol="TL1" parmType="" units="DMMs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="DMMTX" collector="TL1" oid="DMMTX" type="COUNTER"/>
+      <value parameter="DMMTX"/>
+    </metric>
+    <metric id="Fujitsu FP.DMRRX.ne.rx" name="Fujitsu Rx FP DMRRX" desc="Number of DMRs received" protocol="TL1" parmType="" units="DMRs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="DMRRX" collector="TL1" oid="DMRRX" type="COUNTER"/>
+      <value parameter="DMRRX"/>
+    </metric>
+    <metric id="Fujitsu FP.DMRTX.ne.rx" name="Fujitsu Tx FP DMRTX" desc="Number of DMRs sent" protocol="TL1" parmType="" units="DMRs" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="DMRTX" collector="TL1" oid="DMRTX" type="COUNTER"/>
+      <value parameter="DMRTX"/>
+    </metric>
+    <metric id="Fujitsu FP.FDMIN.ne.rx" name="Fujitsu Rx FP FDMIN" desc="Minimum Two-Way Frame Delay in microseconds" protocol="TL1" parmType="" units="microseconds" conversion-function="NONE" consolidation-function="MIN" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="FDMIN" collector="TL1" oid="FDMIN" type="GAUGE"/>
+      <value parameter="FDMIN"/>
+    </metric>
+    <metric id="Fujitsu FP.FDMAX.ne.rx" name="Fujitsu Rx FP FDMAX" desc="Maximum Two-Way Frame Delay in microseconds" protocol="TL1" parmType="" units="microseconds" conversion-function="NONE" consolidation-function="MAX" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="FDMAX" collector="TL1" oid="FDMAX" type="GAUGE"/>
+      <value parameter="FDMAX"/>
+    </metric>
+    <metric id="Fujitsu FP.FDAVG.ne.rx" name="Fujitsu Rx FP FDAVG" desc="Avg One-Way Frame Delay in microseconds" protocol="TL1" parmType="IP_SLA_ONEWAY_DELAY_DS" units="microseconds" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="FDAVG" collector="TL1" oid="FDAVG" type="GAUGE"/>
+      <value parameter="FDAVG"/>
+    </metric>
+    <metric id="Fujitsu FP.FDAVG.ne.tx" name="Fujitsu Tx FP FDAVG" desc="Avg One-Way Frame Delay in microseconds" protocol="TL1" parmType="IP_SLA_ONEWAY_DELAY_SD" units="microseconds" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="FDAVG" collector="TL1" oid="FDAVG" type="GAUGE"/>
+      <value parameter="FDAVG"/>
+    </metric>
+    <metric id="Fujitsu FP.IFDVMIN.ne.rx" name="Fujitsu Rx FP IFDVMIN" desc="Minimum Two-Way Inter-Frame Delay Variation in microseconds" protocol="TL1" parmType="" units="microseconds" conversion-function="NONE" consolidation-function="MIN" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="IFDVMIN" collector="TL1" oid="IFDVMIN" type="GAUGE"/>
+      <value parameter="IFDVMIN"/>
+    </metric>
+    <metric id="Fujitsu FP.IFDVMAX.ne.rx" name="Fujitsu Rx FP IFDVMAX" desc="Maximum One-Way Inter-Frame Delay Variation in microseconds" protocol="TL1" parmType="" units="microseconds" conversion-function="NONE" consolidation-function="MAX" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="IFDVMAX" collector="TL1" oid="IFDVMAX" type="GAUGE"/>
+      <value parameter="IFDVMAX"/>
+    </metric>
+    <metric id="Fujitsu FP.IFDVAVG.ne.rx" name="Fujitsu Rx FP FDAVG" desc="Avg Owo-Way Inter-Frame Delay Variation in microseconds" protocol="TL1" parmType="IP_SLA_LATENCY_DS" units="microseconds" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="IFDVAVG" collector="TL1" oid="IFDVAVG" type="GAUGE"/>
+      <value parameter="IFDVAVG"/>
+    </metric>
+    <metric id="Fujitsu FP.IFDVAVG.ne.tx" name="Fujitsu Tx FP FDAVG" desc="Avg Owo-Way Inter-Frame Delay Variation in microseconds" protocol="TL1" parmType="IP_SLA_LATENCY_SD" units="microseconds" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="IFDVAVG" collector="TL1" oid="IFDVAVG" type="GAUGE"/>
+      <value parameter="IFDVAVG"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.lif" name="Fujitsu LIF" protocol="TL1" displayType="Normal">
+    <metric id="Fujitsu LIF.GRFR.ne.rx" name="Fujitsu Rx LIF GRFR" desc="Service ingress green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-A.ne.rx" name="Fujitsu Rx LIF GRFR-A" desc="Service Class A green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-A" collector="TL1" oid="GRFR-A" type="COUNTER"/>
+      <value parameter="GRFR-A"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-B.ne.rx" name="Fujitsu Rx LIF GRFR-B" desc="Service Class B green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-B" collector="TL1" oid="GRFR-B" type="COUNTER"/>
+      <value parameter="GRFR-B"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-C.ne.rx" name="Fujitsu Rx LIF GRFR-C" desc="Service Class C green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-C" collector="TL1" oid="GRFR-C" type="COUNTER"/>
+      <value parameter="GRFR-C"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-D.ne.rx" name="Fujitsu Rx LIF GRFR-D" desc="Service Class D green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-D" collector="TL1" oid="GRFR-D" type="COUNTER"/>
+      <value parameter="GRFR-D"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-E.ne.rx" name="Fujitsu Rx LIF GRFR-E" desc="Service Class E green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-E" collector="TL1" oid="GRFR-E" type="COUNTER"/>
+      <value parameter="GRFR-E"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-F.ne.rx" name="Fujitsu Rx LIF GRFR-F" desc="Service Class F green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-F" collector="TL1" oid="GRFR-F" type="COUNTER"/>
+      <value parameter="GRFR-F"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-G.ne.rx" name="Fujitsu Rx LIF GRFR-G" desc="Service Class G green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-G" collector="TL1" oid="GRFR-G" type="COUNTER"/>
+      <value parameter="GRFR-G"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR-H.ne.rx" name="Fujitsu Rx LIF GRFR-H" desc="Service Class H green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-H" collector="TL1" oid="GRFR-H" type="COUNTER"/>
+      <value parameter="GRFR-H"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT.ne.rx" name="Fujitsu Rx LIF GROCT" desc="Service ingress green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-A.ne.rx" name="Fujitsu Rx LIF GROCT-A" desc="Service Class A green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-A" collector="TL1" oid="GROCT-A" type="COUNTER"/>
+      <value parameter="GROCT-A"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-B.ne.rx" name="Fujitsu Rx LIF GROCT-B" desc="Service Class B green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-B" collector="TL1" oid="GROCT-B" type="COUNTER"/>
+      <value parameter="GROCT-B"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-C.ne.rx" name="Fujitsu Rx LIF GROCT-C" desc="Service Class C green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-C" collector="TL1" oid="GROCT-C" type="COUNTER"/>
+      <value parameter="GROCT-C"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-D.ne.rx" name="Fujitsu Rx LIF GROCT-D" desc="Service Class D green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-D" collector="TL1" oid="GROCT-D" type="COUNTER"/>
+      <value parameter="GROCT-D"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-E.ne.rx" name="Fujitsu Rx LIF GROCT-E" desc="Service Class E green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-E" collector="TL1" oid="GROCT-E" type="COUNTER"/>
+      <value parameter="GROCT-E"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-F.ne.rx" name="Fujitsu Rx LIF GROCT-F" desc="Service Class F green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-F" collector="TL1" oid="GROCT-F" type="COUNTER"/>
+      <value parameter="GROCT-F"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-G.ne.rx" name="Fujitsu Rx LIF GROCT-G" desc="Service Class G green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-G" collector="TL1" oid="GROCT-G" type="COUNTER"/>
+      <value parameter="GROCT-G"/>
+    </metric>
+    <metric id="Fujitsu LIF.GROCT-H.ne.rx" name="Fujitsu Rx LIF GROCT-H" desc="Service Class H green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-H" collector="TL1" oid="GROCT-H" type="COUNTER"/>
+      <value parameter="GROCT-H"/>
+    </metric>
+    <metric id="Fujitsu LIF.IDEF-L.ne.rx" name="Fujitsu Rx LIF IDEF-L" desc="Total frames with invalid TPID or unexpected VID that were received on the LIF" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="IDEF-L" collector="TL1" oid="IDEF-L" type="COUNTER"/>
+      <value parameter="IDEF-L"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR.ne.rx" name="Fujitsu Rx LIF RDFR" desc="Service red frames discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR" collector="TL1" oid="RDFR" type="COUNTER"/>
+      <value parameter="RDFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-A.ne.rx" name="Fujitsu Rx LIF RDFR-A" desc="Service Class A red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-A" collector="TL1" oid="RDFR-A" type="COUNTER"/>
+      <value parameter="RDFR-A"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-B.ne.rx" name="Fujitsu Rx LIF RDFR-B" desc="Service Class B red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-B" collector="TL1" oid="RDFR-B" type="COUNTER"/>
+      <value parameter="RDFR-B"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-C.ne.rx" name="Fujitsu Rx LIF RDFR-C" desc="Service Class C red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-C" collector="TL1" oid="RDFR-C" type="COUNTER"/>
+      <value parameter="RDFR-C"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-D.ne.rx" name="Fujitsu Rx LIF RDFR-D" desc="Service Class D red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-D" collector="TL1" oid="RDFR-D" type="COUNTER"/>
+      <value parameter="RDFR-D"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-E.ne.rx" name="Fujitsu Rx LIF RDFR-E" desc="Service Class E red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-E" collector="TL1" oid="RDFR-E" type="COUNTER"/>
+      <value parameter="RDFR-E"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-F.ne.rx" name="Fujitsu Rx LIF RDFR-F" desc="Service Class F red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-F" collector="TL1" oid="RDFR-F" type="COUNTER"/>
+      <value parameter="RDFR-F"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-G.ne.rx" name="Fujitsu Rx LIF RDFR-G" desc="Service Class G red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-G" collector="TL1" oid="RDFR-G" type="COUNTER"/>
+      <value parameter="RDFR-G"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDFR-H.ne.rx" name="Fujitsu Rx LIF RDFR-H" desc="Service Class H red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-H" collector="TL1" oid="RDFR-H" type="COUNTER"/>
+      <value parameter="RDFR-H"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT.ne.rx" name="Fujitsu Rx LIF RDOCT" desc="Service red octets discarded" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT" collector="TL1" oid="RDOCT" type="COUNTER"/>
+      <value parameter="RDOCT"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-A.ne.rx" name="Fujitsu Rx LIF RDOCT-A" desc="Service Class A red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-A" collector="TL1" oid="RDOCT-A" type="COUNTER"/>
+      <value parameter="RDOCT-A"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-B.ne.rx" name="Fujitsu Rx LIF RDOCT-B" desc="Service Class B red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-B" collector="TL1" oid="RDOCT-B" type="COUNTER"/>
+      <value parameter="RDOCT-B"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-C.ne.rx" name="Fujitsu Rx LIF RDOCT-C" desc="Service Class C red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-C" collector="TL1" oid="RDOCT-C" type="COUNTER"/>
+      <value parameter="RDOCT-C"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-D.ne.rx" name="Fujitsu Rx LIF RDOCT-D" desc="Service Class D red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-D" collector="TL1" oid="RDOCT-D" type="COUNTER"/>
+      <value parameter="RDOCT-D"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-E.ne.rx" name="Fujitsu Rx LIF RDOCT-E" desc="Service Class E red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-E" collector="TL1" oid="RDOCT-E" type="COUNTER"/>
+      <value parameter="RDOCT-E"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-F.ne.rx" name="Fujitsu Rx LIF RDOCT-F" desc="Service Class F red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-F" collector="TL1" oid="RDOCT-F" type="COUNTER"/>
+      <value parameter="RDOCT-F"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-G.ne.rx" name="Fujitsu Rx LIF RDOCT-G" desc="Service Class G red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-G" collector="TL1" oid="RDOCT-G" type="COUNTER"/>
+      <value parameter="RDOCT-G"/>
+    </metric>
+    <metric id="Fujitsu LIF.RDOCT-H.ne.rx" name="Fujitsu Rx LIF RDOCT-H" desc="Service Class H red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-H" collector="TL1" oid="RDOCT-H" type="COUNTER"/>
+      <value parameter="RDOCT-H"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-A.ne.tx" name="Fujitsu Tx LIF TDFR-A" desc="Service Class A frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-A" collector="TL1" oid="TDFR-A" type="COUNTER"/>
+      <value parameter="TDFR-A"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-B.ne.tx" name="Fujitsu Tx LIF TDFR-B" desc="Service Class B frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-B" collector="TL1" oid="TDFR-B" type="COUNTER"/>
+      <value parameter="TDFR-B"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-C.ne.tx" name="Fujitsu Tx LIF TDFR-C" desc="Service Class C frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-C" collector="TL1" oid="TDFR-C" type="COUNTER"/>
+      <value parameter="TDFR-C"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-D.ne.tx" name="Fujitsu Tx LIF TDFR-D" desc="Service Class D frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-D" collector="TL1" oid="TDFR-D" type="COUNTER"/>
+      <value parameter="TDFR-D"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-E.ne.tx" name="Fujitsu Tx LIF TDFR-E" desc="Service Class E frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-E" collector="TL1" oid="TDFR-E" type="COUNTER"/>
+      <value parameter="TDFR-E"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-F.ne.tx" name="Fujitsu Tx LIF TDFR-F" desc="Service Class F frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-F" collector="TL1" oid="TDFR-F" type="COUNTER"/>
+      <value parameter="TDFR-F"/>
+    </metric>
+    <metric id="Fujitsu LIF.GRFR.ne.rx1" name="Fujitsu Rx LIF GRFR" desc="Service ingress green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.TDFR-H.ne.tx" name="Fujitsu Tx LIF TDFR-H" desc="Service Class H frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-H" collector="TL1" oid="TDFR-H" type="COUNTER"/>
+      <value parameter="TDFR-H"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR.ne.rx" name="Fujitsu Rx LIF TFR" desc="Total frames received on the LIF" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR" collector="TL1" oid="TFR" type="COUNTER"/>
+      <value parameter="TFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.TGRFR.ne.tx" name="Fujitsu Tx LIF TGRFR" desc="Total service green frames destined to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TGRFR" collector="TL1" oid="TGRFR" type="COUNTER"/>
+      <value parameter="TGRFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.TGROCT.ne.tx" name="Fujitsu Tx LIF TGROCT" desc="Total service green octets destined to the interface" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TGROCT" collector="TL1" oid="TGROCT" type="COUNTER"/>
+      <value parameter="TGROCT"/>
+    </metric>
+    <metric id="Fujitsu LIF.TYLFR.ne.tx" name="Fujitsu Tx LIF TYLFR" desc="Total service yellow frames destined to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TYLFR" collector="TL1" oid="TYLFR" type="COUNTER"/>
+      <value parameter="TYLFR"/>
+    </metric>
+    <metric id="Fujitsu LIF.TYLOCT.ne.tx" name="Fujitsu Tx LIF TYLOCT" desc="Total service yellow octets destined to the interface" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TYLOCT" collector="TL1" oid="TYLOCT" type="COUNTER"/>
+      <value parameter="TYLOCT"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-A.ne.tx" name="Fujitsu Tx LIF TFR-A" desc="Service Class A frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-A" collector="TL1" oid="TFR-A" type="COUNTER"/>
+      <value parameter="TFR-A"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-B.ne.tx" name="Fujitsu Tx LIF TFR-B" desc="Service Class B frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-B" collector="TL1" oid="TFR-B" type="COUNTER"/>
+      <value parameter="TFR-B"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-C.ne.tx" name="Fujitsu Tx LIF TFR-C" desc="Service Class C frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-C" collector="TL1" oid="TFR-C" type="COUNTER"/>
+      <value parameter="TFR-C"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-D.ne.tx" name="Fujitsu Tx LIF TFR-D" desc="Service Class D frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-D" collector="TL1" oid="TFR-D" type="COUNTER"/>
+      <value parameter="TFR-D"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-E.ne.tx" name="Fujitsu Tx LIF TFR-E" desc="Service Class E frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-E" collector="TL1" oid="TFR-E" type="COUNTER"/>
+      <value parameter="TFR-E"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-F.ne.tx" name="Fujitsu Tx LIF TFR-F" desc="Service Class F frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-F" collector="TL1" oid="TFR-F" type="COUNTER"/>
+      <value parameter="TFR-F"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-G.ne.tx" name="Fujitsu Tx LIF TFR-G" desc="Service Class G frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-G" collector="TL1" oid="TFR-G" type="COUNTER"/>
+      <value parameter="TFR-G"/>
+    </metric>
+    <metric id="Fujitsu LIF.TFR-H.ne.tx" name="Fujitsu Tx LIF TFR-H" desc="Service Class H frames destined for the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-H" collector="TL1" oid="TFR-H" type="COUNTER"/>
+      <value parameter="TFR-H"/>
+    </metric>
+    <metric id="Fujitsu LIF.TOCT.ne.rx" name="Fujitsu Rx LIF TOCT" desc="Total octets received on the LIF" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TOCT" collector="TL1" oid="TOCT" type="COUNTER"/>
+      <value parameter="TOCT"/>
+    </metric>
+    <metric id="Fujitsu LIF.L2ACL-DISC.ne.rx" name="Fujitsu Rx LIF L2ACL-DISC" desc="L2ACL-DISC" protocol="TL1" units="L2ACL-DISC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="L2ACL-DISC" collector="TL1" oid="L2ACL-DISC" type="COUNTER"/>
+      <value parameter="L2ACL-DISC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.tmlp" name="Fujitsu TMLP" protocol="TL1" displayType="Normal">
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR.ne.rx" name="Fujitsu Rx TMLP GRFR" desc="Service ingress green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-A.ne.rx" name="Fujitsu Rx TMLP GRFR-A" desc="Service Class A green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-A" collector="TL1" oid="GRFR-A" type="COUNTER"/>
+      <value parameter="GRFR-A"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-B.ne.rx" name="Fujitsu Rx TMLP GRFR-B" desc="Service Class B green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-B" collector="TL1" oid="GRFR-B" type="COUNTER"/>
+      <value parameter="GRFR-B"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-C.ne.rx" name="Fujitsu Rx TMLP GRFR-C" desc="Service Class C green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-C" collector="TL1" oid="GRFR-C" type="COUNTER"/>
+      <value parameter="GRFR-C"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-D.ne.rx" name="Fujitsu Rx TMLP GRFR-D" desc="Service Class D green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-D" collector="TL1" oid="GRFR-D" type="COUNTER"/>
+      <value parameter="GRFR-D"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-E.ne.rx" name="Fujitsu Rx TMLP GRFR-E" desc="Service Class E green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-E" collector="TL1" oid="GRFR-E" type="COUNTER"/>
+      <value parameter="GRFR-E"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-F.ne.rx" name="Fujitsu Rx TMLP GRFR-F" desc="Service Class F green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-F" collector="TL1" oid="GRFR-F" type="COUNTER"/>
+      <value parameter="GRFR-F"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-G.ne.rx" name="Fujitsu Rx TMLP GRFR-G" desc="Service Class G green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-G" collector="TL1" oid="GRFR-G" type="COUNTER"/>
+      <value parameter="GRFR-G"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR-H.ne.rx" name="Fujitsu Rx TMLP GRFR-H" desc="Service Class H green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-H" collector="TL1" oid="GRFR-H" type="COUNTER"/>
+      <value parameter="GRFR-H"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT.ne.rx" name="Fujitsu Rx TMLP GROCT" desc="Service ingress green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-A.ne.rx" name="Fujitsu Rx TMLP GROCT-A" desc="Service Class A green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-A" collector="TL1" oid="GROCT-A" type="COUNTER"/>
+      <value parameter="GROCT-A"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-B.ne.rx" name="Fujitsu Rx TMLP GROCT-B" desc="Service Class B green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-B" collector="TL1" oid="GROCT-B" type="COUNTER"/>
+      <value parameter="GROCT-B"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-C.ne.rx" name="Fujitsu Rx TMLP GROCT-C" desc="Service Class C green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-C" collector="TL1" oid="GROCT-C" type="COUNTER"/>
+      <value parameter="GROCT-C"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-D.ne.rx" name="Fujitsu Rx TMLP GROCT-D" desc="Service Class D green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-D" collector="TL1" oid="GROCT-D" type="COUNTER"/>
+      <value parameter="GROCT-D"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-E.ne.rx" name="Fujitsu Rx TMLP GROCT-E" desc="Service Class E green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-E" collector="TL1" oid="GROCT-E" type="COUNTER"/>
+      <value parameter="GROCT-E"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-F.ne.rx" name="Fujitsu Rx TMLP GROCT-F" desc="Service Class F green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-F" collector="TL1" oid="GROCT-F" type="COUNTER"/>
+      <value parameter="GROCT-F"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-G.ne.rx" name="Fujitsu Rx TMLP GROCT-G" desc="Service Class G green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-G" collector="TL1" oid="GROCT-G" type="COUNTER"/>
+      <value parameter="GROCT-G"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT-H.ne.rx" name="Fujitsu Rx TMLP GROCT-H" desc="Service Class H green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-H" collector="TL1" oid="GROCT-H" type="COUNTER"/>
+      <value parameter="GROCT-H"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR.ne.rx" name="Fujitsu Rx TMLP RDFR" desc="Service red frames discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR" collector="TL1" oid="RDFR" type="COUNTER"/>
+      <value parameter="RDFR"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-A.ne.rx" name="Fujitsu Rx TMLP RDFR-A" desc="Service Class A red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-A" collector="TL1" oid="RDFR-A" type="COUNTER"/>
+      <value parameter="RDFR-A"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-B.ne.rx" name="Fujitsu Rx TMLP RDFR-B" desc="Service Class B red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-B" collector="TL1" oid="RDFR-B" type="COUNTER"/>
+      <value parameter="RDFR-B"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-C.ne.rx" name="Fujitsu Rx TMLP RDFR-C" desc="Service Class C red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-C" collector="TL1" oid="RDFR-C" type="COUNTER"/>
+      <value parameter="RDFR-C"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-D.ne.rx" name="Fujitsu Rx TMLP RDFR-D" desc="Service Class D red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-D" collector="TL1" oid="RDFR-D" type="COUNTER"/>
+      <value parameter="RDFR-D"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-E.ne.rx" name="Fujitsu Rx TMLP RDFR-E" desc="Service Class E red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-E" collector="TL1" oid="RDFR-E" type="COUNTER"/>
+      <value parameter="RDFR-E"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-F.ne.rx" name="Fujitsu Rx TMLP RDFR-F" desc="Service Class F red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-F" collector="TL1" oid="RDFR-F" type="COUNTER"/>
+      <value parameter="RDFR-F"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-G.ne.rx" name="Fujitsu Rx TMLP RDFR-G" desc="Service Class G red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-G" collector="TL1" oid="RDFR-G" type="COUNTER"/>
+      <value parameter="RDFR-G"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDFR-H.ne.rx" name="Fujitsu Rx TMLP RDFR-H" desc="Service Class H red frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-H" collector="TL1" oid="RDFR-H" type="COUNTER"/>
+      <value parameter="RDFR-H"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT.ne.rx" name="Fujitsu Rx TMLP RDOCT" desc="Service red octets discarded" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT" collector="TL1" oid="RDOCT" type="COUNTER"/>
+      <value parameter="RDOCT"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-A.ne.rx" name="Fujitsu Rx TMLP RDOCT-A" desc="Service Class A red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-A" collector="TL1" oid="RDOCT-A" type="COUNTER"/>
+      <value parameter="RDOCT-A"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-B.ne.rx" name="Fujitsu Rx TMLP RDOCT-B" desc="Service Class B red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-B" collector="TL1" oid="RDOCT-B" type="COUNTER"/>
+      <value parameter="RDOCT-B"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-C.ne.rx" name="Fujitsu Rx TMLP RDOCT-C" desc="Service Class C red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-C" collector="TL1" oid="RDOCT-C" type="COUNTER"/>
+      <value parameter="RDOCT-C"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-D.ne.rx" name="Fujitsu Rx TMLP RDOCT-D" desc="Service Class D red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-D" collector="TL1" oid="RDOCT-D" type="COUNTER"/>
+      <value parameter="RDOCT-D"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-E.ne.rx" name="Fujitsu Rx TMLP RDOCT-E" desc="Service Class E red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-E" collector="TL1" oid="RDOCT-E" type="COUNTER"/>
+      <value parameter="RDOCT-E"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-F.ne.rx" name="Fujitsu Rx TMLP RDOCT-F" desc="Service Class F red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-F" collector="TL1" oid="RDOCT-F" type="COUNTER"/>
+      <value parameter="RDOCT-F"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-G.ne.rx" name="Fujitsu Rx TMLP RDOCT-G" desc="Service Class G red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-G" collector="TL1" oid="RDOCT-G" type="COUNTER"/>
+      <value parameter="RDOCT-G"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.RDOCT-H.ne.rx" name="Fujitsu Rx TMLP RDOCT-H" desc="Service Class H red octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-H" collector="TL1" oid="RDOCT-H" type="COUNTER"/>
+      <value parameter="RDOCT-H"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR.ne.rx" name="Fujitsu Rx TMLP TFR" desc="Total number of service ingress frames received on the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="tTFR" collector="TL1" oid="TFR" type="COUNTER"/>
+      <value parameter="tTFR"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TOCT.ne.rx" name="Fujitsu Rx TMLP TOCT" desc="Total number of service ingress octets received on the interface" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TOCT" collector="TL1" oid="TOCT" type="COUNTER"/>
+      <value parameter="TOCT"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.YLOCT.ne.rx" name="Fujitsu Rx TMLP YLOCT" desc="Service yellow octets received on the interface" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLOCT" collector="TL1" oid="YLOCT" type="COUNTER"/>
+      <value parameter="YLOCT"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-A.ne.tx" name="Fujitsu Tx TMLP TFR-A" desc="Service Class A frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-A" collector="TL1" oid="TFR-A" type="COUNTER"/>
+      <value parameter="TFR-A"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-B.ne.tx" name="Fujitsu Tx TMLP TFR-B" desc="Service Class B frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-B" collector="TL1" oid="TFR-B" type="COUNTER"/>
+      <value parameter="TFR-B"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-C.ne.tx" name="Fujitsu Tx TMLP TFR-C" desc="Service Class C frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-C" collector="TL1" oid="TFR-C" type="COUNTER"/>
+      <value parameter="TFR-C"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-D.ne.tx" name="Fujitsu Tx TMLP TFR-D" desc="Service Class D frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-D" collector="TL1" oid="TFR-D" type="COUNTER"/>
+      <value parameter="TFR-D"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-E.ne.tx" name="Fujitsu Tx TMLP TFR-E" desc="Service Class E frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-E" collector="TL1" oid="TFR-E" type="COUNTER"/>
+      <value parameter="TFR-E"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-F.ne.tx" name="Fujitsu Tx TMLP TFR-F" desc="Service Class F frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-F" collector="TL1" oid="TFR-F" type="COUNTER"/>
+      <value parameter="TFR-F"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-G.ne.tx" name="Fujitsu Tx TMLP TFR-G" desc="Service Class G frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-G" collector="TL1" oid="TFR-G" type="COUNTER"/>
+      <value parameter="TFR-G"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR-H.ne.tx" name="Fujitsu Tx TMLP TFR-H" desc="Service Class H frames sent to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR-H" collector="TL1" oid="TFR-H" type="COUNTER"/>
+      <value parameter="TFR-H"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-A.ne.tx" name="Fujitsu Tx TMLP TDFR-A" desc="Service Class A frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-A" collector="TL1" oid="TDFR-A" type="COUNTER"/>
+      <value parameter="TDFR-A"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-B.ne.tx" name="Fujitsu Tx TMLP TDFR-B" desc="Service Class B frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-B" collector="TL1" oid="TDFR-B" type="COUNTER"/>
+      <value parameter="TDFR-B"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-C.ne.tx" name="Fujitsu Tx TMLP TDFR-C" desc="Service Class C frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-C" collector="TL1" oid="TDFR-C" type="COUNTER"/>
+      <value parameter="TDFR-C"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-D.ne.tx" name="Fujitsu Tx TMLP TDFR-D" desc="Service Class D frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-D" collector="TL1" oid="TDFR-D" type="COUNTER"/>
+      <value parameter="TDFR-D"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-E.ne.tx" name="Fujitsu Tx TMLP TDFR-E" desc="Service Class E frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-E" collector="TL1" oid="TDFR-E" type="COUNTER"/>
+      <value parameter="TDFR-E"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-F.ne.tx" name="Fujitsu Tx TMLP TDFR-F" desc="Service Class F frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-F" collector="TL1" oid="TDFR-F" type="COUNTER"/>
+      <value parameter="TDFR-F"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-G.ne.tx" name="Fujitsu Tx TMLP TDFR-G" desc="Service Class G frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-G" collector="TL1" oid="TDFR-G" type="COUNTER"/>
+      <value parameter="TDFR-G"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TDFR-H.ne.tx" name="Fujitsu Tx TMLP TDFR-H" desc="Service Class H frames destined for the interface that were discarded" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TDFR-H" collector="TL1" oid="TDFR-H" type="COUNTER"/>
+      <value parameter="TDFR-H"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GRFR.ne.tx" name="Fujitsu Tx TMLP GRFR" desc="Service ingress green frames received" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.GROCT.ne.tx" name="Fujitsu Tx TMLP GROCT" desc="Service ingress green octets received" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="COUNTER"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.YLFR.ne.tx" name="Fujitsu Tx TMLP YLFR" desc="Service yellow frames destined to the interface" protocol="TL1" units="Frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLFR" collector="TL1" oid="YLFR" type="COUNTER"/>
+      <value parameter="YLFR"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.YLOCT.ne.tx" name="Fujitsu Tx TMLP YLOCT" desc="Service yellow Octets destined to the interface" protocol="TL1" units="Octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLOCT" collector="TL1" oid="YLOCT" type="COUNTER"/>
+      <value parameter="YLOCT"/>
+    </metric>
+  </metricGroup>
+  <!--
+newly added
+-->
+  <metricGroup id="fujitsu-flowpoint-tl1.fp" name="flow point" protocol="TL1" displayType="Normal">
+    <metric id="fujitsu-tl1.ACL-DISC" name="fujitsu ACL-DISC  Tx" desc="ACL-DISC" protocol="TL1" units="ACL-DISC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ACL-DISC" collector="TL1" oid="ACL-DISC" type="GAUGE"/>
+      <value parameter="ACL-DISC"/>
+    </metric>
+    <metric id="fujitsu-tl1.AVFR5SEC" name="fujitsu AVFR5SEC  Tx" desc="AVFR5SEC" protocol="TL1" units="AVFR5SEC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="AVFR5SEC" collector="TL1" oid="AVFR5SEC" type="GAUGE"/>
+      <value parameter="AVFR5SEC"/>
+    </metric>
+    <metric id="fujitsu-tl1.AVSIZE5SEC" name="fujitsu AVSIZE5SEC  Tx" desc="AVSIZE5SEC" protocol="TL1" units="AVSIZE5SEC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="AVSIZE5SEC" collector="TL1" oid="AVSIZE5SEC" type="GAUGE"/>
+      <value parameter="AVSIZE5SEC"/>
+    </metric>
+    <metric id="fujitsu-tl1.AVTR5SEC" name="fujitsu AVTR5SEC  Tx" desc="AVTR5SEC" protocol="TL1" units="AVTR5SEC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="AVTR5SEC" collector="TL1" oid="AVTR5SEC" type="GAUGE"/>
+      <value parameter="AVTR5SEC"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR.1" name="fujitsu GRFR  Tx" desc="GRFR" protocol="TL1" units="GRFR" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="GAUGE"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR.2" name="fujitsu GRFR  Tx" desc="GRFR" protocol="TL1" units="GRFR" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR" collector="TL1" oid="GRFR" type="GAUGE"/>
+      <value parameter="GRFR"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-A" name="fujitsu GRFR-A  Tx" desc="GRFR-A" protocol="TL1" units="GRFR-A" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-A" collector="TL1" oid="GRFR-A" type="GAUGE"/>
+      <value parameter="GRFR-A"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-B" name="fujitsu GRFR-B  Tx" desc="GRFR-B" protocol="TL1" units="GRFR-B" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-B" collector="TL1" oid="GRFR-B" type="GAUGE"/>
+      <value parameter="GRFR-B"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-C" name="fujitsu GRFR-C  Tx" desc="GRFR-C" protocol="TL1" units="GRFR-C" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-C" collector="TL1" oid="GRFR-C" type="GAUGE"/>
+      <value parameter="GRFR-C"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-D" name="fujitsu GRFR-D  Tx" desc="GRFR-D" protocol="TL1" units="GRFR-D" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-D" collector="TL1" oid="GRFR-D" type="GAUGE"/>
+      <value parameter="GRFR-D"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-E" name="fujitsu GRFR-E  Tx" desc="GRFR-E" protocol="TL1" units="GRFR-E" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-E" collector="TL1" oid="GRFR-E" type="GAUGE"/>
+      <value parameter="GRFR-E"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-F" name="fujitsu GRFR-F  Tx" desc="GRFR-F" protocol="TL1" units="GRFR-F" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-F" collector="TL1" oid="GRFR-F" type="GAUGE"/>
+      <value parameter="GRFR-F"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-G" name="fujitsu GRFR-G  Tx" desc="GRFR-G" protocol="TL1" units="GRFR-G" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-G" collector="TL1" oid="GRFR-G" type="GAUGE"/>
+      <value parameter="GRFR-G"/>
+    </metric>
+    <metric id="fujitsu-tl1.GRFR-H" name="fujitsu GRFR-H  Tx" desc="GRFR-H" protocol="TL1" units="GRFR-H" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GRFR-H" collector="TL1" oid="GRFR-H" type="GAUGE"/>
+      <value parameter="GRFR-H"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT.1" name="fujitsu GROCT  Tx" desc="GROCT" protocol="TL1" units="GROCT" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="GAUGE"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT.2" name="fujitsu GROCT  Tx" desc="GROCT" protocol="TL1" units="GROCT" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="GROCT" collector="TL1" oid="GROCT" type="GAUGE"/>
+      <value parameter="GROCT"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-A" name="fujitsu GROCT-A  Tx" desc="GROCT-A" protocol="TL1" units="GROCT-A" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-A" collector="TL1" oid="GROCT-A" type="GAUGE"/>
+      <value parameter="GROCT-A"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-B" name="fujitsu GROCT-B  Tx" desc="GROCT-B" protocol="TL1" units="GROCT-B" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-B" collector="TL1" oid="GROCT-B" type="GAUGE"/>
+      <value parameter="GROCT-B"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-C" name="fujitsu GROCT-C  Tx" desc="GROCT-C" protocol="TL1" units="GROCT-C" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-C" collector="TL1" oid="GROCT-C" type="GAUGE"/>
+      <value parameter="GROCT-C"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-D" name="fujitsu GROCT-D  Tx" desc="GROCT-D" protocol="TL1" units="GROCT-D" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-D" collector="TL1" oid="GROCT-D" type="GAUGE"/>
+      <value parameter="GROCT-D"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-E" name="fujitsu GROCT-E  Tx" desc="GROCT-E" protocol="TL1" units="GROCT-E" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-E" collector="TL1" oid="GROCT-E" type="GAUGE"/>
+      <value parameter="GROCT-E"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-F" name="fujitsu GROCT-F  Tx" desc="GROCT-F" protocol="TL1" units="GROCT-F" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-F" collector="TL1" oid="GROCT-F" type="GAUGE"/>
+      <value parameter="GROCT-F"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-G" name="fujitsu GROCT-G  Tx" desc="GROCT-G" protocol="TL1" units="GROCT-G" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-G" collector="TL1" oid="GROCT-G" type="GAUGE"/>
+      <value parameter="GROCT-G"/>
+    </metric>
+    <metric id="fujitsu-tl1.GROCT-H" name="fujitsu GROCT-H  Tx" desc="GROCT-H" protocol="TL1" units="GROCT-H" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GROCT-H" collector="TL1" oid="GROCT-H" type="GAUGE"/>
+      <value parameter="GROCT-H"/>
+    </metric>
+    <metric id="fujitsu-tl1.IDISC" name="fujitsu IDISC  Tx" desc="IDISC" protocol="TL1" units="IDISC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="IDISC" collector="TL1" oid="IDISC" type="GAUGE"/>
+      <value parameter="IDISC"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR" name="fujitsu RDFR  Tx" desc="RDFR" protocol="TL1" units="RDFR" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR" collector="TL1" oid="RDFR" type="GAUGE"/>
+      <value parameter="RDFR"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-A" name="fujitsu RDFR-A  Tx" desc="RDFR-A" protocol="TL1" units="RDFR-A" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-A" collector="TL1" oid="RDFR-A" type="GAUGE"/>
+      <value parameter="RDFR-A"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-B" name="fujitsu RDFR-B  Tx" desc="RDFR-B" protocol="TL1" units="RDFR-B" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-B" collector="TL1" oid="RDFR-B" type="GAUGE"/>
+      <value parameter="RDFR-B"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-C" name="fujitsu RDFR-C  Tx" desc="RDFR-C" protocol="TL1" units="RDFR-C" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-C" collector="TL1" oid="RDFR-C" type="GAUGE"/>
+      <value parameter="RDFR-C"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-D" name="fujitsu RDFR-D  Tx" desc="RDFR-D" protocol="TL1" units="RDFR-D" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-D" collector="TL1" oid="RDFR-D" type="GAUGE"/>
+      <value parameter="RDFR-D"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-E" name="fujitsu RDFR-E  Tx" desc="RDFR-E" protocol="TL1" units="RDFR-E" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-E" collector="TL1" oid="RDFR-E" type="GAUGE"/>
+      <value parameter="RDFR-E"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-F" name="fujitsu RDFR-F  Tx" desc="RDFR-F" protocol="TL1" units="RDFR-F" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-F" collector="TL1" oid="RDFR-F" type="GAUGE"/>
+      <value parameter="RDFR-F"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-G" name="fujitsu RDFR-G  Tx" desc="RDFR-G" protocol="TL1" units="RDFR-G" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-G" collector="TL1" oid="RDFR-G" type="GAUGE"/>
+      <value parameter="RDFR-G"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDFR-H" name="fujitsu RDFR-H  Tx" desc="RDFR-H" protocol="TL1" units="RDFR-H" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDFR-H" collector="TL1" oid="RDFR-H" type="GAUGE"/>
+      <value parameter="RDFR-H"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT" name="fujitsu RDOCT  Tx" desc="RDOCT" protocol="TL1" units="RDOCT" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="RDOCT" collector="TL1" oid="RDOCT" type="GAUGE"/>
+      <value parameter="RDOCT"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-A" name="fujitsu RDOCT-A  Tx" desc="RDOCT-A" protocol="TL1" units="RDOCT-A" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-A" collector="TL1" oid="RDOCT-A" type="GAUGE"/>
+      <value parameter="RDOCT-A"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-B" name="fujitsu RDOCT-B  Tx" desc="RDOCT-B" protocol="TL1" units="RDOCT-B" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-B" collector="TL1" oid="RDOCT-B" type="GAUGE"/>
+      <value parameter="RDOCT-B"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-C" name="fujitsu RDOCT-C  Tx" desc="RDOCT-C" protocol="TL1" units="RDOCT-C" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-C" collector="TL1" oid="RDOCT-C" type="GAUGE"/>
+      <value parameter="RDOCT-C"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-D" name="fujitsu RDOCT-D  Tx" desc="RDOCT-D" protocol="TL1" units="RDOCT-D" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-D" collector="TL1" oid="RDOCT-D" type="GAUGE"/>
+      <value parameter="RDOCT-D"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-E" name="fujitsu RDOCT-E  Tx" desc="RDOCT-E" protocol="TL1" units="RDOCT-E" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-E" collector="TL1" oid="RDOCT-E" type="GAUGE"/>
+      <value parameter="RDOCT-E"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-F" name="fujitsu RDOCT-F  Tx" desc="RDOCT-F" protocol="TL1" units="RDOCT-F" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-F" collector="TL1" oid="RDOCT-F" type="GAUGE"/>
+      <value parameter="RDOCT-F"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-G" name="fujitsu RDOCT-G  Tx" desc="RDOCT-G" protocol="TL1" units="RDOCT-G" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-G" collector="TL1" oid="RDOCT-G" type="GAUGE"/>
+      <value parameter="RDOCT-G"/>
+    </metric>
+    <metric id="fujitsu-tl1.RDOCT-H" name="fujitsu RDOCT-H  Tx" desc="RDOCT-H" protocol="TL1" units="RDOCT-H" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RDOCT-H" collector="TL1" oid="RDOCT-H" type="GAUGE"/>
+      <value parameter="RDOCT-H"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-A" name="fujitsu TDFR-A  Tx" desc="TDFR-A" protocol="TL1" units="TDFR-A" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-A" collector="TL1" oid="TDFR-A" type="GAUGE"/>
+      <value parameter="TDFR-A"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-B" name="fujitsu TDFR-B  Tx" desc="TDFR-B" protocol="TL1" units="TDFR-B" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-B" collector="TL1" oid="TDFR-B" type="GAUGE"/>
+      <value parameter="TDFR-B"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-C" name="fujitsu TDFR-C  Tx" desc="TDFR-C" protocol="TL1" units="TDFR-C" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-C" collector="TL1" oid="TDFR-C" type="GAUGE"/>
+      <value parameter="TDFR-C"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-D" name="fujitsu TDFR-D  Tx" desc="TDFR-D" protocol="TL1" units="TDFR-D" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-D" collector="TL1" oid="TDFR-D" type="GAUGE"/>
+      <value parameter="TDFR-D"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-E" name="fujitsu TDFR-E  Tx" desc="TDFR-E" protocol="TL1" units="TDFR-E" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-E" collector="TL1" oid="TDFR-E" type="GAUGE"/>
+      <value parameter="TDFR-E"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-F" name="fujitsu TDFR-F  Tx" desc="TDFR-F" protocol="TL1" units="TDFR-F" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-F" collector="TL1" oid="TDFR-F" type="GAUGE"/>
+      <value parameter="TDFR-F"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-G" name="fujitsu TDFR-G  Tx" desc="TDFR-G" protocol="TL1" units="TDFR-G" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-G" collector="TL1" oid="TDFR-G" type="GAUGE"/>
+      <value parameter="TDFR-G"/>
+    </metric>
+    <metric id="fujitsu-tl1.TDFR-H" name="fujitsu TDFR-H  Tx" desc="TDFR-H" protocol="TL1" units="TDFR-H" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TDFR-H" collector="TL1" oid="TDFR-H" type="GAUGE"/>
+      <value parameter="TDFR-H"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR" name="fujitsu TFR  Tx" desc="TFR" protocol="TL1" units="TFR" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR" collector="TL1" oid="TFR" type="GAUGE"/>
+      <value parameter="TFR"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR5SEC" name="fujitsu TFR5SEC  Tx" desc="TFR5SEC" protocol="TL1" units="TFR5SEC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR5SEC" collector="TL1" oid="TFR5SEC" type="GAUGE"/>
+      <value parameter="TFR5SEC"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-A" name="fujitsu TFR-A  Tx" desc="TFR-A" protocol="TL1" units="TFR-A" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-A" collector="TL1" oid="TFR-A" type="GAUGE"/>
+      <value parameter="TFR-A"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-B" name="fujitsu TFR-B  Tx" desc="TFR-B" protocol="TL1" units="TFR-B" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-B" collector="TL1" oid="TFR-B" type="GAUGE"/>
+      <value parameter="TFR-B"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-C" name="fujitsu TFR-C  Tx" desc="TFR-C" protocol="TL1" units="TFR-C" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-C" collector="TL1" oid="TFR-C" type="GAUGE"/>
+      <value parameter="TFR-C"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-D" name="fujitsu TFR-D  Tx" desc="TFR-D" protocol="TL1" units="TFR-D" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-D" collector="TL1" oid="TFR-D" type="GAUGE"/>
+      <value parameter="TFR-D"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-E" name="fujitsu TFR-E  Tx" desc="TFR-E" protocol="TL1" units="TFR-E" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-E" collector="TL1" oid="TFR-E" type="GAUGE"/>
+      <value parameter="TFR-E"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-F" name="fujitsu TFR-F  Tx" desc="TFR-F" protocol="TL1" units="TFR-F" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-F" collector="TL1" oid="TFR-F" type="GAUGE"/>
+      <value parameter="TFR-F"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-G" name="fujitsu TFR-G  Tx" desc="TFR-G" protocol="TL1" units="TFR-G" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-G" collector="TL1" oid="TFR-G" type="GAUGE"/>
+      <value parameter="TFR-G"/>
+    </metric>
+    <metric id="fujitsu-tl1.TFR-H" name="fujitsu TFR-H  Tx" desc="TFR-H" protocol="TL1" units="TFR-H" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR-H" collector="TL1" oid="TFR-H" type="GAUGE"/>
+      <value parameter="TFR-H"/>
+    </metric>
+    <metric id="fujitsu-tl1.TOCT" name="fujitsu TOCT  Tx" desc="TOCT" protocol="TL1" units="TOCT" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TOCT" collector="TL1" oid="TOCT" type="GAUGE"/>
+      <value parameter="TOCT"/>
+    </metric>
+    <metric id="fujitsu-tl1.TOCT5SEC.1" name="fujitsu TOCT5SEC  Tx" desc="TOCT5SEC" protocol="TL1" units="TOCT5SEC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TOCT5SEC" collector="TL1" oid="TOCT5SEC" type="GAUGE"/>
+      <value parameter="TOCT5SEC"/>
+    </metric>
+    <metric id="fujitsu-tl1.TOCT5SEC.2" name="fujitsu TOCT5SEC  Tx" desc="TOCT5SEC" protocol="TL1" units="TOCT5SEC" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TOCT5SEC" collector="TL1" oid="TOCT5SEC" type="GAUGE"/>
+      <value parameter="TOCT5SEC"/>
+    </metric>
+    <metric id="fujitsu-tl1.YLFR.1" name="fujitsu YLFR  Tx" desc="YLFR" protocol="TL1" units="YLFR" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="YLFR" collector="TL1" oid="YLFR" type="GAUGE"/>
+      <value parameter="YLFR"/>
+    </metric>
+    <metric id="fujitsu-tl1.YLFR.2" name="fujitsu YLFR  Tx" desc="YLFR" protocol="TL1" units="YLFR" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLFR" collector="TL1" oid="YLFR" type="GAUGE"/>
+      <value parameter="YLFR"/>
+    </metric>
+    <metric id="fujitsu-tl1.YLOCT.1" name="fujitsu YLOCT  Tx" desc="YLOCT" protocol="TL1" units="YLOCT" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="YLOCT" collector="TL1" oid="YLOCT" type="GAUGE"/>
+      <value parameter="YLOCT"/>
+    </metric>
+    <metric id="fujitsu-tl1.YLOCT.2" name="fujitsu YLOCT  Tx" desc="YLOCT" protocol="TL1" units="YLOCT" conversion-function="NONE" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="YLOCT" collector="TL1" oid="YLOCT" type="GAUGE"/>
+      <value parameter="YLOCT"/>
+    </metric>
+  </metricGroup>
+  <!--
+<metricGroup id="fujitsu-flashwave-tl1.slamon" name="Fujitsu FP SLAMON" protocol="TL1" displayType="Normal">
+
+  
+                                   
+</metricGroup>    
+-->
+  <!--
+newly added
+-->
+  <metricGroup id="fujitsu-flashwave-tl1.ACL-DISC" name="Fujitsu ACL-DISC" protocol="TL1" displayType="Normal">
+    <!--dummy for reference
+    <metric
+        id="fujitsu-flashwave-tl1.tmlp.GRFR.ne.rx"
+        name="Fujitsu Rx TMLP GRFR"
+        desc="Service ingress green frames received"
+        protocol="TL1"
+        units="Frames"
+        conversion-function="PER_PERIOD"
+        consolidation-function="SUM"
+        location="NEAR_END"
+        direction="RECEIVE"
+        displayType="verticalBar-hist"
+        displayColor="DARK_GREEN"
+    >
+        
+        <parameter name="GRFR" collector="TL1" oid="GRFR" type="COUNTER"/>
+        <value parameter="GRFR"/>
+
+    </metric>
+  -->
+    <metric id="fujitsu-flashwave-tl1.ACL-DISC.ne.rx" name="Fujitsu Rx TMLP ACL-DISC" desc="ACL-DISC" protocol="TL1" units="ACL-DISC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ACL-DISC" collector="TL1" oid="ACL-DISC" type="COUNTER"/>
+      <value parameter="ACL-DISC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.AVFR5SEC" name="Fujitsu AVFR5SEC" protocol="TL1" displayType="Normal">
+    <metric id="fujitsu-flashwave-tl1.AVFR5SEC.ne.rx" name="Fujitsu Rx TMLP AVFR5SEC" desc="AVFR5SEC" protocol="TL1" units="AVFR5SEC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="AVFR5SEC" collector="TL1" oid="AVFR5SEC" type="COUNTER"/>
+      <value parameter="AVFR5SEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.AVSIZE5SEC" name="Fujitsu AVSIZE5SEC" protocol="TL1" displayType="Normal">
+    <metric id="fujitsu-flashwave-tl1.AVSIZE5SEC.ne.rx" name="Fujitsu Rx TMLP AVSIZE5SEC" desc="AVSIZE5SEC" protocol="TL1" units="AVSIZE5SEC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="AVSIZE5SEC" collector="TL1" oid="AVSIZE5SEC" type="COUNTER"/>
+      <value parameter="AVSIZE5SEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.IDISC" name="Fujitsu IDISC" protocol="TL1" displayType="Normal">
+    <metric id="fujitsu-flashwave-tl1.IDISC.ne.rx" name="Fujitsu Rx TMLP IDISC" desc="IDISC" protocol="TL1" units="IDISC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="IDISC" collector="TL1" oid="IDISC" type="COUNTER"/>
+      <value parameter="IDISC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.TFR5SEC" name="Fujitsu TFR5SEC" protocol="TL1" displayType="Composite">
+    <metric id="fujitsu-flashwave-tl1.TFR5SEC.ne.rx" name="Fujitsu Rx TMLP TFR5SEC" desc="TFR5SEC" protocol="TL1" units="TFR5SEC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFR5SEC" collector="TL1" oid="TFR5SEC" type="COUNTER"/>
+      <value parameter="TFR5SEC"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.tmlp.TFR5SEC.ne.rx" name="Fujitsu Rx TMLP TFR5SEC" desc="TFR5SEC" protocol="TL1" units="TFR5SEC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TFR5SEC" collector="TL1" oid="TFR5SEC" type="COUNTER"/>
+      <value parameter="TFR5SEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fujitsu-flashwave-tl1.TOCT5SEC" name="Fujitsu TOCT5SEC" protocol="TL1" displayType="Composite">
+    <metric id="fujitsu-flashwave-tl1.TOCT5SEC.ne.rx" name="Fujitsu Rx TMLP TOCT5SEC" desc="TOCT5SEC" protocol="TL1" units="TOCT5SEC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TOCT5SEC" collector="TL1" oid="TOCT5SEC" type="COUNTER"/>
+      <value parameter="TOCT5SEC"/>
+    </metric>
+    <metric id="fujitsu-flashwave-tl1.TOCT5SEC.ne.rx1" name="Fujitsu Rx TMLP TOCT5SEC" desc="TOCT5SEC" protocol="TL1" units="TOCT5SEC" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TOCT5SEC" collector="TL1" oid="TOCT5SEC" type="COUNTER"/>
+      <value parameter="TOCT5SEC"/>
+    </metric>
+  </metricGroup>
+</pmProfile>

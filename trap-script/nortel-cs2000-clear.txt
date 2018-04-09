@@ -1,0 +1,5 @@
+send-trap guru enp0s25:0 alarm-mib:alarmCleared:alarmCleared
+send-trap guru enp0s25:0 alarm-mib:alarmCleared:alarmCleared-v1
+send-trap guru enp0s25:0 alarm-mib:alarmCleared:alarmCleared-v1-alt
+send-trap guru enp0s25:0 generic-traps:linkUp:linkUp-v1
+send-trap guru enp0s25:0 generic-traps:linkUp:linkUp-v2c

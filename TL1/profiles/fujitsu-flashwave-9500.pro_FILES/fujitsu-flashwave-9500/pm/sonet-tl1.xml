@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd">
+
+<pmProfile name="sonet-tl1" version="UNCLEAN">
+  <metricGroup id="sonet-line-tl1" name="SONET line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVL" name="SONET CV-L" parmType="CV_L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.CV-L" name="SONET CV-L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CV-L" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL.ne" name="SONET ES-L" parmType="ES_L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ES-L" name="SONET ES-L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ES-L" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.LOSSL" name="SONET LOSS-L" desc="Loss of Signal Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="lossl" collector="TL1" oid="LOSSL" type="COUNTER"/>
+      <value parameter="lossl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL" name="SONET SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SES-L" name="SONET SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SES-L" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SEFSL" name="SONET SEFS" desc="Severely Errored Framing Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSL" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL" name="SONET UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.UAS-L" name="SONET UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UAS-L" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FCL" name="SONET FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FCL" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+    <metric id="sonet-line-tl1.na.FCL" name="SONET Na FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FC-L" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.fe" name="SONET FE line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVL.FE" name="SONET FE CV-L" parmType="CV_L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.CV-L.FE" name="SONET FE CV-L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CV-LFE" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL.FE" name="SONET FE ES-L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ES-L.FE" name="SONET FE ES-L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ES-LFE" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.LOSSL.FE" name="SONET FE LOSS-L" desc="Loss of Signal Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="lossl" collector="TL1" oid="LOSSL" type="COUNTER"/>
+      <value parameter="lossl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL.FE" name="SONET FE SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SES-L.FE" name="SONET FE SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SES-LFE" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SEFSL.FE" name="SONET FE SEFS" desc="Severely Errored Framing Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSL" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL.FE" name="SONET FE UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.UAS-L.FE" name="SONET FE UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UAS-LFE" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FCL.FE" name="SONET FE FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FCL" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FC-L.FE" name="SONET FE FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FC-LFE" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+    <metric id="sonet-line-tl1.na.FCL.FE" name="SONET FE FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FC-L" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.rx" name="SONET Rx line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVL.rx" name="SONET Rx CV-L" parmType="CV_L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL.rx" name="SONET Rx ES-L" desc="Errored Seconds - Line" parmType="ES_L" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.LOSSL.rx" name="SONET Rx LOSS-L" desc="Loss of signal Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="lossl" collector="TL1" oid="LOSSL" type="COUNTER"/>
+      <value parameter="lossl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL.rx" name="SONET Rx SES-L" desc="Severely Errored Seconds - Line" parmType="SES_L" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SEFSL.rx" name="SONET Rx SEFS" desc="Severely Errored Framing Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSL" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL.rx" name="SONET Rx UAS-L" desc="Unavailable Seconds - Line" parmType="UAS_L" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FCL.rx" name="SONET Rx FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FCL" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.rx.fe" name="SONET Rx FE line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVL.rx.fe" name="SONET Rx FE CV-L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL.rx.fe" name="SONET Rx FE ES-L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.LOSSL.rx.fe" name="SONET Rx FE LOSS-L" desc="Loss of signal Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="lossl" collector="TL1" oid="LOSSL" type="COUNTER"/>
+      <value parameter="lossl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL.rx.fe" name="SONET Rx FE SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SEFSL.rx.fe" name="SONET Rx FE SEFS" desc="Severely Errored Framing Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSL" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL.rx.fe" name="SONET Rx FE UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FCL.rx.fe" name="SONET Rx FE FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FCL" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.tx" name="SONET Tx line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVL.tx" name="SONET Tx CV-L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL.tx" name="SONET Tx ES-L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.LOSSL.tx" name="SONET Tx LOSS-L" desc="Loss of signal Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="lossl" collector="TL1" oid="LOSSL" type="COUNTER"/>
+      <value parameter="lossl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL.tx" name="SONET Tx SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SEFSL.tx" name="SONET Tx SEFS" desc="Severely Errored Framing Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSL" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL.tx" name="SONET Tx UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FCL.tx" name="SONET Tx FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FCL" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.tx" name="SONET Tx FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.tx.fe" name="SONET Tx FE line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVL.tx.fe" name="SONET Tx FE CV-L" desc="Coding Violations - Line" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL.tx.fe" name="SONET Tx FE ES-L" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.LOSSL.tx.fe" name="SONET Tx FE LOSS-L" desc="Loss of signal Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="lossl" collector="TL1" oid="LOSSL" type="COUNTER"/>
+      <value parameter="lossl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL.tx.fe" name="SONET Tx FE SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SEFSL.tx.fe" name="SONET Tx FE SEFS" desc="Severely Errored Framing Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSL" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL.tx.fe" name="SONET Tx FE UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.FCL.tx.fe" name="SONET Tx FE FC-L" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcl" collector="TL1" oid="FCL" type="COUNTER"/>
+      <value parameter="fcl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1(1)" name="SONET line(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.LOSS-L(1)" name="Sonet LOSS-L(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-l" collector="TL1" oid="LOSS-L" type="COUNTER"/>
+      <value parameter="loss-l"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.fe(1)" name="SONET FE line(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.fe.LOSS-L(1)" name="Sonet FE LOSS-L(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-l" collector="TL1" oid="LOSS-L" type="COUNTER"/>
+      <value parameter="loss-l"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.rx(1)" name="SONET Rx line(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.rx.CV-L(1)" name="Sonet Rx CV-L(1)" desc="Coding violation - Line" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-l" collector="TL1" oid="CV-L" type="COUNTER"/>
+      <value parameter="cv-l"/>
+    </metric>
+    <metric id="sonet-line-tl1.ES-L.rx(1)" name="Sonet Rx ES-L(1)" desc="Errored seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-l" collector="TL1" oid="ES-L" type="COUNTER"/>
+      <value parameter="es-l"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.SES-L(1)" name="Sonet Rx SES-L(1)" desc="Severely Errored seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-l" collector="TL1" oid="SES-L" type="COUNTER"/>
+      <value parameter="ses-l"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.UAS-L(1)" name="Sonet Rx UAS-L(1)" desc="Unavailable seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-l" collector="TL1" oid="UAS-L" type="COUNTER"/>
+      <value parameter="uas-l"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.FC-L(1)" name="Sonet Rx FC-L(1)" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-l" collector="TL1" oid="FC-L" type="COUNTER"/>
+      <value parameter="fc-l"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.LOSS-L(1)" name="Sonet Rx LOSS-L(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-l" collector="TL1" oid="LOSS-L" type="COUNTER"/>
+      <value parameter="loss-l"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.rx.fe(1)" name="SONET Rx FE line(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.rx.fe.CV-LFE(1)" name="Sonet Rx Fe CV-LFE(1)" desc="Coding violation - Line" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-lfe" collector="TL1" oid="CV-LFE" type="COUNTER"/>
+      <value parameter="cv-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.ES-LFE.rx.fe(1)" name="Sonet Rx Fe ES-LFE(1)" desc="Errored seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-lfe" collector="TL1" oid="ES-LFE" type="COUNTER"/>
+      <value parameter="es-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.fe.SES-LFE(1)" name="Sonet Rx Fe SES-LFE(1)" desc="Severely Errored seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-lfe" collector="TL1" oid="SES-LFE" type="COUNTER"/>
+      <value parameter="ses-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.fe.UAS-LFE(1)" name="Sonet Rx Fe UAS-LFE(1)" desc="Unavailable seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-lfe" collector="TL1" oid="UAS-LFE" type="COUNTER"/>
+      <value parameter="uas-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.fe.FC-LFE(1)" name="Sonet Rx Fe FC-LFE(1)" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-lfe" collector="TL1" oid="FC-LFE" type="COUNTER"/>
+      <value parameter="fc-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.LOSS-LFE(1)" name="Sonet Rx FE LOSS-LFE(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-lfe" collector="TL1" oid="LOSS-LFE" type="COUNTER"/>
+      <value parameter="loss-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.rx.fe.LOSS-L(1)" name="Sonet Rx FE LOSS-L(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-l" collector="TL1" oid="LOSS-L" type="COUNTER"/>
+      <value parameter="loss-l"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.tx(1)" name="SONET Tx line(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.tx.LOSS-L(1)" name="Sonet Tx LOSS-L(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-l" collector="TL1" oid="LOSS-L" type="COUNTER"/>
+      <value parameter="loss-l"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.tx.fe(1)" name="SONET Tx FE line(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.tx.fe.LOSS-L(1)" name="Sonet Tx FE LOSS-L(1)" desc="Loss of signal seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="loss-l" collector="TL1" oid="LOSS-L" type="COUNTER"/>
+      <value parameter="loss-l"/>
+    </metric>
+    <metric id="sonet-line-tl1.tx.fe.CV-LFE(1)" name="Sonet Tx Fe CV-LFE(1)" desc="Coding violation - Line" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-lfe" collector="TL1" oid="CV-LFE" type="COUNTER"/>
+      <value parameter="cv-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.tx.fe.ES-LFE(1)" name="Sonet Tx Fe ES-LFE(1)" desc="Errored seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-lfe" collector="TL1" oid="ES-LFE" type="COUNTER"/>
+      <value parameter="es-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.tx.fe.SES-LFE(1)" name="Sonet Tx Fe SES-LFE(1)" desc="Severely Errored seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-lfe" collector="TL1" oid="SES-LFE" type="COUNTER"/>
+      <value parameter="ses-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.tx.fe.UAS-LFE(1)" name="Sonet Tx Fe UAS-LFE(1)" desc="Unavailable seconds - Line" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-lfe" collector="TL1" oid="UAS-LFE" type="COUNTER"/>
+      <value parameter="uas-lfe"/>
+    </metric>
+    <metric id="sonet-line-tl1.tx.fe.FC-LFE(1)" name="Sonet Tx Fe FC-LFE(1)" desc="Failure count - Line" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-lfe" collector="TL1" oid="FC-LFE" type="COUNTER"/>
+      <value parameter="fc-lfe"/>
+    </metric>
+  </metricGroup>
+  <!-- =================================================================== -->
+  <metricGroup id="sonet-section-tl1" name="SONET section" protocol="TL1" displayType="Normal">
+    <metric id="sonet-section-tl1.CVS" name="SONET CVS" parmType="CV_S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CVS" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.ESS" name="SONET ESS" parmType="ES_S" desc="Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <metric id="sonet-section-tl1.SESS" name="SONET SESS" desc="Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SESS" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+    <metric id="sonet-section-tl1.SEFSS" name="SONET SEFSS" desc="Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefss" collector="TL1" oid="SEFSS" type="COUNTER"/>
+      <value parameter="sefss"/>
+    </metric>
+    <metric id="sonet-section-tl1.UAS-S" name="SONET UAS-S" desc="Unavailable Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uass" collector="TL1" oid="UASS" type="COUNTER"/>
+      <value parameter="uass"/>
+    </metric>
+    <!-- This section contains different montype names -->
+    <metric id="sonet-section-tl1.na.CV-S" name="SONET CV-S" parmType="CV_S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CV-S" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.ES-S" name="SONET ES-S" parmType="ES_S" desc="Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ES-S" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <!--
+      newly added montype ES-RS
+-->
+    <metric id="sonet-section-tl1.ESRS errors detected" name="sonet-section-ES-RS" desc="No. of seconds during which at least one RS block error was detected" protocol="TL1" units="SECOND" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esrs" collector="TL1" oid="ES-RS" type="COUNTER"/>
+      <value parameter="esrs"/>
+    </metric>
+    <metric id="sonet-section-tl1.SES-S" name="SONET SES-S" parmType="SES_S" desc="Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SES-S" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+    <metric id="sonet-section-tl1.SEFS-S" name="SONET SEFS-S" desc="Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefss" collector="TL1" oid="SEFS-S" type="COUNTER"/>
+      <value parameter="sefss"/>
+    </metric>
+    <metric id="sonet-section-tl1.CV" name="SONET Na CV" desc="Coding Violations" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv" collector="TL1" oid="CV" type="COUNTER"/>
+      <value parameter="cv"/>
+    </metric>
+    <metric id="sonet-section-tl1.ES" name="SONET Na ES" desc="Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es" collector="TL1" oid="ES" type="COUNTER"/>
+      <value parameter="es"/>
+    </metric>
+    <metric id="sonet-section-tl1.SES" name="SONET Na SES" desc="Severely Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses" collector="TL1" oid="SES" type="COUNTER"/>
+      <value parameter="ses"/>
+    </metric>
+    <metric id="sonet-section-tl1.SEFS" name="SONET Na SEFS" desc="Severely Errored Frame Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFS" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC12CV-S" name="SONET OC12CV-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc12cvs" collector="TL1" oid="OC12CV-S" type="COUNTER"/>
+      <value parameter="oc12cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC12CVS-S" name="SONET OC12CVS-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc12cvs-s" collector="TL1" oid="OC12CVS-S" type="COUNTER"/>
+      <value parameter="oc12cvs-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC3CV-S" name="SONET OC3CV-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc3cvs" collector="TL1" oid="OC3CV-S" type="COUNTER"/>
+      <value parameter="oc3cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC3CVS-S" name="SONET OC3CVS-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc3cvs-s" collector="TL1" oid="OC3CVS-S" type="COUNTER"/>
+      <value parameter="oc3cvs-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC192CV-S" name="SONET OC192CV-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc192cvs" collector="TL1" oid="OC192CV-S" type="COUNTER"/>
+      <value parameter="oc192cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC192CVS-S" name="SONET OC192CVS-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc192cvs-s" collector="TL1" oid="OC192CVS-S" type="COUNTER"/>
+      <value parameter="oc192cvs-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC48CV-S" name="SONET OC48CV-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc48cvs" collector="TL1" oid="OC48CV-S" type="COUNTER"/>
+      <value parameter="oc48cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC48CVS-S" name="SONET OC48CVS-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc48cvs-s" collector="TL1" oid="OC48CVS-S" type="COUNTER"/>
+      <value parameter="oc48cvs-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC768CV-S" name="SONET OC768CV-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc768cvs" collector="TL1" oid="OC768CV-S" type="COUNTER"/>
+      <value parameter="oc768cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.na.OC768CVS-S" name="SONET OC768CVS-S" desc="Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="oc768cvs-s" collector="TL1" oid="OC768CVS-S" type="COUNTER"/>
+      <value parameter="oc768cvs-s"/>
+    </metric>
+  </metricGroup>
+  <!-- =================================================================== -->
+  <metricGroup id="sonet-section-tl1.tx" name="SONET section transmit" protocol="TL1" displayType="Normal">
+    <metric id="sonet-section-tl1.tx.CVS" name="SONET Tx CV-S" parmType="CV_S" desc=" Transmit Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CVS" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.ESS5" name="SONET Tx ES-S" parmType="ES_S" desc="Transmit Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.SESS" name="SONET Tx SES-S" parmType="SES_S" desc="Transmit Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SESS" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.SEFSS" name="SONET Tx SEFS-S" desc="Transmit Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefss" collector="TL1" oid="SEFSS" type="COUNTER"/>
+      <value parameter="sefss"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.SEFS-S" name="SONET Tx SEFS-S" desc="Transmit Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs-s" collector="TL1" oid="SEFS-S" type="COUNTER"/>
+      <value parameter="sefs-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.UAS-S" name="SONET Tx UAS-S" desc="Unavailable Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uass" collector="TL1" oid="UASS" type="COUNTER"/>
+      <value parameter="uass"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.CV" name="SONET Tx CV" desc=" Transmit Coding Violations" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv" collector="TL1" oid="CV" type="COUNTER"/>
+      <value parameter="cv"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.ES" name="SONET Tx ES" desc="Transmit Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es" collector="TL1" oid="ES" type="COUNTER"/>
+      <value parameter="es"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.SES" name="SONET Tx SES" desc="Transmit Severely Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses" collector="TL1" oid="SES" type="COUNTER"/>
+      <value parameter="ses"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.SEFS" name="SONET Tx SEFS" desc="Transmit Severely Errored Frame Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFS" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+  </metricGroup>
+  <!-- =================================================================== -->
+  <metricGroup id="sonet-section-tl1.rx.fe" name="SONET FE Rx Section" protocol="TL1" displayType="Normal">
+    <metric id="sonet-section-tl1.CVS.rx.fe" name="SONET FE Rx CV-S" desc=" Receive Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CVS" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.ESS.rx.fe" name="SONET FE Rx ES-S" parmType="ES_S" desc="Receive Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <metric id="sonet-section-tl1.SESS.rx.fe" name="SONET FE Rx SES-S" parmType="SES_S" desc="Receive Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SESS" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+    <metric id="sonet-section-tl1.SEFS-S.rx.fe" name="SONET FE Rx SEFS-S" desc="Receive Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="AVG" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SEFS-S" collector="TL1" oid="SEFS-S" type="COUNTER"/>
+      <value parameter="SEFS-S"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-section-tl1.rx" name="SONET section receive" protocol="TL1" displayType="Normal">
+    <metric id="sonet-section-tl1.rx.CVS" name="SONET Rx CV-S" parmType="CV_S" desc=" Receive Coding Violations - Section" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CVS" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.ESS" name="SONET Rx ES-S" parmType="ES_S" desc="Receive Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.SESS2" name="SONET Rx SES-S" parmType="SES_S" desc="Receive Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SESS" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.SEFSS" name="SONET Rx SEFS-S" desc="Receive Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefss" collector="TL1" oid="SEFSS" type="COUNTER"/>
+      <value parameter="sefss"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.UAS-S" name="SONET Rx UAS-S" desc="Unavailable Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uass" collector="TL1" oid="UASS" type="COUNTER"/>
+      <value parameter="uass"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.CV" name="SONET Rx CV" desc=" Receive Coding Violations" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv" collector="TL1" oid="CV" type="COUNTER"/>
+      <value parameter="cv"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.ES" name="SONET Rx ES" desc="Receive Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es" collector="TL1" oid="ES" type="COUNTER"/>
+      <value parameter="es"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.SES" name="SONET Rx SES" desc="Receive Severely Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses" collector="TL1" oid="SES" type="COUNTER"/>
+      <value parameter="ses"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.SEFS" name="SONET Rx SEFS" desc="Receive Severely Errored Frame Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFS" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-section-tl1.rx(1)" name="SONET section receive(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-section-tl1.rx.CV-S(1)" name="Sonet Rx CV-S(1)" desc="Coding violation - Section" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-s" collector="TL1" oid="CV-S" type="COUNTER"/>
+      <value parameter="cv-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.ES-S(1)" name="Sonet Rx ES-S(1)" desc="Errored seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-s" collector="TL1" oid="ES-S" type="COUNTER"/>
+      <value parameter="es-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.SES-S(1)" name="Sonet Rx SES-S(1)" desc="Severely Errored seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-s" collector="TL1" oid="SES-S" type="COUNTER"/>
+      <value parameter="ses-s"/>
+    </metric>
+    <metric id="sonet-section-tl1.rx.SEFS-S(1)" name="Sonet Rx SEFS-S(1)" desc="Severely Errored Frame seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs-s" collector="TL1" oid="SEFS-S" type="COUNTER"/>
+      <value parameter="sefs-s"/>
+    </metric>
+  </metricGroup>
+  <!--
+   newly added metric
+-->
+  <metricGroup id="sonet-section-tl1.cvl-far end" name="SONET section CVL FAR_END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.rx.CVL(1)" name="Sonet Rx CVL(1)" desc="Coding violation - Section" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.CVL(1)" name="Sonet Tx CVL(1)" desc="Errored seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-section-tl1.CVL-near end" name="SONET section CVL NEAR_END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.rx.CVL(2)" name="Sonet Rx CVL(2)" desc="Coding violation - Section" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.CVL(2)" name="Sonet Tx CVL(2)" desc="Errored seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvl" collector="TL1" oid="CVL" type="COUNTER"/>
+      <value parameter="cvl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-section-tl1.CVS-near end" name="SONET section CVS NEAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.rx.CVS(2)" name="Sonet Rx CVS(2)" desc="Coding violation - Section" protocol="TL1" units="ERRORS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CVS" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+    <metric id="sonet-section-tl1.tx.CVS(2)" name="Sonet Tx CVS(2)" desc="Errored seconds - Section" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvs" collector="TL1" oid="CVS" type="COUNTER"/>
+      <value parameter="cvs"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1-esl" name="SONET line" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.ESLnew" name="SONET ESL" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL5" name="SONET ESL" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.esl-far-end" name="SONET line ESL FAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-line-tl1.ESL2" name="SONET ESL" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESL3" name="SONET ESL" desc="Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esl" collector="TL1" oid="ESL" type="COUNTER"/>
+      <value parameter="esl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.ess near end" name="SONET line ESS NEAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.ESS5" name="SONET ESS" parmType="ES_S" desc="Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <metric id="sonet-section-tl1.ESS1" name="SONET ESS" desc="Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.ess far end" name="SONET line ESS FAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.ESS2" name="SONET ESS" parmType="ES_S" desc="Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+    <metric id="sonet-section-tl1.ESS3" name="SONET ESS" desc="Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ess" collector="TL1" oid="ESS" type="COUNTER"/>
+      <value parameter="ess"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.sefss near end" name="SONET line SEFSS NEAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.SEFSS1" name="SONET SEFSS" desc="Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefss" collector="TL1" oid="SEFSS" type="COUNTER"/>
+      <value parameter="sefss"/>
+    </metric>
+    <metric id="sonet-section-tl1.SEFSS2" name="SONET SEFSS" desc="Severely Errored Frame Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefss" collector="TL1" oid="SEFSS" type="COUNTER"/>
+      <value parameter="sefss"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.sesl far end" name="SONET line SESL FAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-line-tl1.SESL1" name="SONET SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL2" name="SONET SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.sesl near end" name="SONET line SESL NEAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-line-tl1.SESL3" name="SONET SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESL4" name="SONET SES-L" desc="Severely Errored Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesl" collector="TL1" oid="SESL" type="COUNTER"/>
+      <value parameter="sesl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.sess near end" name="SONET line SESS NEAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.SESS5" name="SONET SESS" desc="Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SESS" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+    <metric id="sonet-section-tl1.SESS1" name="SONET SESS" desc="Severely Errored Seconds - Section" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sess" collector="TL1" oid="SESS" type="COUNTER"/>
+      <value parameter="sess"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.uasl near end" name="SONET line UASL NEAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-line-tl1.UASL5" name="SONET UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASL1" name="SONET UAS-L" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasl" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="uasl"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-tl1.uasl far end" name="SONET line UASL FAR END" protocol="TL1" displayType="Composite">
+    <metric id="sonet-section-tl1.UASL" name="SONET UASL" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="UASL" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="UASL"/>
+    </metric>
+    <metric id="sonet-section-tl1.UASL-tx" name="SONET SESS TX" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="UASL" collector="TL1" oid="UASL" type="COUNTER"/>
+      <value parameter="UASL"/>
+    </metric>
+  </metricGroup>
+  <!-- =================================================================== -->
+  <metricGroup id="sonet-path-tl1" name="SONET path" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.SEFS-P" name="SONET SEFS-P" desc="Severely Errored Framing Second count - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFS-P" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CSS-P" name="SONET CSS-P" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CSS" collector="TL1" oid="CSS-P" type="COUNTER"/>
+      <value parameter="CSS"/>
+    </metric>
+    <metric id="sonet-path-tl1.AISSP" name="SONET AISS-P" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aissp" collector="TL1" oid="AISSP" type="COUNTER"/>
+      <value parameter="aissp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP" name="SONET CV-P" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CVP" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP" name="SONET ES-P" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esp" collector="TL1" oid="ESP" type="COUNTER"/>
+      <value parameter="esp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP" name="SONET SES-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP" name="SONET FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP" name="SONET UAS-P" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASCPP" name="SONET UASCPP" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASCPP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP" name="SONET SAS-P" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sasp" collector="TL1" oid="SASP" type="COUNTER"/>
+      <value parameter="sasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCP-P" name="SONET CVCP-P" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP-P" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCPP" name="SONET CVCPP" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCPP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCP-P" name="SONET ESCP-P" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP-P" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCPP" name="SONET ESCPP" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCPP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASCP" name="SONET SASCP" desc="Count of 1-second intervals containing one or more SEF defects or one or more AIS defects." protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sascp" collector="TL1" oid="SASCP" type="COUNTER"/>
+      <value parameter="sascp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASCPP" name="SONET SASCPP" desc="Count of 1-second intervals containing one or more SEF defects or one or more AIS defects." protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sascp" collector="TL1" oid="SASCPP" type="COUNTER"/>
+      <value parameter="sascp"/>
+    </metric>
+    <!--
+      <metric
+         id="sonet-path-tl1.FCP"
+         name="SONET FCP"
+         desc="Failure count - path"
+         protocol="TL1"
+         units="FAILURES"
+         conversion-function="NONE"
+         consolidation-function="SUM"
+         direction="NA"
+         location="NEAR_END"
+
+         min="0"
+         displayType="verticalBar-hist"
+         displayColor="DARK_GREEN"
+      >
+         <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+         <value parameter="fcp"/>
+      </metric>
+      -->
+    <metric id="sonet-path-tl1.FC-P" name="SONET FCP" desc="Failure count - path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CSSP" name="SONET CSSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cssp" collector="TL1" oid="CSSP" type="COUNTER"/>
+      <value parameter="cssp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSP" name="SONET SEFSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFSP" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.fe" name="SONET FE path" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.SEFS-P.fe" name="SONET FE SEFS-P" desc="Severely Errored Framing Second count - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFS-P" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CSS-P.fe" name="SONET FE CSS-P" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CSS" collector="TL1" oid="CSS-P" type="COUNTER"/>
+      <value parameter="CSS"/>
+    </metric>
+    <metric id="sonet-path-tl1.AISSP.fe" name="SONET FE AISS-P" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aissp" collector="TL1" oid="AISSP" type="COUNTER"/>
+      <value parameter="aissp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.fe" name="SONET FE CV-P" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CVP" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.fe" name="SONET FE ES-P" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esp" collector="TL1" oid="ESP" type="COUNTER"/>
+      <value parameter="esp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.fe" name="SONET FE SES-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.fe" name="SONET FE FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.FC-P.fe" name="SONET FE FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FC-PFE" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.fe" name="SONET FE UAS-P" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASCPP.fe" name="SONET FE UASCPP" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASCPP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.fe" name="SONET FE SASP-P" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sasp" collector="TL1" oid="SASP" type="COUNTER"/>
+      <value parameter="sasp"/>
+    </metric>
+    <!--
+      <metric
+         id="sonet-path-tl1.FCP.fe"
+         name="SONET FE FCP"
+         desc="Failure count - path"
+         protocol="TL1"
+         units="FAILURES"
+         conversion-function="NONE"
+         consolidation-function="SUM"
+         direction="NA"
+         location="FAR_END"
+
+         min="0"
+         displayType="verticalBar-hist"
+         displayColor="DARK_GREEN"
+      >
+         <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+         <value parameter="fcp"/>
+      </metric>
+      -->
+    <metric id="sonet-path-tl1.CSSP.fe" name="SONET FE CSSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cssp" collector="TL1" oid="CSSP" type="COUNTER"/>
+      <value parameter="cssp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSP.fe" name="SONET FE SEFSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFSP" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.rx" name="SONET Rx path" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.rx" name="SONET Rx AISS-P" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aissp" collector="TL1" oid="AISSP" type="COUNTER"/>
+      <value parameter="aissp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.rx" name="SONET Rx CV-P" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CVP" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CV-P.rx" name="SONET Rx CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCP-P.rx" name="SONET Rx CVCP-P" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP-P" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCPP.rx" name="SONET Rx CVCPP" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCPP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCP-P.rx" name="SONET Rx ESCP-P" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP-P" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCPP.rx" name="SONET Rx ESCPP" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCPP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.rx" name="SONET Rx FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASCPP.rx" name="SONET Rx UASCPP" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASCPP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CSS-P.rx" name="SONET Rx CSS-P" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CSS" collector="TL1" oid="CSS-P" type="COUNTER"/>
+      <value parameter="CSS"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCP-P.rx" name="SONET Rx SESCP-P" desc="Count of one-second intervals in which one or more coding violations are detected or SEF or AIS defects are detected" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SESCP" collector="TL1" oid="SESCP-P" type="COUNTER"/>
+      <value parameter="SESCP"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCPP.rx" name="SONET Rx SESCPP" desc="Count of one-second intervals in which one or more coding violations are detected or SEF or AIS defects are detected" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SESCP" collector="TL1" oid="SESCPP" type="COUNTER"/>
+      <value parameter="SESCP"/>
+    </metric>
+    <!--
+      <metric
+         id="sonet-path-tl1.FCP.rx"
+         name="SONET Rx FCP"
+         desc="Failure count - path"
+         protocol="TL1"
+         units="FAILURES"
+         conversion-function="NONE"
+         consolidation-function="SUM"
+         direction="RECEIVE"
+         location="NEAR_END"
+
+         min="0"
+         displayType="verticalBar-hist"
+         displayColor="DARK_GREEN"
+      >
+         <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+         <value parameter="fcp"/>
+      </metric>
+      -->
+    <metric id="sonet-path-tl1.CSSP.rx" name="SONET Rx CSSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cssp" collector="TL1" oid="CSSP" type="COUNTER"/>
+      <value parameter="cssp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSP.rx" name="SONET Rx SEFSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFSP" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.rx.fe" name="SONET Rx FE path" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.rx.fe" name="SONET Rx FE AISS-P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aissp" collector="TL1" oid="AISSP" type="COUNTER"/>
+      <value parameter="aissp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.rx.fe" name="SONET Rx FE CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CVP" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CV-P.rx.fe" name="SONET Rx FE CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CV-PFE" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.rx.fe" name="SONET Rx FE ES-P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esp" collector="TL1" oid="ESP" type="COUNTER"/>
+      <value parameter="esp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCP-P.rx.fe" name="SONET Rx FE CVCP-P" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP-P" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCPP.rx.fe" name="SONET Rx FE CVCPP" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCPP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.rx.fe" name="SONET Rx FE SES-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCP-P.rx.fe" name="SONET Rx FE ESCP-P" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP-P" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCPP.rx.fe" name="SONET Rx FE ESCPP" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCPP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.rx.fe" name="SONET Rx FE FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.rx.fe" name="SONET Rx FE UAS-P" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASCPP.rx.fe" name="SONET Rx FE UASCPP" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASCPP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.rx.fe" name="SONET Rx FE SASP-P" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sasp" collector="TL1" oid="SASP" type="COUNTER"/>
+      <value parameter="sasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFS-P.rx.fe" name="SONET Rx FE SEFS-P" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFS-P" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCP-P.rx.fe" name="SONET Rx FE SESCP-P" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sescp" collector="TL1" oid="SESCP-P" type="COUNTER"/>
+      <value parameter="sescp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCPP.rx.fe" name="SONET Rx FE SESCPP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sescp" collector="TL1" oid="SESCPP" type="COUNTER"/>
+      <value parameter="sescp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASCP.rx.fe" name="SONET Rx FE SASCP" desc="Count of 1-second intervals containing one or more SEF defects or one or more AIS defects." protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sascp" collector="TL1" oid="SASCP" type="COUNTER"/>
+      <value parameter="sascp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASCPP.rx.fe" name="SONET Rx FE SASCPP" desc="Count of 1-second intervals containing one or more SEF defects or one or more AIS defects." protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sascp" collector="TL1" oid="SASCPP" type="COUNTER"/>
+      <value parameter="sascp"/>
+    </metric>
+    <!--
+      <metric
+         id="sonet-path-tl1.FCP.rx.fe"
+         name="SONET Rx FE FCP"
+         desc="Failure count - path"
+         protocol="TL1"
+         units="FAILURES"
+         conversion-function="NONE"
+         consolidation-function="SUM"
+         direction="RECEIVE"
+         location="FAR_END"
+
+         min="0"
+         displayType="verticalBar-hist"
+         displayColor="DARK_GREEN"
+      >
+         <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+         <value parameter="fcp"/>
+      </metric>
+      -->
+    <metric id="sonet-path-tl1.CSSP.rx.fe" name="SONET Rx FE CSSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cssp" collector="TL1" oid="CSSP" type="COUNTER"/>
+      <value parameter="cssp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSP.rx.fe" name="SONET Rx FE SEFSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs" collector="TL1" oid="SEFSP" type="COUNTER"/>
+      <value parameter="sefs"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.tx" name="SONET Tx path" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.tx" name="SONET Tx AISS-P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aissp" collector="TL1" oid="AISSP" type="COUNTER"/>
+      <value parameter="aissp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.tx" name="SONET Tx CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="cvp" collector="TL1" oid="CVP" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CV-P.tx" name="SONET Tx CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="cvp" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASCPP.tx" name="SONET Tx UASCPP" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="uasp" collector="TL1" oid="UASCPP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCP-P.tx" name="SONET Tx SESCP-P" desc="Severe Errored Second -Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SESCP" collector="TL1" oid="SESCP-P" type="COUNTER"/>
+      <value parameter="SESCP"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCPP.tx" name="SONET Tx SESCPP" desc="Severe Errored Second -Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SESCP" collector="TL1" oid="SESCPP" type="COUNTER"/>
+      <value parameter="SESCP"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCP-P.tx" name="SONET Tx CVCP-P" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP-P" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCPP.tx" name="SONET Tx CVCPP" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCPP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCP-P.tx" name="SONET Tx ESCP-P" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP-P" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCPP.tx" name="SONET Tx ESCPP" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCPP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASCP.tx" name="SONET Tx SASCP" desc="Count of 1-second intervals containing one or more SEF defects or one or more AIS defects." protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sascp" collector="TL1" oid="SASCP" type="COUNTER"/>
+      <value parameter="sascp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASCPP.tx" name="SONET Tx SASCPP" desc="Count of 1-second intervals containing one or more SEF defects or one or more AIS defects." protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sascp" collector="TL1" oid="SASCPP" type="COUNTER"/>
+      <value parameter="sascp"/>
+    </metric>
+    <!--
+      <metric
+         id="sonet-path-tl1.FCP.tx"
+         name="SONET Tx FCP"
+         desc="Failure count - path"
+         protocol="TL1"
+         units="FAILURES"
+         conversion-function="NONE"
+         consolidation-function="SUM"
+         direction="TRANSMIT"
+         location="NEAR_END"
+
+         min="0"
+         displayType="verticalBar-hist"
+         displayColor="DARK_GREEN"
+      >
+         <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+         <value parameter="fcp"/>
+      </metric>
+      -->
+    <metric id="sonet-path-tl1.CSSP.tx" name="SONET Tx CSSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cssp" collector="TL1" oid="CSSP" type="COUNTER"/>
+      <value parameter="cssp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSP.tx" name="SONET Tx SEFSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFSP" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.tx.fe" name="SONET Tx FE path" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.tx.fe" name="SONET Tx FE AISS-P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aissp" collector="TL1" oid="AISSP" type="COUNTER"/>
+      <value parameter="aissp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.tx.fe" name="SONET Tx FE CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvp" collector="TL1" oid="CVP" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CV-P.tx.fe" name="SONET Tx FE CV-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="cvp" collector="TL1" oid="CV-PFE" type="COUNTER"/>
+      <value parameter="cvp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.tx.fe" name="SONET Tx FE ES-P" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esp" collector="TL1" oid="ESP" type="COUNTER"/>
+      <value parameter="esp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.tx.fe" name="SONET Tx FE SES-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCP-P.tx.fe" name="SONET Tx FE CVCP-P" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP-P" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVCPP.tx.fe" name="SONET Tx FE CVCPP" desc="Count Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCPP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCP-P.tx.fe" name="SONET Tx FE SESCP-P" desc="Severe Errored Second -Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SESCP" collector="TL1" oid="SESCP-P" type="COUNTER"/>
+      <value parameter="SESCP"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESCPP.tx.fe" name="SONET Tx FE SESCPP" desc="Severe Errored Second -Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SESCP" collector="TL1" oid="SESCPP" type="COUNTER"/>
+      <value parameter="SESCP"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCP-P.tx.fe" name="SONET Tx FE ESCP-P" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP-P" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESCPP.tx.fe" name="SONET Tx FE ESCPP" desc="Count Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCPP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.tx.fe" name="SONET Tx FE FC-P" desc="Failure count - Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+      <value parameter="fcp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.tx.fe" name="SONET Tx FE UAS-P" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASCPP.tx.fe" name="SONET Tx FE UASCPP" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASCPP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.tx.fe" name="SONET Tx FE SASP-P" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sasp" collector="TL1" oid="SASP" type="COUNTER"/>
+      <value parameter="sasp"/>
+    </metric>
+    <!--
+      <metric
+         id="sonet-path-tl1.FCP.tx.fe"
+         name="SONET Tx FE FCP"
+         desc="Failure count - path"
+         protocol="TL1"
+         units="FAILURES"
+         conversion-function="NONE"
+         consolidation-function="SUM"
+         direction="TRANSMIT"
+         location="FAR_END"
+
+         min="0"
+         displayType="verticalBar-hist"
+         displayColor="DARK_GREEN"
+      >
+         <parameter name="fcp" collector="TL1" oid="FCP" type="COUNTER"/>
+         <value parameter="fcp"/>
+      </metric>
+      -->
+    <metric id="sonet-path-tl1.CSSP.tx.fe" name="SONET Tx FE CSSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cssp" collector="TL1" oid="CSSP" type="COUNTER"/>
+      <value parameter="cssp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSP.tx.fe" name="SONET Tx FE SEFSP" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefsp" collector="TL1" oid="SEFSP" type="COUNTER"/>
+      <value parameter="sefsp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1(1)" name="SONET path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP(1)" name="SONET AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-p" collector="TL1" oid="AISS-P" type="COUNTER"/>
+      <value parameter="aiss-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP(1)" name="SONET CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-p" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cv-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP(1)" name="SONET ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-p" collector="TL1" oid="ES-P" type="COUNTER"/>
+      <value parameter="es-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP(1)" name="SONET SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-P" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP(1)" name="SONET UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-P" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP(1)" name="SONET SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-p" collector="TL1" oid="SAS-P" type="COUNTER"/>
+      <value parameter="sas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP(1)" name="SONET FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.fe(1)" name="SONET FE path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.fe(1)" name="SONET FE AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-p" collector="TL1" oid="AISS-P" type="COUNTER"/>
+      <value parameter="aiss-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.fe(1)" name="SONET FE CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-p" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cv-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.fe(1)" name="SONET FE ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-p" collector="TL1" oid="ES-P" type="COUNTER"/>
+      <value parameter="es-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.fe(1)" name="SONET FE SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-P" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SES-PFE.fe(1)" name="SONET FE SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-PFE" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.fe(1)" name="SONET FE UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-P" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASPFE.fe(1)" name="SONET FE UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-PFE" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.fe(1)" name="SONET FE SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-p" collector="TL1" oid="SAS-P" type="COUNTER"/>
+      <value parameter="sas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.fe(1)" name="SONET FE FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.rx(1)" name="SONET Rx path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.rx(1)" name="SONET Rx AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-p" collector="TL1" oid="AISS-P" type="COUNTER"/>
+      <value parameter="aiss-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.rx(1)" name="SONET Rx CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-p" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cv-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.rx(1)" name="SONET Rx ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-p" collector="TL1" oid="ES-P" type="COUNTER"/>
+      <value parameter="es-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.rx(1)" name="SONET Rx SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-P" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.rx(1)" name="SONET Rx UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-P" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.rx(1)" name="SONET Rx SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-p" collector="TL1" oid="SAS-P" type="COUNTER"/>
+      <value parameter="sas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.rx(1)" name="SONET Rx FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.rx.fe(1)" name="SONET Rx FE path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.rx.fe(1)" name="SONET Rx FE AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-p" collector="TL1" oid="AISS-P" type="COUNTER"/>
+      <value parameter="aiss-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.rx.fe(1)" name="SONET Rx FE CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-p" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cv-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.rx.fe(1)" name="SONET Rx FE ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-p" collector="TL1" oid="ES-P" type="COUNTER"/>
+      <value parameter="es-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.rx.fe(1)" name="SONET Rx FE SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-P" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.rx.fe(1)" name="SONET Rx FE UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-P" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.rx.fe(1)" name="SONET Rx FE SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-p" collector="TL1" oid="SAS-P" type="COUNTER"/>
+      <value parameter="sas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.rx.fe(1)" name="SONET Rx FE FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.tx(1)" name="SONET Tx path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.tx(1)" name="SONET Tx AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-p" collector="TL1" oid="AISS-P" type="COUNTER"/>
+      <value parameter="aiss-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.tx(1)" name="SONET Tx CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-p" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cv-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.tx(1)" name="SONET Tx ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-p" collector="TL1" oid="ES-P" type="COUNTER"/>
+      <value parameter="es-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.tx(1)" name="SONET Tx SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-P" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.tx(1)" name="SONET Tx UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-P" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.tx(1)" name="SONET Tx SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-p" collector="TL1" oid="SAS-P" type="COUNTER"/>
+      <value parameter="sas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.tx(1)" name="SONET Tx FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.tx.fe(1)" name="SONET Tx FE path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSP.tx.fe(1)" name="SONET Tx FE AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-p" collector="TL1" oid="AISS-P" type="COUNTER"/>
+      <value parameter="aiss-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVP.tx.fe(1)" name="SONET Tx FE CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-p" collector="TL1" oid="CV-P" type="COUNTER"/>
+      <value parameter="cv-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.tx.fe(1)" name="SONET Tx FE ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-p" collector="TL1" oid="ES-P" type="COUNTER"/>
+      <value parameter="es-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.tx.fe(1)" name="SONET Tx FE SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-p" collector="TL1" oid="SES-P" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESPFE.tx.fe(1)" name="SONET Tx FE SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="ses-p" collector="TL1" oid="SES-PFE" type="COUNTER"/>
+      <value parameter="ses-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.tx.fe(1)" name="SONET Tx FE UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-p" collector="TL1" oid="UAS-P" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASPFE.tx.fe(1)" name="SONET Tx FE UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="uas-p" collector="TL1" oid="UAS-PFE" type="COUNTER"/>
+      <value parameter="uas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.tx.fe(1)" name="SONET Tx FE SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-p" collector="TL1" oid="SAS-P" type="COUNTER"/>
+      <value parameter="sas-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCP.tx.fe(1)" name="SONET Tx FE FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-P" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+    <metric id="sonet-path-tl1.FC-PFE.tx.fe(1)" name="SONET Tx FE FC-P(1)" desc="Failure Count - Path" protocol="TL1" units="ERRORS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-p" collector="TL1" oid="FC-PFE" type="COUNTER"/>
+      <value parameter="fc-p"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.rx.pfe(1)" name="SONET Rx Fe path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.AISSPFE.rx(1)" name="SONET Rx Fe AISS-P(1)" parmType="AISS_P" desc="Alarm Indication Signal Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="aiss-pfe" collector="TL1" oid="AISS-PFE" type="COUNTER"/>
+      <value parameter="aiss-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.CVPFE.rx(1)" name="SONET Rx Fe CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-pfe" collector="TL1" oid="CV-PFE" type="COUNTER"/>
+      <value parameter="cv-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESPFE.rx(1)" name="SONET Rx Fe ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-pfe" collector="TL1" oid="ES-PFE" type="COUNTER"/>
+      <value parameter="es-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESAPFE.rx(1)" name="SONET Rx Fe ESA-P(1)" desc="Errored Seconds A- Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esa-pfe" collector="TL1" oid="ESA-PFE" type="COUNTER"/>
+      <value parameter="esa-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESBPFE.rx(1)" name="SONET Rx Fe ESB-P(1)" desc="Errored Seconds A- Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esb-pfe" collector="TL1" oid="ESB-PFE" type="COUNTER"/>
+      <value parameter="esb-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESPFE.rx(1)" name="SONET Rx Fe SES-P(1)" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-pfe" collector="TL1" oid="SES-PFE" type="COUNTER"/>
+      <value parameter="ses-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASPFE.rx(1)" name="SONET Rx Fe UAS-P(1)" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-pfe" collector="TL1" oid="UAS-PFE" type="COUNTER"/>
+      <value parameter="uas-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASPFE.rx(1)" name="SONET Rx Fe SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-pfe" collector="TL1" oid="SAS-PFE" type="COUNTER"/>
+      <value parameter="sas-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.SEFSPFE.rx(1)" name="SONET Rx Fe SEFS-PFE(1)" desc="Severely Errored Framing Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sefs-pfe" collector="TL1" oid="SEFS-PFE" type="COUNTER"/>
+      <value parameter="sefs-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.CSSPFE.rx(1)" name="SONET Rx Fe CSS-PFE(1)" desc="Number of seconds during which a controlled slip occurred" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="css-pfe" collector="TL1" oid="CSS-PFE" type="COUNTER"/>
+      <value parameter="css-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.FCFE.rx(1)" name="SONET Rx Fe FC-PFE(1)" desc="failure count" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fc-pfe" collector="TL1" oid="FC-PFE" type="COUNTER"/>
+      <value parameter="fc-pfe"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.tx.pfe(1)" name="SONET Tx Fe path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.CVPFE.tx(1)" name="SONET Tx Fe CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-pfe" collector="TL1" oid="CV-PFE" type="COUNTER"/>
+      <value parameter="cv-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESAPFE.tx(1)" name="SONET Tx Fe ESA-P(1)" desc="Errored Seconds A- Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esa-pfe" collector="TL1" oid="ESA-PFE" type="COUNTER"/>
+      <value parameter="esa-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESBPFE.tx(1)" name="SONET Tx Fe ESB-P(1)" desc="Errored Seconds B- Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esb-pfe" collector="TL1" oid="ESB-PFE" type="COUNTER"/>
+      <value parameter="esb-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASPFE.tx(1)" name="SONET Tx Fe SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-pfe" collector="TL1" oid="SAS-PFE" type="COUNTER"/>
+      <value parameter="sas-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESPFE.tx(1)" name="SONET Tx Fe ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-pfe" collector="TL1" oid="ES-PFE" type="COUNTER"/>
+      <value parameter="es-pfe"/>
+    </metric>
+  </metricGroup>
+  <!-- =================================================================== -->
+  <metricGroup id="sonet-vt-path-tl1" name="SONET VT" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVV" name="SONET CV-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvv" collector="TL1" oid="CVV" type="COUNTER"/>
+      <value parameter="cvv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESV" name="SONET ES-V" parmType="ES_V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esv" collector="TL1" oid="ESV" type="COUNTER"/>
+      <value parameter="esv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESV" name="SONET SES-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesv" collector="TL1" oid="SESV" type="COUNTER"/>
+      <value parameter="sesv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASV" name="SONET UAS-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasv" collector="TL1" oid="UASV" type="COUNTER"/>
+      <value parameter="uasv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.CV-V" name="SONET CV-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-v" collector="TL1" oid="CV-V" type="COUNTER"/>
+      <value parameter="cv-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ES-V" name="SONET ES-V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-v" collector="TL1" oid="ES-V" type="COUNTER"/>
+      <value parameter="es-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SES-V" name="SONET SES-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-v" collector="TL1" oid="SES-V" type="COUNTER"/>
+      <value parameter="ses-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UAS-V" name="SONET UAS-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-v" collector="TL1" oid="UAS-V" type="COUNTER"/>
+      <value parameter="uas-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.FC-V" name="SONET FC-V" desc="Failure count - VT" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FC-V" collector="TL1" oid="FC-V" type="COUNTER"/>
+      <value parameter="FC-V"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt-path-tl1.rx" name="SONET Rx VT" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVV.rx" name="SONET Rx CV-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvv" collector="TL1" oid="CVV" type="COUNTER"/>
+      <value parameter="cvv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESV.rx" name="SONET Rx ES-V" parmType="ES_V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esv" collector="TL1" oid="ESV" type="COUNTER"/>
+      <value parameter="esv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESV.rx" name="SONET Rx SES-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesv" collector="TL1" oid="SESV" type="COUNTER"/>
+      <value parameter="sesv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASV.rx" name="SONET Rx UAS-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasv" collector="TL1" oid="UASV" type="COUNTER"/>
+      <value parameter="uasv"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt-path-tl1.rx(1)" name="SONET Rx VT(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVV.rx(1)" name="SONET Rx CV-V(1)" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-v" collector="TL1" oid="CV-V" type="COUNTER"/>
+      <value parameter="cv-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESV.rx(1)" name="SONET Rx ES-V(1)" parmType="ES_V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-v" collector="TL1" oid="ES-V" type="COUNTER"/>
+      <value parameter="es-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESV.rx(1)" name="SONET Rx SES-V(1)" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="ses-v" collector="TL1" oid="SES-V" type="COUNTER"/>
+      <value parameter="ses-v"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASV.rx(1)" name="SONET Rx UAS-V(1)" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uas-v" collector="TL1" oid="UAS-V" type="COUNTER"/>
+      <value parameter="uas-v"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt-path-tl1.rx.fe" name="SONET Rx FE VT" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVV.rx.fe" name="SONET Rx FE CV-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvv" collector="TL1" oid="CVV" type="COUNTER"/>
+      <value parameter="cvv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESV.rx.fe" name="SONET Rx FE ES-V" parmType="ES_V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esv" collector="TL1" oid="ESV" type="COUNTER"/>
+      <value parameter="esv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESV.rx.fe" name="SONET Rx FE SES-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesv" collector="TL1" oid="SESV" type="COUNTER"/>
+      <value parameter="sesv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASV.rx.fe" name="SONET Rx FE UAS-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasv" collector="TL1" oid="UASV" type="COUNTER"/>
+      <value parameter="uasv"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt-path-tl1.rx.fe(1)" name="SONET Rx FE VT(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVV.rx.fe(1)" name="SONET Rx FE CV-V(1)" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvvfe" collector="TL1" oid="CV-VFE" type="COUNTER"/>
+      <value parameter="cvvfe"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESV.rx.fe(1)" name="SONET Rx FE ES-V(1)" parmType="ES_V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esvfe" collector="TL1" oid="ES-VFE" type="COUNTER"/>
+      <value parameter="esvfe"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESV.rx.fe(1)" name="SONET Rx FE SES-V(1)" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesvfe" collector="TL1" oid="SES-VFE" type="COUNTER"/>
+      <value parameter="sesvfe"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASV.rx.fe(1)" name="SONET Rx FE UAS-V(1)" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasvfe" collector="TL1" oid="UAS-VFE" type="COUNTER"/>
+      <value parameter="uasvfe"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt1-path-tl1.rx" name="SONET Rx VT-V" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVP-V.rx" name="SONET Rx CVP-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpv" collector="TL1" oid="CVP-V" type="COUNTER"/>
+      <value parameter="cvpv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESP-V.rx" name="SONET Rx ESP-V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espv" collector="TL1" oid="ESP-V" type="COUNTER"/>
+      <value parameter="espv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESP-V.rx" name="SONET Rx SESP-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sespv" collector="TL1" oid="SESP-V" type="COUNTER"/>
+      <value parameter="sespv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASP-V.rx" name="SONET Rx UASP-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uaspv" collector="TL1" oid="UASP-V" type="COUNTER"/>
+      <value parameter="uaspv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.FC-V.rx" name="SONET Rx FC-V" desc="Failure count - VT" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FC-V" collector="TL1" oid="FC-V" type="COUNTER"/>
+      <value parameter="FC-V"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt1-path-tl1.rx.fe" name="SONET Rx FE VT-V" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVP-V.rx.fe" name="SONET Rx FE CVP-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpv" collector="TL1" oid="CVP-V" type="COUNTER"/>
+      <value parameter="cvpv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESP-V.rx.fe" name="SONET Rx FE ESP-V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espv" collector="TL1" oid="ESP-V" type="COUNTER"/>
+      <value parameter="espv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESP-V.rx.fe" name="SONET Rx FE SESP-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sespv" collector="TL1" oid="SESP-V" type="COUNTER"/>
+      <value parameter="sespv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASP-V.rx.fe" name="SONET Rx FE UASP-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uaspv" collector="TL1" oid="UASP-V" type="COUNTER"/>
+      <value parameter="uaspv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.FC-VFE.rx.fe" name="SONET Rx FE FC-VFE" desc="Failure count - VT Far End" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FC-VFE" collector="TL1" oid="FC-VFE" type="COUNTER"/>
+      <value parameter="FC-VFE"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt1-path-tl1.tx" name="SONET Tx VT-V" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVP-V.tx" name="SONET Tx CVP-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpv" collector="TL1" oid="CVP-V" type="COUNTER"/>
+      <value parameter="cvpv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESP-V.tx" name="SONET Tx ESP-V" parmType="ES_V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espv" collector="TL1" oid="ESP-V" type="COUNTER"/>
+      <value parameter="espv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESP-V.tx" name="SONET Tx SESP-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sespv" collector="TL1" oid="SESP-V" type="COUNTER"/>
+      <value parameter="sespv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASP-V.tx" name="SONET Tx UASP-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uaspv" collector="TL1" oid="UASP-V" type="COUNTER"/>
+      <value parameter="uaspv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.FC-V.tx" name="SONET Tx FC-V" desc="Failure count - VT Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcv" collector="TL1" oid="FC-V" type="COUNTER"/>
+      <value parameter="fcv"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vt1-path-tl1.tx.fe" name="SONET Tx FE VT-V" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vt-path-tl1.CVP-V.tx.fe" name="SONET Tx FE CVP-V" desc="Coding Violations - VT Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpv" collector="TL1" oid="CVP-V" type="COUNTER"/>
+      <value parameter="cvpv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.ESP-V.tx.fe" name="SONET Tx FE ESP-V" desc="Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espv" collector="TL1" oid="ESP-V" type="COUNTER"/>
+      <value parameter="espv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.SESP-V.tx.fe" name="SONET Tx FE SESP-V" desc="Severely Errored Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sespv" collector="TL1" oid="SESP-V" type="COUNTER"/>
+      <value parameter="sespv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.UASP-V.tx.fe" name="SONET Tx FE UASP-V" desc="Unavailable Seconds - VT Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uaspv" collector="TL1" oid="UASP-V" type="COUNTER"/>
+      <value parameter="uaspv"/>
+    </metric>
+    <metric id="sonet-vt-path-tl1.FC-V.tx.fe" name="SONET Tx FE FC-V" desc="Failure count - VT Path" protocol="TL1" units="FAILURES" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="fcv" collector="TL1" oid="FC-V" type="COUNTER"/>
+      <value parameter="fcv"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-protection-tl1" name="SONET line protection" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-protection-tl1.PSC" name="SONET PSC" desc="Protection Switch Count" protocol="TL1" units="Count" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psc" collector="TL1" oid="PSC" type="GAUGE"/>
+      <value parameter="psc"/>
+    </metric>
+    <metric id="sonet-line-protection-tl1.PSC-L" name="SONET PSC-L" desc="Protection Switch Count" protocol="TL1" units="Count" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psc" collector="TL1" oid="PSC-L" type="COUNTER"/>
+      <value parameter="psc"/>
+    </metric>
+    <metric id="sonet-line-protection-tl1.PSD" name="SONET PSD" desc="Protection Switch Duration" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psd" collector="TL1" oid="PSD" type="GAUGE"/>
+      <value parameter="psd"/>
+    </metric>
+    <metric id="sonet-line-protection-tl1.BERSDL" name="SONET BERSDL" desc="BER Signal Degrade Line" protocol="TL1" units="ber" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="lineSeries-hist">
+      <parameter name="BERSDL" collector="TL1" oid="BERSDL" type="GAUGE"/>
+      <value parameter="BERSDL"/>
+    </metric>
+    <metric id="sonet-line-protection-tl1.BERSFL" name="SONET BERSFL" desc="BER Signal Fail Line" protocol="TL1" units="ber" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="lineSeries-hist">
+      <parameter name="BERSFL" collector="TL1" oid="BERSFL" type="GAUGE"/>
+      <value parameter="BERSFL"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-protection-tl1.fe" name="SONET Fe line protection" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-protection-tl1.PSC.fe" name="SONET  Fe PSC" desc="Protection Switch Count" protocol="TL1" units="Count" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psc" collector="TL1" oid="PSC" type="COUNTER"/>
+      <value parameter="psc"/>
+    </metric>
+    <metric id="sonet-line-protection-tl1.PSD.fe" name="SONET Fe PSD" desc="Protection Switch Duration" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psd" collector="TL1" oid="PSD" type="COUNTER"/>
+      <value parameter="psd"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-protection-tl1.rx" name="SONET Rx line protection" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.PSC.rx" name="SONET Rx PSC" desc="Protection Switch Count" protocol="TL1" units="Count" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psc" collector="TL1" oid="PSC" type="GAUGE"/>
+      <value parameter="psc"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-line-protection-tl1.rx.fe" name="SONET Rx Fe line protection" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.PSC.rx.fe" name="SONET Rx Fe PSC" desc="Protection Switch Count" protocol="TL1" units="Count" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="psc" collector="TL1" oid="PSC" type="GAUGE"/>
+      <value parameter="psc"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-protection-tl1.rx" name="SONET path protection" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-protection-tl1.BERSDP" name="SONET BERSDP" desc="BER Signal Degrade Path" protocol="TL1" units="ber" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="lineSeries-hist">
+      <parameter name="BERSDP" collector="TL1" oid="BERSDP" type="GAUGE"/>
+      <value parameter="BERSDP"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-cp-path-tl1.rx" name="SONET Rx CP" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVCP.rx" name="SONET Rx CVCP" desc="Coding Violations - CP" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-line-protection-tl1.PSD.rx" name="SONET Rx PSD" desc="Protection Switch Duration" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="lineSeries-hist" displayColor="DARK_GREEN">
+      <parameter name="psd" collector="TL1" oid="PSD" type="GAUGE"/>
+      <value parameter="psd"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESCP.rx" name="SONET Rx ESCP" desc="Errored Seconds - CP" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESCP.rx" name="SONET Rx SESCP" desc="Severely Errored Seconds - CP" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sescp" collector="TL1" oid="SESCP" type="COUNTER"/>
+      <value parameter="sescp"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASCP.rx" name="SONET Rx UASCP" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uascp" collector="TL1" oid="UASCP" type="COUNTER"/>
+      <value parameter="uascp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-cp-path-tl1.rx.fe" name="SONET Rx FE CP" protocol="TL1" displayType="Normal">
+    <metric id="sonet-line-tl1.CVCP.rx.fe" name="SONET Rx FE CVCP" desc="Coding Violations - CP" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvcp" collector="TL1" oid="CVCP" type="COUNTER"/>
+      <value parameter="cvcp"/>
+    </metric>
+    <metric id="sonet-line-tl1.ESCP.rx.fe" name="SONET Rx FE ESCP" desc="Errored Seconds - CP" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="escp" collector="TL1" oid="ESCP" type="COUNTER"/>
+      <value parameter="escp"/>
+    </metric>
+    <metric id="sonet-line-tl1.SESCP.rx.fe" name="SONET Rx FE SESCP" desc="Severely Errored Seconds - CP" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sescp" collector="TL1" oid="SESCP" type="COUNTER"/>
+      <value parameter="sescp"/>
+    </metric>
+    <metric id="sonet-line-tl1.UASCP.rx.fe" name="SONET Rx FE UASCP" desc="Unavailable Seconds - Line" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uascp" collector="TL1" oid="UASCP" type="COUNTER"/>
+      <value parameter="uascp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vcg-tl1.rx" name="SONET Rx VCG" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vcg-path-tl1.Rx.na.LOMSEC" name="VCG LOMSEC" desc="Loss of Multframe Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LOMSEC" collector="TL1" oid="LOMSEC" type="COUNTER"/>
+      <value parameter="LOMSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.SQMSEC" name="VCG SQMSEC" desc="Sequence Number Error Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SQMSEC" collector="TL1" oid="SQMSEC" type="COUNTER"/>
+      <value parameter="SQMSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.GSQMSEC" name="VCG GSQMSEC" desc="Group Sequence Number Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GSQMSEC" collector="TL1" oid="GSQMSEC" type="COUNTER"/>
+      <value parameter="GSQMSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.LOASEC" name="VCG LOASEC" desc="Loss of Alignment Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LOASEC" collector="TL1" oid="LOASEC" type="COUNTER"/>
+      <value parameter="LOASEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.BWCHGSEC" name="VCG BWCHGSEC" desc="Bandwidth Change Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="BWCHGSEC" collector="TL1" oid="BWCHGSEC" type="COUNTER"/>
+      <value parameter="BWCHGSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.CRCERRSEC" name="VCG CRCERRSEC" desc="CRC Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CRCERRSEC" collector="TL1" oid="CRCERRSEC" type="COUNTER"/>
+      <value parameter="CRCERRSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.CTRLERRSEC" name="VCG CTRLERRSEC" desc="Control Packet Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CTRLERRSEC" collector="TL1" oid="CTRLERRSEC" type="COUNTER"/>
+      <value parameter="CTRLERRSEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-vcg-tl1.rx-cumulative" name="SONET Rx VCG(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-vcg-path-tl1.Rx.na.LOMSEC-cumulative" name="VCG LOMSEC-cumulative" desc="Loss of Multframe Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LOMSEC" collector="TL1" oid="LOMSEC" type="COUNTER"/>
+      <value parameter="LOMSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.SQMSEC-cumulative" name="VCG SQMSEC-cumulative" desc="Sequence Number Error Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SQMSEC" collector="TL1" oid="SQMSEC" type="COUNTER"/>
+      <value parameter="SQMSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.GSQMSEC-cumulative" name="VCG GSQMSEC-cumulative" desc="Group Sequence Number Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="GSQMSEC" collector="TL1" oid="GSQMSEC" type="COUNTER"/>
+      <value parameter="GSQMSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.LOASEC-cumulative" name="VCG LOASEC-cumulative" desc="Loss of Alignment Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LOASEC" collector="TL1" oid="LOASEC" type="COUNTER"/>
+      <value parameter="LOASEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.BWCHGSEC-cumulative" name="VCG BWCHGSEC-cumulative" desc="Bandwidth Change Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="BWCHGSEC" collector="TL1" oid="BWCHGSEC" type="COUNTER"/>
+      <value parameter="BWCHGSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.CRCERRSEC-cumulative" name="VCG CRCERRSEC-cumulative" desc="CRC Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CRCERRSEC" collector="TL1" oid="CRCERRSEC" type="COUNTER"/>
+      <value parameter="CRCERRSEC"/>
+    </metric>
+    <metric id="sonet-vcg-path-tl1.Rx.na.CTRLERRSEC-cumulative" name="VCG CTRLERRSEC-cumulative" desc="Control Packet Errored Seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CTRLERRSEC" collector="TL1" oid="CTRLERRSEC" type="COUNTER"/>
+      <value parameter="CTRLERRSEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-p-tl1.rx" name="SONET Rx path-p" protocol="TL1" displayType="Normal">
+    <metric id="adtran-sonet-path-tl1.CVP-P" name="SONET Rx CVP-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpp" collector="TL1" oid="CVP-P" type="COUNTER"/>
+      <value parameter="cvpp"/>
+    </metric>
+    <metric id="adtran-sonet-path-tl1.ESP-P" name="SONET Rx ESP-P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espp" collector="TL1" oid="ESP-P" type="COUNTER"/>
+      <value parameter="espp"/>
+    </metric>
+    <metric id="adtran-sonet-path-tl1.SESP-P" name="SONET Rx SESP-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP-P" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-p-tl1.rx.fe" name="SONET Rx FE path-p" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.CVP-P.rx.fe" name="SONET Rx FE CVP-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpp" collector="TL1" oid="CVP-P" type="COUNTER"/>
+      <value parameter="cvpp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP-P.rx.fe" name="SONET Rx FE ESP-P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espp" collector="TL1" oid="ESP-P" type="COUNTER"/>
+      <value parameter="espp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP-P.rx.fe" name="SONET Rx FE SESP-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP-P" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-p-tl1.tx" name="SONET Tx path-p" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.CVP-P.tx" name="SONET Tx CVP-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpp" collector="TL1" oid="CVP-P" type="COUNTER"/>
+      <value parameter="cvpp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP-P.tx" name="SONET Tx ESP-P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espp" collector="TL1" oid="ESP-P" type="COUNTER"/>
+      <value parameter="espp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP-P.tx" name="SONET Tx SESP-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP-P" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-p-tl1.tx.fe" name="SONET Tx FE path-p" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.CVP-P.tx.fe" name="SONET Tx FE CVP-P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cvpp" collector="TL1" oid="CVP-P" type="COUNTER"/>
+      <value parameter="cvpp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP-P.tx.fe" name="SONET Tx FE ESP-P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="espp" collector="TL1" oid="ESP-P" type="COUNTER"/>
+      <value parameter="espp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP-P.tx.fe" name="SONET Tx FE SESP-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP-P" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-frame-tl1" name="SONET frame" protocol="TL1" displayType="Normal">
+    <metric id="sonet-frame-tl1.SESF.rx" name="SONET Rx SESF" desc="Severely Errored Frame seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesf" collector="TL1" oid="SESF" type="COUNTER"/>
+      <value parameter="sesf"/>
+    </metric>
+    <metric id="sonet-frame-tl1.SESF.rx.fe" name="SONET Rx FE SESF" desc="Severely Errored Frame seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesf" collector="TL1" oid="SESF" type="COUNTER"/>
+      <value parameter="sesf"/>
+    </metric>
+    <metric id="sonet-frame-tl1.SESF.tx" name="SONET Tx SESF" desc="Severely Errored Frame seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesf" collector="TL1" oid="SESF" type="COUNTER"/>
+      <value parameter="sesf"/>
+    </metric>
+    <metric id="sonet-frame-tl1.SESF.tx.fe" name="SONET Tx FE SESF" desc="Severely Errored Frame seconds" protocol="TL1" units="SECONDS" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesf" collector="TL1" oid="SESF" type="COUNTER"/>
+      <value parameter="sesf"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-path-tl1.pfe(1)" name="SONET Fe path(1)" protocol="TL1" displayType="Normal">
+    <metric id="sonet-path-tl1.CVPFE(1)" name="SONET Fe CV-P(1)" parmType="CV_P" desc="Coding Violations - Path" protocol="TL1" units="VIOLATIONS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="cv-pfe" collector="TL1" oid="CV-PFE" type="COUNTER"/>
+      <value parameter="cv-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESPFE(1)" name="SONET Fe ES-P(1)" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="es-pfe" collector="TL1" oid="ES-PFE" type="COUNTER"/>
+      <value parameter="es-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESBPFE(1)" name="SONET Fe ESB-P(1)" desc="Errored Seconds B- Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esb-pfe" collector="TL1" oid="ESB-PFE" type="COUNTER"/>
+      <value parameter="esb-pfe"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASPFE(1)" name="SONET Fe SASP-P(1)" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sas-pfe" collector="TL1" oid="SAS-PFE" type="COUNTER"/>
+      <value parameter="sas-pfe"/>
+    </metric>
+  </metricGroup>
+  <!--
+new metric
+-->
+  <metricGroup id="sonet-tl1-lfs" name="SONET-TL1 LFS" protocol="TL1" displayType="Composite">
+    <metric id="sonet-tl1-rx-lfs" name="Sonet-TL1-RX-LFS" desc="LFS" protocol="TL1" units="LFS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LFS" collector="TL1" oid="LFS" type="COUNTER"/>
+      <value parameter="LFS"/>
+    </metric>
+    <metric id="sonet-tl1-tx-lfs" name="Sonet-TL1-TX-LFS" desc="LFS" protocol="TL1" units="LFS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="LFS" collector="TL1" oid="LFS" type="COUNTER"/>
+      <value parameter="LFS"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-rfs" name="SONET-TL1 RFS" protocol="TL1" displayType="Composite">
+    <metric id="sonet-tl1-rx-rfs" name="Sonet-TL1-RX-RFS" desc="RFS" protocol="TL1" units="RFS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RFS" collector="TL1" oid="RFS" type="COUNTER"/>
+      <value parameter="RFS"/>
+    </metric>
+    <metric id="sonet-tl1-tx-rfs" name="Sonet-TL1-TX-RFS" desc="RFS" protocol="TL1" units="RFS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="RFS" collector="TL1" oid="RFS" type="COUNTER"/>
+      <value parameter="RFS"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-rxerr-txerr" name="SONET-TL1 RXERR TXERR" protocol="TL1" displayType="Composite">
+    <metric id="sonet-tl1-rx-rxerr-txerr" name="Sonet-TL1-RX-RXERR" desc="RXERR" protocol="TL1" units="RXERR" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RXERR" collector="TL1" oid="RXERR" type="COUNTER"/>
+      <value parameter="RXERR"/>
+    </metric>
+    <metric id="sonet-tl1-tx-rxerr-txerr" name="Sonet-TL1-TX-TXERR" desc="TXERR" protocol="TL1" units="TXERR" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TXERR" collector="TL1" oid="TXERR" type="COUNTER"/>
+      <value parameter="TXERR"/>
+    </metric>
+  </metricGroup>
+  <!-- =================================================================== -->
+  <!-- Newly Added -->
+  <metricGroup id="sonet-tl1-D-PATH" name="sonet D-PATH" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-D-PATH1" name="D-PATH" desc="D-PATH" protocol="TL1" units="D-PATH" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="D-PATH" collector="TL1" oid="D-PATH" type="COUNTER"/>
+      <value parameter="D-PATH"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-N-DET" name="sonet N-DET" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-N-DET1" name="N-DET" desc="N-DET" protocol="TL1" units="N-DET" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="N-DET" collector="TL1" oid="N-DET" type="COUNTER"/>
+      <value parameter="N-DET"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-N-GEN" name="sonet N-GEN" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-N-GEN1" name="N-GEN" desc="N-GEN" protocol="TL1" units="N-GEN" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="N-GEN" collector="TL1" oid="N-GEN" type="COUNTER"/>
+      <value parameter="N-GEN"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-P-DET" name="sonet P-DET" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-P-DET1" name="P-DET" desc="P-DET" protocol="TL1" units="P-DET" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="P-DET" collector="TL1" oid="P-DET" type="COUNTER"/>
+      <value parameter="P-DET"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-P-GEN" name="sonet P-GEN" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-P-GEN1" name="P-GEN" desc="P-GEN" protocol="TL1" units="P-GEN" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="P-GEN" collector="TL1" oid="P-GEN" type="COUNTER"/>
+      <value parameter="P-GEN"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-S-DET" name="sonet S-DET" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-S-DET1" name="S-DET" desc="S-DET" protocol="TL1" units="S-DET" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="S-DET" collector="TL1" oid="S-DET" type="COUNTER"/>
+      <value parameter="S-DET"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-S-GEN" name="sonet S-GEN" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-S-GEN1" name="S-GEN" desc="S-GEN" protocol="TL1" units="S-GEN" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="lineSeries-hist" displayColor="BLUE">
+      <parameter name="S-GEN" collector="TL1" oid="S-GEN" type="COUNTER"/>
+      <value parameter="S-GEN"/>
+    </metric>
+  </metricGroup>
+  <!--
+  added metrics for BELL CANADA POC
+-->
+  <metricGroup id="sonet-tl1-MSEC" name="SONET-TL1 MSEC" protocol="TL1" displayType="Normal">
+    <metric id="sonet-tl1-rx-msec" name="Sonet-TL1-RX-MSEC" desc="MSEC" protocol="TL1" units="millisecond" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="MSEC" collector="TL1" oid="MSEC" type="COUNTER"/>
+      <value parameter="MSEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-UASP-tx-rx" name="SONET-TL1 UASP TX RX" protocol="TL1" displayType="Composite">
+    <metric id="sonet-path-tl1.UASP.rx" name="SONET Rx UAS-P" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="uasp" collector="TL1" oid="UASP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.UASP.tx" name="SONET Tx UAS-P" desc="Unavailable Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="uasp" collector="TL1" oid="UASP" type="COUNTER"/>
+      <value parameter="uasp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-SESP-tx-rx" name="SONET-TL1 SESP TX RX" protocol="TL1" displayType="Composite">
+    <metric id="sonet-path-tl1.SESP.rx" name="SONET Rx SES-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sesp" collector="TL1" oid="SESP" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SESP.tx" name="SONET Tx SES-P" desc="Severely Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="sesp" collector="TL1" oid="SESP" type="COUNTER"/>
+      <value parameter="sesp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-SASP-tx-rx" name="SONET-TL1 SASP TX RX" protocol="TL1" displayType="Composite">
+    <metric id="sonet-path-tl1.SASP.rx" name="SONET Rx SASP-P" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="sasp" collector="TL1" oid="SASP" type="COUNTER"/>
+      <value parameter="sasp"/>
+    </metric>
+    <metric id="sonet-path-tl1.SASP.tx" name="SONET Tx SASP-P" desc="SEF/AIS Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="sasp" collector="TL1" oid="SASP" type="COUNTER"/>
+      <value parameter="sasp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="sonet-tl1-ESP-tx-rx" name="SONET-TL1 ESP TX RX" protocol="TL1" displayType="Composite">
+    <metric id="sonet-path-tl1.ESP.rx" name="SONET Rx ES-P" parmType="ES_P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="esp" collector="TL1" oid="ESP" type="COUNTER"/>
+      <value parameter="esp"/>
+    </metric>
+    <metric id="sonet-path-tl1.ESP.tx" name="SONET Tx ES-P" desc="Errored Seconds - Path" protocol="TL1" units="SECONDS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="esp" collector="TL1" oid="ESP" type="COUNTER"/>
+      <value parameter="esp"/>
+    </metric>
+  </metricGroup>
+</pmProfile>

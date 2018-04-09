@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tl1-profile id="fujitsu-flashwave-9500" version="c2cb0d4de946"> 
+  <!-- ==================================================================== -->  
+  <!-- Enumeration mappings -->  
+  <!-- ==================================================================== -->  
+  <map name="AlarmAction"> 
+    <entry tl1="CL" model="CLEAR"/>  
+    <entry tl1="SC" model="RAISE"/>  
+    <entry tl1="TC" model="RAISE"/>  
+    <default model="RAISE"/> 
+  </map>  
+  <map name="ServiceAffecting"> 
+    <entry tl1="SA" model="true"/>  
+    <default model="false"/> 
+  </map>  
+  <map name="PerceivedSeverity"> 
+    <entry tl1="CR" model="CRITICAL"/>  
+    <entry tl1="MJ" model="MAJOR"/>  
+    <entry tl1="MN" model="MINOR"/>  
+    <entry tl1="NA" model="WARNING"/>  
+    <entry tl1="SC" model="WARNING"/>  
+    <entry tl1="CL" model="WARNING"/>  
+    <entry tl1="TC" model="INFO"/>  
+    <entry tl1="NR" model="NOT_REPORTED"/> 
+  </map>  
+  <map name="Transitory"> 
+    <entry tl1="TC" model="true"/>  
+    <default model="false"/> 
+  </map>  
+  <map name="Direction"> 
+    <entry tl1="RCV" model="RECEIVE"/>  
+    <entry tl1="TRMT" model="TRANSMIT"/>  
+    <default model="NA"/> 
+  </map>  
+  <map name="ProbableCause"> 
+    <default model="INDETERMINATE"/> 
+  </map>  
+  <map name="Location"> 
+    <entry tl1="FEND" model="FAR_END"/>  
+    <entry tl1="NEND" model="NEAR_END"/>  
+    <default model="NA"/> 
+  </map>  
+  <map name="TimePeriod"> 
+    <entry tl1="1-DAY" model="DAY_1"/>  
+    <entry tl1="15-MIN" model="MIN_15"/>  
+    <default model="OTHER"/> 
+  </map>  
+  <!-- ==================================================================== -->  
+  <!-- Alarm definitions -->  
+  <!-- ==================================================================== -->  
+  <event object="centina.sa.model.fault.EquipmentAlarm"> 
+    <verb>REPT ALM</verb>  
+    <verb-block> 
+      <verb-position index="2"> 
+        <map-property name="aidType" default=""/> 
+      </verb-position> 
+    </verb-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="sourceId"/>  
+        <map-property name="aidVal" default=""/> 
+      </position> 
+    </position-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="perceivedSeverity" map="PerceivedSeverity"/>  
+        <property name="action" map="AlarmAction"/> 
+      </position>  
+      <position index="1"> 
+        <property name="probableCause" map="ProbableCause"/>  
+        <property name="specificProblem"/> 
+      </position>  
+      <position index="2" property="serviceAffecting" map="ServiceAffecting"/>  
+      <position index="5" property="location" map="Location"/>  
+      <position index="6" property="direction" map="Direction"/> 
+    </position-block>  
+    <position-block> 
+      <position index="0" property="additionalInformation"/> 
+    </position-block>  
+    <map> 
+      <property name="sourceName" value="$aidType$:$aidVal$"/> 
+    </map>  
+    <example><![CDATA["FP-1-1:CR,OLOS,SA,08-20,12-14-06,NEND,RCV:\"Optical Loss Of Signal\""]]></example> 
+  </event>  
+  <!-- ==================================================================== -->  
+  <event object="centina.sa.model.fault.SecurityAlarm" conditions="SecuConditions"> 
+    <verb>REPT ALM SECU</verb>  
+    <position-block> 
+      <position index="0"> 
+        <property name="sourceId"/>  
+        <property name="sourceName"/> 
+      </position> 
+    </position-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="perceivedSeverity" map="PerceivedSeverity"/>  
+        <property name="action" map="AlarmAction"/> 
+      </position>  
+      <position index="1"> 
+        <property name="probableCause" map="ProbableCause"/>  
+        <property name="specificProblem"/> 
+      </position> 
+    </position-block>  
+    <position-block> 
+      <position index="0" property="additionalInformation"/> 
+    </position-block>  
+    <example><![CDATA["emsadmin:NA,INTRUSION,,02-14,23-19-20,:\"Intrusion Detected\""]]></example> 
+  </event>  
+  <!-- ==================================================================== -->  
+  <!-- Event definitions -->  
+  <!-- ==================================================================== -->  
+  <event object="centina.sa.model.fault.EquipmentEvent"> 
+    <verb>REPT EVT</verb>  
+    <verb-block> 
+      <verb-position index="2"> 
+        <map-property name="aidType" default=""/> 
+      </verb-position> 
+    </verb-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="sourceId"/>  
+        <map-property name="aidVal" default=""/> 
+      </position> 
+    </position-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="probableCause" map="ProbableCause"/>  
+        <property name="specificProblem"/> 
+      </position>  
+      <position index="1"> 
+        <property name="perceivedSeverity" map="PerceivedSeverity" default="INFO"/>  
+        <property name="transitory" map="Transitory"/>  
+        <property name="action" map="AlarmAction"/> 
+      </position>  
+      <position index="4" property="location" map="Location"/>  
+      <position index="5" property="direction" map="Direction"/>  
+      <position index="6" property="monitorValue"/>  
+      <position index="7" property="thresholdLevel"/>  
+      <position index="8" property="timePeriod" map="TimePeriod"/> 
+    </position-block>  
+    <position-block> 
+      <position index="0" property="additionalInformation"/> 
+    </position-block>  
+    <map> 
+      <property name="sourceName" value="$aidType$:$aidVal$"/> 
+    </map>  
+    <example><![CDATA["emsadmin:NO,73-DAY"]]></example> 
+  </event>  
+  <event object="centina.sa.model.fault.SecurityAlarm" conditions="SecuConditions"> 
+    <verb>REPT EVT SECU</verb>  
+    <position-block> 
+      <position index="0"> 
+        <property name="sourceId"/>  
+        <property name="sourceName"/> 
+      </position> 
+    </position-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="probableCause" map="ProbableCause"/>  
+        <property name="specificProblem"/> 
+      </position>  
+      <position index="1"> 
+        <property name="perceivedSeverity" map="PerceivedSeverity" default="INFO"/>  
+        <property name="transitory" map="Transitory"/>  
+        <property name="action" map="AlarmAction"/> 
+      </position> 
+    </position-block>  
+    <example><![CDATA["COM:LOGIN-FAILURE-PSWD,TC,,,,,,,:\"SECURITY\":\"INVALID LOGIN - PASSWORD - SEE AUDIT LOG\""]]></example> 
+  </event>  
+  <!-- ==================================================================== -->  
+  <event object="centina.sa.model.fault.EnvironmentAlarm"> 
+    <verb>REPT ALM ENV</verb>  
+    <position-block> 
+      <position index="0"> 
+        <property name="sourceId"/>  
+        <property name="sourceName"/> 
+      </position> 
+    </position-block>  
+    <position-block> 
+      <position index="0"> 
+        <property name="perceivedSeverity" map="PerceivedSeverity"/>  
+        <property name="action" map="AlarmAction"/> 
+      </position>  
+      <position index="1"> 
+        <property name="probableCause" map="ProbableCause"/>  
+        <property name="specificProblem"/> 
+      </position>  
+      <position index="4" property="additionalInformation"/> 
+    </position-block> 
+  </event>  
+  <!-- ==================================================================== -->  
+  <!-- command definitions -->  
+  <!-- ==================================================================== -->  
+  <command name="RTRV-COND-ALL" required="true"> 
+    <parameter name="commandCode" value="RTRV-COND-ALL"/>  
+    <parameter name="tid" property="name"/>  
+    <response object="centina.sa.model.fault.EquipmentAlarm"> 
+      <position-block> 
+        <position index="0"> 
+          <property name="sourceId"/>  
+          <map-property name="aidVal" default=""/> 
+        </position>  
+        <position index="1"> 
+          <map-property name="aidType" default=""/> 
+        </position> 
+      </position-block>  
+      <position-block> 
+        <position index="0" property="perceivedSeverity" map="PerceivedSeverity"/>  
+        <position index="1"> 
+          <property name="probableCause" map="ProbableCause"/>  
+          <property name="specificProblem"/> 
+        </position>  
+        <position index="2" property="serviceAffecting" map="ServiceAffecting"/>  
+        <position index="3" property="raisedTime" dateFormat="MM-dd"/>  
+        <position index="4" property="raisedTime" dateFormat="kk-mm-ss"/>  
+        <position index="5" property="location" map="Location"/>  
+        <position index="6" property="direction" map="Direction"/>  
+        <position index="8" property="additionalInformation"/> 
+      </position-block>  
+      <explicit> 
+        <property name="action" value="RAISE"/>  
+        <property name="networkElementSequenceNumber" value="0"/> 
+      </explicit>  
+      <map> 
+        <property name="sourceName" value="$aidType$:$aidVal$"/> 
+      </map>  
+      <example><![CDATA["12-A-3-T2-4,TRIB:CR,OLOS,SA,08-08,17-57-02,NEND,RCV,NA,\"Optical Loss Of Signal\""]]></example> 
+    </response> 
+  </command>  
+  <command name="RTRV-COND-ENV"> 
+    <parameter name="commandCode" value="RTRV-COND-ENV"/>  
+    <parameter name="tid" property="name"/>  
+    <parameter name="aid" value="ALL"/>  
+    <response object="centina.sa.model.fault.EnvironmentAlarm"> 
+      <position-block> 
+        <position index="0"> 
+          <property name="sourceId"/>  
+          <property name="sourceName"/> 
+        </position> 
+      </position-block>  
+      <position-block> 
+        <position index="0" property="perceivedSeverity" map="PerceivedSeverity"/>  
+        <position index="1"> 
+          <property name="probableCause" map="ProbableCause"/>  
+          <property name="specificProblem"/> 
+        </position>  
+        <position index="2" property="raisedTime" dateFormat="MM-dd"/>  
+        <position index="3" property="raisedTime" dateFormat="kk-mm-ss"/>  
+        <position index="4" property="additionalInformation"/> 
+      </position-block>  
+      <explicit> 
+        <property name="action" value="RAISE"/>  
+        <property name="networkElementSequenceNumber" value="0"/> 
+      </explicit>  
+      <example><![CDATA["1:MJ,PTIN-1,05-11-15,15-11-09,\"Fire Hazard\""]]></example> 
+    </response> 
+  </command>  
+  <command name="RTRV-ALM-ALL" required="true"> 
+    <parameter name="commandCode" value="RTRV-ALM-ALL"/>  
+    <parameter name="tid" property="name"/>  
+    <response object="centina.sa.model.fault.EquipmentAlarm"> 
+      <position-block> 
+        <position index="0"> 
+          <property name="sourceId"/>  
+          <map-property name="aidVal" default=""/> 
+        </position>  
+        <position index="1"> 
+          <map-property name="aidType" default=""/> 
+        </position> 
+      </position-block>  
+      <position-block> 
+        <position index="0" property="perceivedSeverity" map="PerceivedSeverity"/>  
+        <position index="1"> 
+          <property name="probableCause" map="ProbableCause"/>  
+          <property name="specificProblem"/> 
+        </position>  
+        <position index="2" property="serviceAffecting" map="ServiceAffecting"/>  
+        <position index="3" property="raisedTime" dateFormat="MM-dd"/>  
+        <position index="4" property="raisedTime" dateFormat="kk-mm-ss"/>  
+        <position index="5" property="location" map="Location"/>  
+        <position index="6" property="direction" map="Direction"/> 
+      </position-block>  
+      <position-block> 
+        <position index="0" property="additionalInformation"/> 
+      </position-block>  
+      <explicit> 
+        <property name="action" value="RAISE"/>  
+        <property name="networkElementSequenceNumber" value="0"/> 
+      </explicit>  
+      <map> 
+        <property name="sourceName" value="$aidType$:$aidVal$"/> 
+      </map>  
+      <example><![CDATA["1-IOSHELF-PEMA,EQPT:MN,BRKROPEN48V,NSA,08-08,17-56-53,NA,NA:\"Breaker open 48V\""]]></example> 
+    </response> 
+  </command>  
+  <command name="RTRV-ALM-ENV"> 
+    <parameter name="commandCode" value="RTRV-ALM-ENV"/>  
+    <parameter name="tid" property="name"/>  
+    <response object="centina.sa.model.fault.EnvironmentAlarm"> 
+      <position-block> 
+        <position index="0"> 
+          <property name="sourceId"/>  
+          <property name="sourceName"/> 
+        </position> 
+      </position-block>  
+      <position-block> 
+        <position index="0" property="perceivedSeverity" map="PerceivedSeverity"/>  
+        <position index="1"> 
+          <property name="probableCause" map="ProbableCause"/>  
+          <property name="specificProblem"/> 
+        </position>  
+        <position index="2" property="raisedTime" dateFormat="MM-dd"/>  
+        <position index="3" property="raisedTime" dateFormat="kk-mm-ss"/>  
+        <position index="4" property="additionalInformation"/> 
+      </position-block>  
+      <explicit> 
+        <property name="action" value="RAISE"/>  
+        <property name="networkElementSequenceNumber" value="0"/> 
+      </explicit>  
+      <example><![CDATA["1:MJ,PTIN-1,05-11-15,15-11-09,\"Fire Hazard\""]]></example> 
+    </response> 
+  </command>  
+  <!-- ==================================================================== -->  
+  <!-- command-set definitions -->  
+  <!-- ==================================================================== -->  
+  <command-set name="retrieve-all-alarms"> 
+    <command name="RTRV-COND-ALL"/>  
+    <command name="RTRV-COND-ENV"/>  
+    <command name="RTRV-ALM-ALL"/>  
+    <command name="RTRV-ALM-ENV"/> 
+  </command-set> 
+</tl1-profile>

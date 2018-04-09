@@ -1,0 +1,5 @@
+send-trap guru enp0s25:0 nortel-alarm-ext-mib:nnExtAlarm-adhoc1:nnExtAlarm-adhoc1Warning
+send-trap guru enp0s25:0 nortel-alarm-ext-mib:nnExtAlarmMinor:nnExtAlarmMinor
+send-trap guru enp0s25:0 nortel-alarm-ext-mib:nnExtAlarmWarning:nnExtAlarmWarning
+
+

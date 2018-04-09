@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tl1-profile id="fujitsu-flashwave-9500" version="2be743df05f0"> 
+  <!-- ==================================================================== -->  
+  <!-- command definitions -->  
+  <!-- ==================================================================== -->  
+  <command name="RTRV-TSG"> 
+    <parameter name="commandCode" value="RTRV-TSG"/>  
+    <parameter name="tid" property="name"/>  
+    <parameter name="aid" value="ALL"/>  
+    <response object="centina.sa.model.carrierthernet.EthernetVirtualConnection"> 
+      <!-- AID Block -->  
+      <position-block> 
+        <position index="0"> 
+          <property name="name"/>  
+          <property name="logicalId"/>  
+          <map-property name="aidVal"/> 
+        </position> 
+      </position-block>  
+      <position-block></position-block>  
+      <name-block></name-block>  
+      <example><![CDATA["5-2000:P2P:COUPLING=Y"]]></example> 
+    </response> 
+  </command>  
+  <command name="RTRV-FP"> 
+    <parameter name="commandCode" value="RTRV-FP"/>  
+    <parameter name="tid" property="name"/>  
+    <response object="centina.sa.model.profile.layer2.EvcLink"> 
+      <!-- AID Block -->  
+      <position-block> 
+        <position index="0"> 
+          <property name="APort"/> 
+        </position> 
+      </position-block>  
+      <position-block></position-block>  
+      <name-block> 
+        <name name="OUTERVID" property="logicalId"/> 
+      </name-block>  
+      <explicit> 
+        <property name="APortPropName" value="sourceId"/> 
+      </explicit>  
+      <example><![CDATA["1-7-1-2:TFP:EPBPFL=NONE,EPCPDEPFL=NONE,EBWPFL=NONE,IPBPFL=NONE,ACLGRP=NONE,MIRRORID=NONE,STYP=P2P,IBWPFL=NONE,CLASS=NONE,PMHISTORY=N,OUTERVID=1112,ETMACT=Y,CMACXLATE=Y,IDSCPPFL=NONE,ITMACT=Y,MACXLATE=INHERIT,WREDH=NONE,HASH=NONE,WREDG=NONE,WREDF=NONE,WREDE=NONE,SVCTNLMBR=NONE,WREDD=NONE,HDTDPFL=NONE,WREDC=NONE,ETMADJ=GUEEA,TSG=1-4,ITMLP=NONE,ITMADJ=GUEEA,CLRULE=NONE,SDT=CVLAN,ETMLP=NONE,IPCPDEPFL=NONE,WFP=NONE,EINRPCPDEPFL=NONE"]]></example> 
+    </response> 
+  </command>  
+  <command-set name="retrieve-evc"> 
+    <!--    <command name="RTRV-TSG"/> -->  
+    <command name="RTRV-FP"/> 
+  </command-set> 
+</tl1-profile>

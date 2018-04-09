@@ -1,0 +1,115 @@
+Response for Sim
+	<command name="RTRV-10GBE">
+	   <type>10GBE</type>
+	</command>
+	<command name="RTRV-1GBE">
+	   <type>1GBE</type>
+	</command>
+	<command name="RTRV-CBR2G5">
+	   <type>CBR2G5</type>
+	</command>
+	<command name="RTRV-CBRAR-HDSDI">
+	   <type>CBRAR-HDSDI</type>
+	</command>
+	<command name="RTRV-CBRAR-FE">
+	   <type>CBRAR-FE</type>
+	</command>
+	<command name="RTRV-FC100">
+	   <type>FC100</type>
+	</command>
+	<command name="RTRV-FC1200">
+	   <type>FC1200</type>
+	</command>
+	<command name="RTRV-FC200">
+	   <type>FC200</type>
+	</command>
+	<command name="RTRV-FC400">
+	   <type>FC400</type>
+	</command>
+	<command name="RTRV-OC12">
+	   <type>OC12</type>
+	</command>
+	<command name="RTRV-OC192">
+	   <type>OC192</type>
+	</command>
+	<command name="RTRV-OC3">
+	   <type>OC3</type>
+	</command>
+	<command name="RTRV-OC48">
+	   <type>OC48</type>
+	</command>
+	<command name="RTRV-OC768">
+	   <type>OC768</type>
+	</command>
+	<command name="RTRV-OCH">
+	   <type>OCH</type>
+	</command>
+	<command name="RTRV-ODU1">
+	   <type>ODU1</type>
+	</command>
+	<command name="RTRV-ODU2">
+	   <type>ODU2</type>
+	</command>
+	<command name="RTRV-ODU3">
+	   <type>ODU3</type>
+	</command>
+	<command name="RTRV-OTS">
+	   <type>OTS</type>
+	</command>
+	<command name="RTRV-OTU1">
+	   <type>OTU1</type>
+	</command>
+	<command name="RTRV-OTU2">
+	   <type>OTU2</type>
+	</command>
+	<command name="RTRV-OTU3">
+	   <type>OTU3</type>
+	</command>
+	<command name="RTRV-STM16">
+	   <type>STM16</type>
+	</command>
+	<command name="RTRV-STM1">
+	   <type>STM1</type>
+	</command>
+	<command name="RTRV-STM256">
+	   <type>STM256</type>
+	</command>
+	<command name="RTRV-STM4">
+	   <type>STM4</type>
+	</command>
+	<command name="RTRV-STM64">
+	   <type>STM64</type>
+	</command>
+	<command name="RTRV-EQPT">
+	   <type>EQPT</type>
+	</command>
+	<command name="RTRV-ODU4">
+	   <type>ODU4</type>
+	</command>
+	<command name="RTRV-OTU">
+	   <type>OTU</type>
+	</command>
+	<command name="RTRV-OTU4">
+	   <type>OTU4</type>
+	</command>
+	<command name="RTRV-E1">
+	   <type>E1</type>
+	</command>
+	<command name="RTRV-EQPT">
+	   <type>EQPT</type>
+	</command>
+	<command name="RTRV-LAN">
+	   <type>LAN</type>
+	</command>
+	<command name="RTRV-FC800">
+	   <type>FC800</type>
+	</command>
+	<command name="RTRV-100GBE">
+	   <type>100GBE</type>
+	</command>
+	<command name="RTRV-100GBE-SHORT">
+	   <type>100GBE-SHORT</type>
+	</command>
+	<command name="RTRV-40GBE">
+	   <type>40GBE</type>
+	</command>

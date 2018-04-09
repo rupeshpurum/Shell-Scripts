@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tl1-profile id="fujitsu-flashwave-9500" version="c2cb0d4de946"> 
+  <!-- ==================================================================== -->  
+  <!-- Condition definitions -->  
+  <!-- ==================================================================== -->  
+  <conditions name="Conditions"> 
+    <condition problem="AIS" info="Alarm Indication Signal"/>  
+    <condition problem="AIS-L" info="Alarm Indication Signal-Line"/>  
+    <condition problem="AIS-P" info="Alarm Indication Signal-Path"/>  
+    <condition problem="AIS-V" info="Alarm Indication Signal-VT"/>  
+    <condition problem="ALS" info="Automatic Laser Shutdown"/>  
+    <condition problem="APC-DISABLED" info="Automatic Power Control Disabled"/>  
+    <condition problem="APC-FAIL" info="Automatic Power Control Failure"/>  
+    <condition problem="APSB" info="Byte Failure"/>  
+    <condition problem="APSC-IMP" info="Improper Automatic Protection Switch (APS) Code"/>  
+    <condition problem="APSCDFLTK" info="Default K Byte"/>  
+    <condition problem="APSCINCON" info="Inconsistent APS Code"/>  
+    <condition problem="APSCM" info="Protection Switching Channel Match Failure"/>  
+    <condition problem="APSCNMIS" info="Node ID Mismatch"/>  
+    <condition problem="APSIMP" info="APS Invalid Mode"/>  
+    <condition problem="APSMM" info="Automatic Protection Switch Mode Mismatch"/>  
+    <condition problem="AS-CMD" info="Alarms Suppressed By User Command"/>  
+    <condition problem="AS-MT" info="Alarms Suppressed For Maintenance"/>  
+    <condition problem="AU-LOF" info="Loss of Frame (LOF)-Administration Unit-Loss of Multiframe"/>  
+    <condition problem="AUD-LOG-LOSS" info="Audit Log 100 Percent Full-Oldest records will be lost"/>  
+    <condition problem="AUD-LOG-LOW" info="Audit Log 80 Percent Full"/>  
+    <condition problem="AUTOLSROFF" info="Automatic Laser Shutoff Due To High Temperature"/>  
+    <condition problem="AUTORESET" info="Automatic System Reset"/>  
+    <condition problem="AUTOSW-AIS" info="Automatic Unidirectional Path Switched Ring (UPSR) Switch Caused By AIS"/>  
+    <condition problem="AUTOSW-LOP" info="Automatic UPSR Switch Caused By LOP"/>  
+    <condition problem="AUTOSW-PDI" info="Automatic UPSR Switch Caused By PDI"/>  
+    <condition problem="AUTOSW-SDBER" info="Automatic UPSR Switch Caused By SDBER"/>  
+    <condition problem="AUTOSW-SFBER" info="Automatic UPSR Switch Caused By SFBER"/>  
+    <condition problem="AUTOSW-UNEQ" info="Automatic UPSR Switch Caused By UNEQ"/>  
+    <condition problem="BAT-FAIL" info="Battery Failure"/>  
+    <condition problem="BAT-HGH-VLT" info="High Volt"/>  
+    <condition problem="BAT-LOW-VLT" info="Low Volt"/>  
+    <condition problem="BKUPMEMP" info="Primary Nonvolatile Backup Memory Failure"/>  
+    <condition problem="BLSROSYNC" info="BLSR Out Of Sync"/>  
+    <condition problem="CARLOSS" info="Carrier Loss On The LAN"/>  
+    <condition problem="CKTDOWN" info="Signaling Unable to Set Up Circuit"/>  
+    <condition problem="CLDRESTART" info="Cold Restart"/>  
+    <condition problem="COMIOXC" info="Input/Output (IO) Slot To Cross-connect (XCON) Communication Failure"/>  
+    <condition problem="COMM-FAIL" info="Plug-in Module Communication Failure"/>  
+    <condition problem="CONTBUS-A-18" info="TCC A To DCC A Processor Communication Failure"/>  
+    <condition problem="CONTBUS-B-18" info="TCC B To DCC B Processor Communication Failure"/>  
+    <condition problem="CONTBUS_A" info="Controller A To Shelf Slot Communication Failure"/>  
+    <condition problem="CONTBUS_B" info="Controller B To Shelf Slot Communication Failure"/>  
+    <condition problem="CTNEQPT-MISMATCH" info="Connection Equipment Mismatch"/>  
+    <condition problem="CTNEQPT-PBPROT" info="Interconnection Equipment Failure-Protect XC Payload Bus"/>  
+    <condition problem="CTNEQPT-PBWORK" info="Interconnection Equipment Failure-Working XC Payload Bus"/>  
+    <condition problem="DATAFLT" info="Software Fault-Data Integrity Fault"/>  
+    <condition problem="DBOSYNC" info="Standby Database Out of Synchronization"/>  
+    <condition problem="DS3-MISM" info="DS3 Frame Format Mismatch"/>  
+    <condition problem="DSP-COMM-FAIL" info="DSP Communication Failure"/>  
+    <condition problem="DSP-FAIL" info="DSP Failure"/>  
+    <condition problem="DUP-IPADDR" info="IP address already in use within the same data communications channel (DCC) area"/>  
+    <condition problem="DUP-NODENAME" info="Node name already in use within the same DCC area"/>  
+    <condition problem="E-W-MISMATCH" info="Both Ends Of Fiber Provisioned As East Or Both As West"/>  
+    <condition problem="EHIBATVG" info="Extreme High Voltage"/>  
+    <condition problem="ELWBATVG" info="Extreme Low Voltage"/>  
+    <condition problem="EOC" info="Section DCC (SDCC) Termination Failure"/>  
+    <condition problem="EOC-L" info="Line DCC (LDCC) Termination Failure"/>  
+    <condition problem="EQPT" info="Equipment Failure"/>  
+    <condition problem="EQPT-MISS" info="Replaceable Equipment/Unit is Missing"/>  
+    <condition problem="ERFI-P-CONN" info="Enhanced Remote Failure Indication-Path-Connectivity"/>  
+    <condition problem="ERFI-P-PAYLD" info="Enhanced Remote Failure Indication-Path-Payload"/>  
+    <condition problem="ERFI-P-SRVR" info="Enhanced Remote Failure Indication-Path-Server"/>  
+    <condition problem="ERROR-CONFIG" info="Error in Startup Configuration"/>  
+    <condition problem="ETH-LINKLOSS" info="Rear Panel Ethernet Link Removed"/>  
+    <condition problem="EXCCOL" info="Excess Collisions on the LAN"/>  
+    <condition problem="EXERCISE-RING-FAIL" info="Exercise Request on Ring Failed"/>  
+    <condition problem="EXERCISE-RING-REQ" info="Exercise Request on Ring"/>  
+    <condition problem="EXERCISE-SPAN-FAIL" info="Exercise Request on Span Failed"/>  
+    <condition problem="EXERCISE-SPAN-REQ" info="Exercise Request on Span"/>  
+    <condition problem="EXT" info="Failure Detected External To The NE"/>  
+    <condition problem="EXTRA-TRAF-PREEMPT" info="Extra Traffic Preempted"/>  
+    <condition problem="FAILTOSW" info="Failure To Switch To Protection"/>  
+    <condition problem="FAILTOSW-PATH" info="Failure To Switch To Protection-Path"/>  
+    <condition problem="FAILTOSWR" info="Failure To Switch To Protection-Ring"/>  
+    <condition problem="FAILTOSWS" info="Failure To Switch To Protection-Span"/>  
+    <condition problem="FAN" info="Fan Failure"/>  
+    <condition problem="FANDEGRADE" info="Partial Fan Failure"/>  
+    <condition problem="FE-AIS" info="Far End AIS"/>  
+    <condition problem="FE-DS1-MULTLOS" info="Far End Multiple DS1 LOS Detected On DS3"/>  
+    <condition problem="FE-DS1-NSA" info="Far End DS1 Equipment Failure-Non-Service-Affecting"/>  
+    <condition problem="FE-DS1-SA" info="Far End DS1 Equipment Failure-Service-Affecting"/>  
+    <condition problem="FE-DS1-SNGLLOS" info="Far End Single DS1 Loss of Signal (LOS)"/>  
+    <condition problem="FE-DS3-NSA" info="Far End DS3 Equipment Failure-Non-Service-Affecting"/>  
+    <condition problem="FE-DS3-SA" info="Far End DS3 Equipment Failure-Service-Affecting"/>  
+    <condition problem="FE-EQPT-NSA" info="Far End Common Equipment Failure-Non-Service-Affecting"/>  
+    <condition problem="FE-EXERCISING-RING" info="Far End Exercising Ring"/>  
+    <condition problem="FE-EXERCISING-SPAN" info="Far End Exercising Span"/>  
+    <condition problem="FE-FRCDWKSWPR-RING" info="Far End Working Facility Forced To Switch To Protection-Ring"/>  
+    <condition problem="FE-FRCDWKSWPR-SPAN" info="Far End Working Facility Forced To Switch To Protection-Span"/>  
+    <condition problem="FE-IDLE" info="Far End Idle"/>  
+    <condition problem="FE-LOCKOUTOFPR-SPAN" info="Far End Lockout Of Protection-Span"/>  
+    <condition problem="FE-LOF" info="Far End LOF"/>  
+    <condition problem="FE-LOS" info="Far End LOS"/>  
+    <condition problem="FE-MANWKSWPR-RING" info="Far End Manual Switch Of Working Facility To Protection-Ring"/>  
+    <condition problem="FE-MANWKSWPR-SPAN" info="Far End Manual Switch Of Working Facility To Protection-Span"/>  
+    <condition problem="FEC-MISM" info="FEC Mismatch"/>  
+    <condition problem="FEPRLF" info="Far End Protection Line Failure"/>  
+    <condition problem="FORCED-REQ" info="Forced Switch Request"/>  
+    <condition problem="FORCED-REQ-RING" info="Forced Switch Request On Ring"/>  
+    <condition problem="FORCED-REQ-SPAN" info="Forced Switch Request On Span"/>  
+    <condition problem="FRCDSWTOINT" info="Forced Switch To Internal Clock"/>  
+    <condition problem="FRCDSWTOPRI" info="Forced Switch To Primary Reference"/>  
+    <condition problem="FRCDSWTOSEC" info="Forced Switch To Second Reference"/>  
+    <condition problem="FRCDSWTOTHIRD" info="Forced Switch To Third Reference"/>  
+    <condition problem="FRNGSYNC" info="Free Running Synchronization Mode"/>  
+    <condition problem="FSTSYNC" info="Fast Start Synchronization Mode"/>  
+    <condition problem="FULLPASSTHR-BI" info="Bidirectional Full Pass Through Is Active"/>  
+    <condition problem="GCC-EOC" info="GCC Termination Failure"/>  
+    <condition problem="GE-OOSYNC" info="Gigabit Ethernet Out of Synchronization"/>  
+    <condition problem="HI-LASERBIAS" info="Equipment High Laser Bias"/>  
+    <condition problem="HI-RXPOWER" info="Equipment High Receive (Rx) Power"/>  
+    <condition problem="HI-TXPOWER" info="Equipment High Transmit (Tx) Power"/>  
+    <condition problem="HITEMP" info="High Temperature"/>  
+    <condition problem="HLDOVRSYNC" info="Holdover Synchronization Mode"/>  
+    <condition problem="I-HITEMP" info="Industrial High Temperature"/>  
+    <condition problem="IMPROPRMVL" info="Improper Removal"/>  
+    <condition problem="INC-GFP-OUTOFFRAME" info="Out Of Frame Detected by Generic Framing Procedure (GFP) Receiver"/>  
+    <condition problem="INC-GFP-SIGLOSS" info="Client Signal Loss Frames Detected by GFP Receiver"/>  
+    <condition problem="INC-ISD" info="DS3 Idle Condition"/>  
+    <condition problem="INC-SIGLOSS" info="Incoming Signal Loss on Fibre Channel Interface"/>  
+    <condition problem="INC-SYNCLOSS" info="Incoming Synchronization Loss on Fibre Channel Interface"/>  
+    <condition problem="INC_GFP_SYNCLOSS" info="Client Synchronization Loss Frames Detected by GFP Receiver"/>  
+    <condition problem="INHSWPR" info="Inhibit Switch To Protect Request On Equipment"/>  
+    <condition problem="INHSWWKG" info="Inhibit Switch To Working Request On Equipment"/>  
+    <condition problem="INVMACADR" info="Invalid MAC Address"/>  
+    <condition problem="IOSCFGCOPY" info="IOS Configuration Copy In Progress"/>  
+    <condition problem="KB-PASSTHR" info="K Byte Pass Through Is Active"/>  
+    <condition problem="KBYTE-APS-CHANNEL-FAILURE" info="K Byte Channel Failure"/>  
+    <condition problem="LAN-POL-REV" info="LAN Connection Polarity Reversed"/>  
+    <condition problem="LASEREOL" info="Laser Approaching End of Life"/>  
+    <condition problem="LKOUTPR-S" info="Lockout Of Protection-Span"/>  
+    <condition problem="LMP-HELLODOWN" info="LMP Hello FSM to Control Channel Down"/>  
+    <condition problem="LMP-NDFAIL" info="LMP Neighbor Discovery has failed"/>  
+    <condition problem="LO-RXPOWER" info="Equipment Low Rx Power"/>  
+    <condition problem="LO-TXPOWER" info="Equipment Low Tx Power"/>  
+    <condition problem="LOA" info="Loss of Alignment"/>  
+    <condition problem="LOC" info="Loss of Channel"/>  
+    <condition problem="LOCKOUT-REQ" info="Lockout Switch Request On Facility or Equipment"/>  
+    <condition problem="LOCKOUT-REQ-RING" info="Lockout Switch Request On Ring"/>  
+    <condition problem="LOF" info="Loss Of Frame"/>  
+    <condition problem="LOM" info="Loss of Multiframe"/>  
+    <condition problem="LOP-P" info="Loss Of Pointer-Path"/>  
+    <condition problem="LOP-V" info="Loss Of Pointer-VT"/>  
+    <condition problem="LOS" info="Loss Of Signal"/>  
+    <condition problem="LPBKCRS" info="Cross-connect Loopback"/>  
+    <condition problem="LPBKDS1FEAC" info="DS1 Loopback Due To FEAC Command"/>  
+    <condition problem="LPBKDS1FEAC-CMD" info="DS1 Loopback Command Sent To Far End"/>  
+    <condition problem="LPBKDS3FEAC" info="DS3 Loopback Due To FEAC Command"/>  
+    <condition problem="LPBKDS3FEAC-CMD" info="DS3 Loopback Command Sent To Far End"/>  
+    <condition problem="LPBKFACILITY" info="Facility Loopback"/>  
+    <condition problem="LPBKTERMINAL" info="Terminal Loopback"/>  
+    <condition problem="LWBATVG" info="Low Volt"/>  
+    <condition problem="MAN-REQ" info="Manual Switch Request"/>  
+    <condition problem="MANRESET" info="Manual System Reset"/>  
+    <condition problem="MANSWTOINT" info="Manual Switch To Internal Clock"/>  
+    <condition problem="MANSWTOPRI" info="Manual Switch To Primary Reference"/>  
+    <condition problem="MANSWTOSEC" info="Manual Switch To Second Reference"/>  
+    <condition problem="MANSWTOTHIRD" info="Manual Switch To Third Reference"/>  
+    <condition problem="MANUAL-REQ-RING" info="Manual Switch Request On Ring"/>  
+    <condition problem="MANUAL-REQ-SPAN" info="Manual Switch Request On Span"/>  
+    <condition problem="MEA" info="Mismatch Of Equipment And Attributes"/>  
+    <condition problem="MEM-GONE" info="Free Memory On Card Near Zero"/>  
+    <condition problem="MEM-LOW" info="Free Memory On Card Very Low"/>  
+    <condition problem="MFGMEM" info="Manufacturing Data Memory (EEPROM Failure)"/>  
+    <condition problem="NO-CONFIG" info="No Startup Config"/>  
+    <condition problem="NTWTPINC" info="Network Topology Incomplete"/>  
+    <condition problem="OCHNC-ACTIV-FAIL" info="Optical Channel Activation Failure"/>  
+    <condition problem="OCHNC-DEACTIV-FAIL" info="Optical Channel Deactivation Failure"/>  
+    <condition problem="OCHNC-FAIL" info="Optical Channel Connection Failure"/>  
+    <condition problem="OCHNC-INC" info="Optical Channel Incomplete"/>  
+    <condition problem="ODUK-AIS-PM" info="ODUk: Alarm Indication Signal"/>  
+    <condition problem="ODUK-BDI-PM" info="ODUk: PM Backward Defect Indication"/>  
+    <condition problem="ODUK-LCK-PM" info="ODUk: Locked Defect-PM"/>  
+    <condition problem="ODUK-OCI-PM" info="ODUk: Open Connection Indication"/>  
+    <condition problem="ODUK-SD-PM" info="ODUk: Signal Degrade"/>  
+    <condition problem="ODUK-SF-PM" info="ODUk: Signal Failure"/>  
+    <condition problem="ODUK-TIM-PM" info="ODUk: Trail Trace Identifier Mismatch"/>  
+    <condition problem="OOU-TPT" info="Out of Use-Transport Failure"/>  
+    <condition problem="OPTNTWMIS" info="Optical Network Type Mismatch"/>  
+    <condition problem="OTUK-AIS" info="OTUk: Alarm Indication Signal"/>  
+    <condition problem="OTUK-BDI" info="OTUk: Backward Defect Indication"/>  
+    <condition problem="OTUK-LOF" info="OTUk: Loss Of Frame"/>  
+    <condition problem="OTUK-SD" info="OTUk: Signal Degrade"/>  
+    <condition problem="OTUK-SF" info="OTUk: Signal Failure"/>  
+    <condition problem="OTUK-TIM" info="OTUk: Trail Trace Identifier Mismatch"/>  
+    <condition problem="OUT-OF-SYNC" info="8B10B Out of Sync"/>  
+    <condition problem="PDI-P" info="Payload Defect Indication-Path"/>  
+    <condition problem="PEER-NORESPONSE" info="Peer Card Not Responding"/>  
+    <condition problem="PLM-P" info="Payload Label Mismatch-Path"/>  
+    <condition problem="PLM-V" info="Signal Label Mismatch Failure-Payload Label Mismatch-VT"/>  
+    <condition problem="PORT-CODE-MISM" info="Pluggable Port security code mismatch"/>  
+    <condition problem="PORT-COMM-FAIL" info="Module Communication Failure"/>  
+    <condition problem="PORT-MISMATCH" info="Pluggable Port rate mismatch"/>  
+    <condition problem="PORT-MISSING" info="Pluggable Port missing"/>  
+    <condition problem="PRC-DUPID" info="Duplicate Node ID"/>  
+    <condition problem="PROTNA" info="Protection Unit Not Available"/>  
+    <condition problem="PTIM" info="Payload Type Identifier Mismatch"/>  
+    <condition problem="PWR-REDUN" info="Redundant Power Capability Lost"/>  
+    <condition problem="RAI" info="Remote Alarm Indication"/>  
+    <condition problem="RCVR-MISS" info="Facility Termination Equipment-Receiver Missing"/>  
+    <condition problem="RFI" info="Remote Failure Indication"/>  
+    <condition problem="RFI-L" info="Remote Failure Indication-Line"/>  
+    <condition problem="RFI-P" info="One-Bit Remote Failure Indication-Path"/>  
+    <condition problem="RFI-V" info="Remote Failure Indication-VT"/>  
+    <condition problem="RING-ID-MIS" info="Ring ID Mismatch"/>  
+    <condition problem="RING-MISMATCH" info="Far End of Fiber Is Provisioned With Different Ring ID"/>  
+    <condition problem="RING-SW-EAST" info="Ring Switch Is Active on the East Side"/>  
+    <condition problem="RING-SW-WEST" info="Ring Switch Is Active on the West Side"/>  
+    <condition problem="RSVP-HELLODOWN" info="RSVP Hello FSM to Neighbor Down"/>  
+    <condition problem="RUNCFG-SAVENEED" info="Need to Save Running Configuration"/>  
+    <condition problem="SD" info="Signal Degrade"/>  
+    <condition problem="SD-L" info="Bit Error Rate (BER) Threshold Exceeded For Signal Degrade-Line"/>  
+    <condition problem="SD-P" info="BER Threshold Exceeded For Signal Degrade-Path"/>  
+    <condition problem="SF" info="Signal Failure"/>  
+    <condition problem="SF-L" info="BER Threshold Exceeded For Signal Failure-Line"/>  
+    <condition problem="SF-P" info="BER Threshold Exceeded For Signal Failure-Path"/>  
+    <condition problem="SFTWDOWN" info="Software Download In Progress"/>  
+    <condition problem="SNTP-HOST" info="Simple Network Time Protocol (SNTP) Host Failure"/>  
+    <condition problem="SPAN-SW-EAST" info="Span Switch Is Active On The East Side"/>  
+    <condition problem="SPAN-SW-WEST" info="Span Switch Is Active On The West Side"/>  
+    <condition problem="SQM" info="Sequence Mismatch"/>  
+    <condition problem="SQUELCH" info="Ring Is Squelching Traffic"/>  
+    <condition problem="SQUELCHED" info="Equipment Squelched"/>  
+    <condition problem="SSM-DUS" info="Do Not Use For Synchronization"/>  
+    <condition problem="SSM-FAIL" info="Failed To Receive Synchronization Status Message"/>  
+    <condition problem="SSM-LNC" info="G812-Local Node Clock Traceable"/>  
+    <condition problem="SSM-OFF" info="Synchronization Status Messages Are Disabled On This Interface"/>  
+    <condition problem="SSM-PRC" info="G811-Primary Reference Clock Traceable"/>  
+    <condition problem="SSM-PRS" info="Stratum 1 Primary Reference Source Traceable"/>  
+    <condition problem="SSM-RES" info="Reserved For Network Synchronization Use"/>  
+    <condition problem="SSM-SDH-TN" info="G812-Transit Node Clock Traceable"/>  
+    <condition problem="SSM-SETS" info="G813-Synchronous Equipment Timing Source Traceable"/>  
+    <condition problem="SSM-SMC" info="SONET Minimum Clock Traceable"/>  
+    <condition problem="SSM-ST2" info="Stratum 2 Traceable"/>  
+    <condition problem="SSM-ST3" info="Stratum 3 Traceable"/>  
+    <condition problem="SSM-ST3E" info="Stratum 3E Traceable"/>  
+    <condition problem="SSM-ST4" info="Stratum 4 Traceable"/>  
+    <condition problem="SSM-STU" info="Synchronized-Traceability Unknown"/>  
+    <condition problem="SSM-TNC" info="Transit Node Clock Traceable"/>  
+    <condition problem="SWMTXMOD" info="Switching Matrix Module Failure"/>  
+    <condition problem="SWTOPRI" info="Switch To Primary Reference"/>  
+    <condition problem="SWTOSEC" info="Switch To Second Reference"/>  
+    <condition problem="SWTOTHIRD" info="Switch To Third Reference"/>  
+    <condition problem="SYNC-FREQ" info="Synchronization Reference Frequency Out Of Bounds"/>  
+    <condition problem="SYNCPRI" info="Primary Synchronization Reference Failure"/>  
+    <condition problem="SYNCSEC" info="Secondary Synchronization Reference Failure"/>  
+    <condition problem="SYNCTHIRD" info="Third Synchronization Reference Failure"/>  
+    <condition problem="SYSBOOT" info="System Reboot"/>  
+    <condition problem="TIM" info="TIM Section-Trace Identifier Mismatch Failure"/>  
+    <condition problem="TIM-MON" info="TIM Section Monitor-Trace Identifier Mismatch Failure"/>  
+    <condition problem="TIM-P" info="STS Path Trace Identifier Mismatch"/>  
+    <condition problem="TPTFAIL" info="Transport layer failure"/>  
+    <condition problem="TRMT" info="Transmit Failure"/>  
+    <condition problem="TRMT-MISS" info="Facility Termination Equipment-Transmitter Missing"/>  
+    <condition problem="TUNDERRUN" info="Ether Tx Under-run"/>  
+    <condition problem="TX-AIS" info="Alarm Indication Signal in Tx"/>  
+    <condition problem="TX-RAI" info="Remote Alarm Indication in Tx"/>  
+    <condition problem="UNC-WORD" info="Forward Error Correction (FEC) Uncorrected Word"/>  
+    <condition problem="UNEQ-P" info="Unequipped-Path"/>  
+    <condition problem="UNEQ-V" info="Signal Label Mismatch Failure-Unequipped VT"/>  
+    <condition problem="VCG-DEG" info="Virtual Concatenation (VCAT) Group Degraded"/>  
+    <condition problem="VCG-DOWN" info="VCAT Group Down"/>  
+    <condition problem="WKSWPR" info="Switched To Protection"/>  
+    <condition problem="WTR" info="Wait To Restore"/>  
+    <condition problem="WVL-MISMATCH" info="Equipment Wavelength Mismatch"/> 
+  </conditions>  
+  <!-- ==================================================================== -->  
+  <conditions name="SecuConditions"> 
+    <condition problem="INTRUSION-PSWD" info="Security Intrusion Attempt Detected-See Audit Log"/> 
+  </conditions>  
+  <!-- ==================================================================== -->  
+  <conditions name="EnvConditions"> 
+    <condition problem="AIRCOMPR" info="Air compressor failure"/>  
+    <condition problem="AIRCOND" info="Air conditioning failure"/>  
+    <condition problem="AIRDRYR" info="Air dryer failure"/>  
+    <condition problem="BATDSCHRG" info="Battery discharging"/>  
+    <condition problem="BATTERY" info="Battery failure"/>  
+    <condition problem="CLFAN" info="Cooling fan failure"/>  
+    <condition problem="CPMAJOR" info="Centralized power major failure"/>  
+    <condition problem="CPMINOR" info="Centralized power minor failure"/>  
+    <condition problem="ENGINE" info="Engine failure"/>  
+    <condition problem="ENGOPRG" info="Engine operating"/>  
+    <condition problem="ENGTRANS" info="Standby engine transfer"/>  
+    <condition problem="EXPLGS" info="Explosive gas"/>  
+    <condition problem="FIRDETR" info="Fire detector failure"/>  
+    <condition problem="FIRE" info="Fire"/>  
+    <condition problem="FLOOD" info="Flood"/>  
+    <condition problem="FUELLEAK" info="Fuel leak"/>  
+    <condition problem="FUSE" info="Fuse failure"/>  
+    <condition problem="GASALARM" info="Explosive gas, toxic gas, ventilation fail, or gas monitor fail"/>  
+    <condition problem="HATCH" info="CEV hatch fail"/>  
+    <condition problem="GEN" info="Generator failure"/>  
+    <condition problem="HIAIR" info="High airflow"/>  
+    <condition problem="HIHUM" info="High humidity"/>  
+    <condition problem="HITEMP" info="High temperature"/>  
+    <condition problem="HIWTR" info="High water"/>  
+    <condition problem="INTRUDER" info="Intrusion"/>  
+    <condition problem="LEVELCON" info="Level converter"/>  
+    <condition problem="LVDADSL" info="Secondary ADSL low voltage disconnect"/>  
+    <condition problem="LVDBYPAS" info="Low voltage disconnect bypass"/>  
+    <condition problem="LWBATVG" info="Low battery voltage"/>  
+    <condition problem="LWFUEL" info="Low fuel"/>  
+    <condition problem="LWHUM" info="Low humidity"/>  
+    <condition problem="LWPRES" info="Low cable pressure"/>  
+    <condition problem="LWTEMP" info="Low temperature"/>  
+    <condition problem="LWWTR" info="Low water"/>  
+    <condition problem="MISC" info="Miscellaneous"/>  
+    <condition problem="OPENDR" info="Open door"/>  
+    <condition problem="POWER" info="Commercial power failure"/>  
+    <condition problem="PUMP" info="Pump failure"/>  
+    <condition problem="PWR-48" info="48 V power supply failure"/>  
+    <condition problem="PWR-139" info="-139 V power converter"/>  
+    <condition problem="PWR-190" info="-190 V power converter"/>  
+    <condition problem="PWRMJ" info="Power supply major"/>  
+    <condition problem="PWRMN" info="Power supply minor"/>  
+    <condition problem="RECT" info="Rectifier failure"/>  
+    <condition problem="RECTHI" info="Rectifier high voltage"/>  
+    <condition problem="RECTLO" info="Rectifier low voltage"/>  
+    <condition problem="RINGGENMJ" info="Ringing generator major"/>  
+    <condition problem="RINGGENMN" info="Ringing generator minor"/>  
+    <condition problem="RTACADSL" info="AC or AC/rectifier power fail ADSL equipment"/>  
+    <condition problem="RTACCRIT" info="AC or AC/rectifier power fail DCL equipment critical site"/>  
+    <condition problem="RTACPWR" info="AC or AC/rectifier power fail DCL equipment"/>  
+    <condition problem="RTACPWRENG" info="Commercial AC fail, site equipped with standby engine"/>  
+    <condition problem="RTBAYPWR" info="AC power loss distributed power RT bay"/>  
+    <condition problem="RTRVENG" info="Retrieve standby engine, commercial AC restored"/>  
+    <condition problem="SMOKE" info="Smoke"/>  
+    <condition problem="TEMP" info="High-low temperature"/>  
+    <condition problem="TOXICGAS" info="Toxic gas"/>  
+    <condition problem="TREPEATER" info="T-repeater shelf"/>  
+    <condition problem="VENTN" info="Ventilation system failure"/> 
+  </conditions>  
+  <!-- ==================================================================== -->  
+  <!-- Alarm definitions -->  
+  <!-- ==================================================================== -->  
+  <event retrieve="RTRV-COND-ALL" conditions="Conditions"> 
+    <verb>REPT ALM 10GFC</verb>  
+    <verb>REPT ALM 10GIGE</verb>  
+    <verb>REPT ALM 1GFC</verb>  
+    <verb>REPT ALM 1GFICON</verb>  
+    <verb>REPT ALM 2GFC</verb>  
+    <verb>REPT ALM 2GFICON</verb>  
+    <verb>REPT ALM D1VIDEO</verb>  
+    <verb>REPT ALM DS1</verb>  
+    <verb>REPT ALM DV6000</verb>  
+    <verb>REPT ALM E100</verb>  
+    <verb>REPT ALM E1000</verb>  
+    <verb>REPT ALM EC1</verb>  
+    <verb>REPT ALM FSTE</verb>  
+    <verb>REPT ALM G1000</verb>  
+    <verb>REPT ALM GIGE</verb>  
+    <verb>REPT ALM HDTV</verb>  
+    <verb>REPT ALM ISC1</verb>  
+    <verb>REPT ALM OC12</verb>  
+    <verb>REPT ALM OC192</verb>  
+    <verb>REPT ALM OC3</verb>  
+    <verb>REPT ALM OC48</verb>  
+    <verb>REPT ALM OCH</verb>  
+    <verb>REPT ALM OMS</verb>  
+    <verb>REPT ALM OTS</verb>  
+    <verb>REPT ALM POS</verb>  
+    <verb>REPT ALM STS1</verb>  
+    <verb>REPT ALM STS12C</verb>  
+    <verb>REPT ALM STS192C</verb>  
+    <verb>REPT ALM STS24C</verb>  
+    <verb>REPT ALM STS18C</verb>  
+    <verb>REPT ALM STS36C</verb>  
+    <verb>REPT ALM STS3C</verb>  
+    <verb>REPT ALM STS48C</verb>  
+    <verb>REPT ALM STS6C</verb>  
+    <verb>REPT ALM STS9C</verb>  
+    <verb>REPT ALM T1</verb>  
+    <verb>REPT ALM T3</verb>  
+    <verb>REPT ALM VT1</verb>  
+    <verb>REPT ALM FP</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-BITS" conditions="Conditions"> 
+    <verb>REPT ALM BITS</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-ALL" conditions="Conditions"> 
+    <verb>REPT ALM COM</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-ENV" conditions="EnvConditions"> 
+    <verb>REPT ALM ENV</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-ALL" conditions="Conditions"> 
+    <verb>REPT ALM LMP</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-ALL" conditions="Conditions"> 
+    <verb>REPT ALM EQPT</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-SYNCN" conditions="Conditions"> 
+    <verb>REPT ALM SYNCN</verb> 
+  </event>  
+  <event conditions="SecuConditions"> 
+    <verb>REPT ALM SECU</verb> 
+  </event>  
+  <!-- ==================================================================== -->  
+  <!-- Event definitions -->  
+  <!-- ==================================================================== -->  
+  <event retrieve="RTRV-COND-ALL" conditions="Conditions"> 
+    <verb>REPT EVT 10GFC</verb>  
+    <verb>REPT EVT 10GIGE</verb>  
+    <verb>REPT EVT 1GFC</verb>  
+    <verb>REPT EVT 1GFICON</verb>  
+    <verb>REPT EVT 2GFC</verb>  
+    <verb>REPT EVT 2GFICON</verb>  
+    <verb>REPT EVT D1VIDEO</verb>  
+    <verb>REPT EVT DS1</verb>  
+    <verb>REPT EVT DV6000</verb>  
+    <verb>REPT EVT E100</verb>  
+    <verb>REPT EVT E1000</verb>  
+    <verb>REPT EVT EC1</verb>  
+    <verb>REPT EVT FSTE</verb>  
+    <verb>REPT EVT G1000</verb>  
+    <verb>REPT EVT GIGE</verb>  
+    <verb>REPT EVT HDTV</verb>  
+    <verb>REPT EVT ISC1</verb>  
+    <verb>REPT EVT OC12</verb>  
+    <verb>REPT EVT OC192</verb>  
+    <verb>REPT EVT OC3</verb>  
+    <verb>REPT EVT OC48</verb>  
+    <verb>REPT EVT OCH</verb>  
+    <verb>REPT EVT OMS</verb>  
+    <verb>REPT EVT OTS</verb>  
+    <verb>REPT EVT POS</verb>  
+    <verb>REPT EVT STS1</verb>  
+    <verb>REPT EVT STS12C</verb>  
+    <verb>REPT EVT STS192C</verb>  
+    <verb>REPT EVT STS24C</verb>  
+    <verb>REPT EVT STS18C</verb>  
+    <verb>REPT EVT STS36C</verb>  
+    <verb>REPT EVT STS3C</verb>  
+    <verb>REPT EVT STS48C</verb>  
+    <verb>REPT EVT STS6C</verb>  
+    <verb>REPT EVT STS9C</verb>  
+    <verb>REPT EVT T1</verb>  
+    <verb>REPT EVT T3</verb>  
+    <verb>REPT EVT VT1</verb> 
+  </event>  
+  <event retrieve="RTRV-COND-ALL" conditions="Conditions"> 
+    <verb>REPT EVT EQPT</verb> 
+  </event> 
+</tl1-profile>

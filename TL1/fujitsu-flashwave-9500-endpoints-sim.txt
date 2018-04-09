@@ -1,0 +1,211 @@
+Response for Sim
+	<command name="RTRV-EQPT">
+	   <type>EQPT</type>
+	</command>
+	<command name="RTRV-10FC">
+	   <type>10FC</type>
+	</command>
+	<command name="RTRV-10GE">
+	   <type>10GE</type>
+	</command>
+	<command name="RTRV-100GE">
+	   <type>100GE</type>
+	</command>
+	<command name="RTRV-ETH">
+	   <type>ETH</type>
+	</command>
+	<command name="RTRV-LAN">
+	   <type>LAN</type>
+	</command>
+	<command name="RTRV-OSC">
+	   <type>OSC</type>
+	</command>
+	<command name="RTRV-OSPF-IF">
+	   <type>OSPF-IF</type>
+	</command>
+	<command name="RTRV-STM1">
+	   <type>STM1</type>
+	</command>
+	<command name="RTRV-STM4">
+	   <type>STM4</type>
+	</command>
+	<command name="RTRV-STM16">
+	   <type>STM16</type>
+	</command>
+	<command name="RTRV-STM64">
+	   <type>STM64</type>
+	</command>
+	<command name="RTRV-STM256">
+	   <type>STM256</type>
+	</command>
+	<command name="RTRV-OC3">
+	   <type>OC3</type>
+	</command>
+	<command name="RTRV-OC12">
+	   <type>OC12</type>
+	</command>
+	<command name="RTRV-OC48">
+	   <type>OC48</type>
+	</command>
+	<command name="RTRV-OC192">
+	   <type>OC192</type>
+	</command>
+	<command name="RTRV-OC768">
+	   <type>OC768</type>
+	</command>
+	<command name="RTRV-OCH107">
+	   <type>OCH107</type>
+	</command>
+	<command name="RTRV-OCH111">
+	   <type>OCH111</type>
+	</command>
+	<command name="RTRV-OCH113">
+	   <type>OCH113</type>
+	</command>
+	<command name="RTRV-OCH430">
+	   <type>OCH430</type>
+	</command>
+	<command name="RTRV-STS1">
+	   <type>STS1</type>
+	</command>
+	<command name="RTRV-STS3C">
+	   <type>STS3C</type>
+	</command>
+	<command name="RTRV-STS12C">
+	   <type>STS12C</type>
+	</command>
+	<command name="RTRV-STS48C">
+	   <type>STS48C</type>
+	</command>
+	<command name="RTRV-STS192C">
+	   <type>STS192C</type>
+	</command>
+	<command name="RTRV-EPORT">
+	   <type>EPORT</type>
+	</command>
+	<command name="RTRV-ODCC">
+	   <type>ODCC</type>
+	</command>
+	<command name="RTRV-WDM">
+	   <type>WDM</type>
+	</command>
+	<command name="RTRV-WCH">
+	   <type>WCH</type>
+	</command>
+	<command name="RTRV-VCG">
+	   <type>VCG</type>
+	</command>
+	<command name="RTRV-LAG">
+	   <type>LAG</type>
+	</command>
+	<command name="RTRV-LIF">
+	   <type>LIF</type>
+	</command>
+	<command name="RTRV-FP">
+	   <type>FP</type>
+	</command>
+	<command name="RTRV-ITMLP">
+	   <type>ITMLP</type>
+	</command>
+	<command name="RTRV-ETMLP">
+	   <type>ETMLP</type>
+	</command>
+	<command name="RTRV-VT1">
+	   <type>VT1</type>
+	</command>
+	<command name="RTRV-T1">
+	   <type>T1</type>
+	</command>
+	<command name="RTRV-T3">
+	   <type>T3</type>
+	</command>
+	<command name="RTRV-E1">
+	   <type>E1</type>
+	</command>
+	<command name="RTRV-E3">
+	   <type>E3</type>
+	</command>
+	<command name="RTRV-T1CLK">
+	   <type>T1CLK</type>
+	</command>
+	<command name="RTRV-E1CLK">
+	   <type>E1CLK</type>
+	</command>
+	<command name="RTRV-ODU1">
+	   <type>ODU1</type>
+	</command>
+	<command name="RTRV-ODU2">
+	   <type>ODU2</type>
+	</command>
+	<command name="RTRV-ODU2E">
+	   <type>ODU2E</type>
+	</command>
+	<command name="RTRV-ODU4">
+	   <type>ODU4</type>
+	</command>
+	<command name="RTRV-OTU2">
+	   <type>OTU2</type>
+	</command>
+	<command name="RTRV-OTU2E">
+	   <type>OTU2E</type>
+	</command>
+	<command name="RTRV-OTU4">
+	   <type>OTU4</type>
+	</command>
+	<command name="RTRV-PORT">
+	   <type>PORT</type>
+	</command>
+	<command name="RTRV-ODU0">
+	   <type>ODU0</type>
+	</command>
+	<command name="RTRV-ODU3">
+	   <type>ODU3</type>
+	</command>
+	<command name="RTRV-OTU1">
+	   <type>OTU1</type>
+	</command>
+	<command name="RTRV-OTU3">
+	   <type>OTU3</type>
+	</command>
+	<command name="RTRV-ODUFLEX">
+	   <type>ODUFLEX</type>
+	</command>
+	<command name="RTRV-FOW">
+	   <type>FOW</type>
+	</command>
+	<command name="RTRV-FOSPORT">
+	   <type>FOSPORT</type>
+	</command>
+	<command name="RTRV-FWINFO">
+	   <type>FWINFO</type>
+	</command>
+	<command name="RTRV-NVM">
+	   <type>NVM</type>
+	</command>
+	<command name="RTRV-1GE">
+	   <type>1GE</type>
+	</command>
+	<command name="RTRV-40GE">
+	   <type>40GE</type>
+	</command>
+	<command name="RTRV-FCPORT">
+	   <type>FCPORT</type>
+	</command>
+	<command name="RTRV-OCH">
+	   <type>OCH</type>
+	</command>
+	<command name="RTRV-ERPRING">
+	   <type>ERPRING</type>
+	</command>
+	<command name="RTRV-ERP">
+	   <type>ERP</type>
+	</command>
+	<command name="RTRV-CONN-RTID">
+	   <type>CONN-RTID</type>
+	</command>
+	<command name="RTRV-GCC0">
+	   <type>GCC0</type>
+	</command>
+	<command name="RTRV-GCC1">
+	   <type>GCC1</type>
+	</command>

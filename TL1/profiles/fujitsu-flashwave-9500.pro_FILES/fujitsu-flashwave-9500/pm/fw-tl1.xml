@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd">
+
+<pmProfile name="fw-tl1" version="UNCLEAN">
+  <metricGroup id="fw-tl1-temp" name="FW TEMP" protocol="TL1" displayType="Normal">
+    <metric id="fw-tl1-temp.rx" name="FW Rx TEMP" desc="SFP/XFP Transceiver Temperature." protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TEMP" collector="TL1" oid="TEMP" type="GAUGE"/>
+      <value parameter="TEMP"/>
+    </metric>
+    <metric id="fw-tl1-ctemp.rx" name="FW Rx CTEMP" desc="Case Temperature." protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="CTEMP" collector="TL1" oid="CTEMP" type="GAUGE"/>
+      <value parameter="CTEMP"/>
+    </metric>
+    <metric id="fw-tl1-temp.rx.TEMP2" name="FW Rx TEMP2" desc="SFP/XFP Transceiver Temperature." protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TEMP2" collector="TL1" oid="TEMP2" type="GAUGE"/>
+      <value parameter="TEMP2"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-supply" name="FW SUPPLY" protocol="TL1" displayType="Normal">
+    <metric id="fw-tl1-supply.rx" name="FW Rx SUPPLY" desc="Supply Voltage" protocol="TL1" units="volts" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SUPPLY" collector="TL1" oid="SUPPLY" type="GAUGE"/>
+      <value parameter="SUPPLY"/>
+    </metric>
+    <metric id="fw-tl1-supply.rx.SUPPLY2" name="FW Rx SUPPLY2" desc="Supply Voltage" protocol="TL1" units="volts" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SUPPLY2" collector="TL1" oid="SUPPLY2" type="GAUGE"/>
+      <value parameter="SUPPLY2"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-regenerator-section" name="FW Rx Regenerator Section" protocol="TL1" displayType="Normal">
+    <metric id="fw-tl1-regenerator-section.BBE" name="FW RS-BBE" desc="Regenerator Section Background Block Error" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="rsbbe" collector="TL1" oid="RS-BBE" type="COUNTER"/>
+      <value parameter="rsbbe"/>
+    </metric>
+    <metric id="fw-tl1-regenerator-section.EB" name="FW RS-EB" desc="Regenerator Section Errored Block" protocol="TL1" units="blocks" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="rseb" collector="TL1" oid="RS-EB" type="COUNTER"/>
+      <value parameter="rseb"/>
+    </metric>
+    <metric id="fw-tl1-regenerator-section.ES" name="FW RS-ES" desc="Regenerator Section Errored Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="rses" collector="TL1" oid="RS-ES" type="COUNTER"/>
+      <value parameter="rses"/>
+    </metric>
+    <metric id="fw-tl1-regenerator-section.SES" name="FW RS-SES" desc="Regenerator Section Severely Errored Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="rsses" collector="TL1" oid="RS-SES" type="COUNTER"/>
+      <value parameter="rsses"/>
+    </metric>
+    <metric id="fw-tl1-regenerator-section.OFS" name="FW RS-OFS" desc="Regenerator Section Out of Frame Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="rsofs" collector="TL1" oid="RS-OFS" type="COUNTER"/>
+      <value parameter="rsofs"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-hp" name="FW Rx High order path" protocol="TL1" displayType="Normal">
+    <metric id="fw-tl1-HP-section.BBE" name="FW HP-BBE" desc="High order path Background Block Error" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="hpbbe" collector="TL1" oid="HP-BBE" type="COUNTER"/>
+      <value parameter="hpbbe"/>
+    </metric>
+    <metric id="fw-tl1-HP-section.EB" name="FW HP-EB" desc="High order path Errored Block" protocol="TL1" units="blocks" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="hpeb" collector="TL1" oid="HP-EB" type="COUNTER"/>
+      <value parameter="hpeb"/>
+    </metric>
+    <metric id="fw-tl1-HP-section.ES" name="FW HP-ES" desc="High order path Errored Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="hpes" collector="TL1" oid="HP-ES" type="COUNTER"/>
+      <value parameter="hpes"/>
+    </metric>
+    <metric id="fw-tl1-HP-section.SES" name="FW HP-SES" desc="High order path Severely Errored Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="hpses" collector="TL1" oid="HP-SES" type="COUNTER"/>
+      <value parameter="hpses"/>
+    </metric>
+    <metric id="fw-tl1-HP-section.UAS" name="FW HP-OFS" desc="High order path Unavailable Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="hpuas" collector="TL1" oid="HP-UAS" type="COUNTER"/>
+      <value parameter="hpuas"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-laser-temp" name="FW Laser TEMP" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-laser1 temp.rx" name="FW Rx laser 1 TEMP" desc="Laser 1 Temperature." protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="l1temp" collector="TL1" oid="L1TEMP" type="GAUGE"/>
+      <value parameter="l1temp"/>
+    </metric>
+    <metric id="fw-tl1-laser2 temp.rx" name="FW Rx laser 2 TEMP" desc="Laser 2 Temperature." protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="l2temp" collector="TL1" oid="L2TEMP" type="GAUGE"/>
+      <value parameter="l2temp"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-laser-cur" name="FW Laser CURR" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-laser1 curr.rx" name="FW Rx laser 1 CUR" desc="Laser 1 Current." protocol="TL1" units="amp" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="l1curr" collector="TL1" oid="L1CUR" type="GAUGE"/>
+      <value parameter="l1curr"/>
+    </metric>
+    <metric id="fw-tl1-laser2 curr.rx" name="FW Rx laser 2 CUR" desc="Laser 2 Current." protocol="TL1" units="amp" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="l2curr" collector="TL1" oid="L2CUR" type="GAUGE"/>
+      <value parameter="l2curr"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-laser-pwr" name="FW Laser PWR" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-laser1 pwr.rx" name="FW Rx laser 1 PWR" desc="Laser 1 Power." protocol="TL1" units="watt" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="l1pwr" collector="TL1" oid="L1PWR" type="GAUGE"/>
+      <value parameter="l1pwr"/>
+    </metric>
+    <metric id="fw-tl1-laser2 pwr.rx" name="FW Rx laser 2 PWR" desc="Laser 2 Power." protocol="TL1" units="watt" conversion-function="NONE" consolidation-function="AVG" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="l2pwr" collector="TL1" oid="L2PWR" type="GAUGE"/>
+      <value parameter="l2pwr"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-preamplifier-temp" name="FW PREAMPLIFIER TEMP" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-preamplifier-temp1" name="FW PREAMPLIFIER TEMP1" desc="Preamplifier 1 normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TEMP1" collector="TL1" oid="TEMP1" type="GAUGE"/>
+      <value parameter="TEMP1"/>
+    </metric>
+    <metric id="fw-tl1-preamplifier-temp2" name="FW PREAMPLIFIER TEMP2" desc="Preamplifier 2 normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TEMP2" collector="TL1" oid="TEMP2" type="GAUGE"/>
+      <value parameter="TEMP2"/>
+    </metric>
+    <metric id="fw-tl1-preamplifier-temp3" name="FW PREAMPLIFIER TEMP3" desc="Preamplifier 3 normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TEMP3" collector="TL1" oid="TEMP3" type="GAUGE"/>
+      <value parameter="TEMP3"/>
+    </metric>
+    <metric id="fw-tl1-preamplifier-temp4" name="FW PREAMPLIFIER TEMP4" desc="Preamplifier 4 normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TEMP4" collector="TL1" oid="TEMP4" type="GAUGE"/>
+      <value parameter="TEMP4"/>
+    </metric>
+  </metricGroup>
+  <!--
+   new metrics
+-->
+  <metricGroup id="fw-tl1-piutemp" name="FW-TL1 PIUTEMP" protocol="TL1" displayType="Normal">
+    <metric id="fw-tl1-piutemp1" name="FW-TL1-PIUTEMP" desc="PIUTEMP" protocol="TL1" units="PIUTEMP" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="PIUTEMP" collector="TL1" oid="PIUTEMP" type="GAUGE"/>
+      <value parameter="PIUTEMP"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-piutempwrst" name="FW-TL1 PIUTEMPWRST" protocol="TL1" displayType="Normal">
+    <metric id="fw-tl1-piutempwrst1" name="FW-TL1-PIUTEMPWRST" desc="PIUTEMPWRST" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="PIUTEMPWRST" collector="TL1" oid="PIUTEMPWRST" type="GAUGE"/>
+      <value parameter="PIUTEMPWRST"/>
+    </metric>
+  </metricGroup>
+  <!-- metrics added for flashwave-7500 -->
+  <metricGroup id="fw-tl1-preamplifier-ldbc" name="FW PREAMPLIFIER LDBC" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-preamplifier-LDBCPREF1" name="FW PREAMPLIFIER LDBCPREF1" desc="Preamplifier 1 laser bias cuurent" protocol="TL1" units="amperes" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LDBCPREF1" collector="TL1" oid="LDBCPREF1" type="COUNTER"/>
+      <value parameter="LDBCPREF1"/>
+    </metric>
+    <metric id="fw-tl1-preamplifier-LDBCPREF2" name="FW PREAMPLIFIER LDBCPREF2" desc="Preamplifier 2 laser bias cuurent" protocol="TL1" units="amperes" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LDBCPREF2" collector="TL1" oid="LDBCPREF2" type="COUNTER"/>
+      <value parameter="LDBCPREF2"/>
+    </metric>
+    <metric id="fw-tl1-preamplifier-LDBCPRER3" name="FW PREAMPLIFIER LDBCPRER3" desc="Preamplifier 3 laser bias cuurent" protocol="TL1" units="amperes" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LDBCPRER3" collector="TL1" oid="LDBCPRER3" type="COUNTER"/>
+      <value parameter="LDBCPRER3"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-postamplifier-ldbc" name="FW PREAMPLIFIER LDBC" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-postamplifier-LDBCPOST1" name="FW POSTAMPLIFIER LDBCPOST1" desc="Postamplifier 1 laser bias cuurent" protocol="TL1" units="amperes" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LDBCPOST1" collector="TL1" oid="LDBCPOST1" type="COUNTER"/>
+      <value parameter="LDBCPOST1"/>
+    </metric>
+    <metric id="fw-tl1-postamplifier-LDBCPOST2" name="FW POSTAMPLIFIER LDBCPOST2" desc="Postamplifier 2 laser bias cuurent" protocol="TL1" units="amperes" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LDBCPOST2" collector="TL1" oid="LDBCPOST2" type="COUNTER"/>
+      <value parameter="LDBCPOST2"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="fw-tl1-optical-mux-htemp" name="FW OPTICAL MUX HTEMP" protocol="TL1" displayType="Composite">
+    <metric id="fw-tl1-optical-mux-heater-temp" name="FW OPTICAL MUX HTEMP" desc="Optical Mux normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="HTEMP" collector="TL1" oid="HTEMP" type="GAUGE"/>
+      <value parameter="HTEMP"/>
+    </metric>
+    <metric id="fw-tl1-optical-mux-heater-temp1" name="FW OPTICAL MUX HTEMP1" desc="Optical 1 Mux normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="HTEMP1" collector="TL1" oid="HTEMP1" type="GAUGE"/>
+      <value parameter="HTEMP1"/>
+    </metric>
+    <metric id="fw-tl1-optical-mux-heater-temp2" name="FW OPTICAL MUX HTEMP" desc="Optical 2 Mux normalized temperature" protocol="TL1" units="degree" conversion-function="NONE" consolidation-function="AVG" direction="NA" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="HTEMP2" collector="TL1" oid="HTEMP2" type="GAUGE"/>
+      <value parameter="HTEMP2"/>
+    </metric>
+  </metricGroup>
+</pmProfile>

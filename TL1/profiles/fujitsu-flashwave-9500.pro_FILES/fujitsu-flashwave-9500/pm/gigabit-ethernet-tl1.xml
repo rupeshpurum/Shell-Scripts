@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd">
+
+<pmProfile name="gigabit-ethernet-tl1" version="UNCLEAN">
+  <metricGroup id="gigabit-ethernet-tl1-lan data.rcv" name="Gigabit-Ethernet-TL1 Lan Rx Lan Data" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Receive broadcast packets" name="Gigabit-Ethernet-TL1 Lan Rx Broadcast Packets" desc="Total number of Broadcast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value parameter="BCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive multicast packets" name="Gigabit-Ethernet-TL1 Lan Rx Multicast Packets" parmType="" desc="Total number of Multicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <value parameter="MCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive octets" name="Gigabit-Ethernet-TL1 Lan Rx Octets" desc="Total number of Octets" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OCTETS-L" collector="TL1" oid="OCTETS-L" type="COUNTER"/>
+      <value parameter="OCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive good frames" name="Gigabit-Ethernet-TL1 Lan Rx Good Frames" parmType="" desc="Total number of Good Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FR-L" collector="TL1" oid="FR-L" type="COUNTER"/>
+      <value parameter="FR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive good octets" name="Gigabit-Ethernet-TL1 Lan Rx Good Octets" parmType="ETH_RX_BYTES" desc="Total number of Good Octets" protocol="TL1" units="Bytes" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <value parameter="GDOCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive average bits per second" name="Gigabit-Ethernet-TL1 Lan Rx Avg Bits Per Second" parmType="ETH_RX_BANDWIDTH" desc="Average bps received on this interface" protocol="TL1" units="bps" conversion-function="PER_SECOND" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <value rpn="GDOCTETS-L,8,*"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive average utilization" name="Gigabit-Ethernet-TL1 Lan Rx Avg Utilization" parmType="ETH_RX_UTILIZATION" desc="Average percent utilization received on this interface" protocol="TL1" units="%" conversion-function="PER_SECOND" consolidation-function="AVG" location="NEAR_END" direction="RECEIVE" displayType="lineSeries-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <parameter name="speed" collector="OBJECT" oid="speed" type="GAUGE" indexed="true"/>
+      <value rpn="GDOCTETS-L,8,*,speed,/,100,*"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive L2CP" name="Gigabit-Ethernet-TL1 Lan Rx L2CP" desc="Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="L2CP-L" collector="TL1" oid="L2CP-L" type="COUNTER"/>
+      <value parameter="L2CP-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive INUNICAST" name="Gigabit-Ethernet-TL1 Lan Rx INUNICAST" parmType="" desc="Input Unicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INUNICAST" collector="TL1" oid="INUNICAST" type="COUNTER"/>
+      <value parameter="INUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Packets received" name="Gigabit-Ethernet lan-TL1 Rx Packets" parmType="ETH_RX_PACKETS" desc="Total number of packets received on this interface" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INUNICAST" collector="TL1" oid="INUNICAST" type="COUNTER"/>
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value rpn="INUNICAST,MCST-L,+,BCST-L,+"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Packets received per second" name="Gigabit-Ethernet lan-TL1 Rx Packets per second" parmType="ETH_RX_PPS" desc="Total number of packets received on this interface per second" protocol="TL1" units="pps" conversion-function="PER_SECOND" consolidation-function="AVG" displayType="lineSeries-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INUNICAST" collector="TL1" oid="INUNICAST" type="COUNTER"/>
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value rpn="INUNICAST,MCST-L,+,BCST-L,+"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive INNONUNICAST" name="Gigabit-Ethernet-TL1 Lan Rx INNONUNICAST" desc="Input non Unicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INNONUNICAST" collector="TL1" oid="INNONUNICAST" type="COUNTER"/>
+      <value parameter="INNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE64" name="Gigabit-Ethernet-TL1 Lan Rx SIZE64" parmType="" desc="64 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE64" collector="TL1" oid="SIZE64" type="COUNTER"/>
+      <value parameter="SIZE64"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE65-127" name="Gigabit-Ethernet-TL1 Lan Rx SIZE65-127" parmType="" desc="65-127 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE65-127" collector="TL1" oid="SIZE65-127" type="COUNTER"/>
+      <value parameter="SIZE65-127"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE128-255" name="Gigabit-Ethernet-TL1 Lan Rx SIZE128-255" parmType="" desc="128-255 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE128-255" collector="TL1" oid="SIZE128-255" type="COUNTER"/>
+      <value parameter="SIZE128-255"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE256-511" name="Gigabit-Ethernet-TL1 Lan Rx SIZE256-511" parmType="" desc="256-511 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE256-511" collector="TL1" oid="SIZE256-511" type="COUNTER"/>
+      <value parameter="SIZE256-511"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE512-1023" name="Gigabit-Ethernet-TL1 Lan Rx SIZE512-1023" parmType="" desc="512-1023 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE512-1023" collector="TL1" oid="SIZE512-1023" type="COUNTER"/>
+      <value parameter="SIZE512-1023"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE1024-1518" name="Gigabit-Ethernet-TL1 Lan Rx SIZE1024-1518" parmType="" desc="1024-1518 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE1024-1518" collector="TL1" oid="SIZE1024-1518" type="COUNTER"/>
+      <value parameter="SIZE1024-1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive OVER1518" name="Gigabit-Ethernet-TL1 Lan Rx OVER1518" parmType="" desc="Over 1518 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OVER1518" collector="TL1" oid="OVER1518" type="COUNTER"/>
+      <value parameter="OVER1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive TBYC-RX" name="Gigabit-Ethernet-TL1 Lan Rx TBYC-RX" parmType="" desc="Total Bytes Received" protocol="TL1" units="bytes" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TBYC-RX" collector="TL1" oid="TBYC-RX" type="COUNTER"/>
+      <value parameter="TBYC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive TFRC-RX" name="Gigabit-Ethernet-TL1 Lan Rx TFRC-RX" parmType="" desc="Total Frames Received" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFRC-RX" collector="TL1" oid="TFRC-RX" type="COUNTER"/>
+      <value parameter="TFRC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive BCST" name="Gigabit-Ethernet-TL1 Lan Rx BCST" parmType="" desc="Broadcast Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="BCST" collector="TL1" oid="BCST" type="COUNTER"/>
+      <value parameter="BCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive MCST" name="Gigabit-Ethernet-TL1 Lan Rx MCST" parmType="" desc="Multicast Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="MCST" collector="TL1" oid="MCST" type="COUNTER"/>
+      <value parameter="MCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive USIZE" name="Gigabit-Ethernet-TL1 Lan Rx USIZE" parmType="" desc="Undersize Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="USIZE" collector="TL1" oid="USIZE" type="COUNTER"/>
+      <value parameter="USIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive OSIZE" name="Gigabit-Ethernet-TL1 Lan Rx OSIZE" parmType="" desc="Oversize Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OSIZE" collector="TL1" oid="OSIZE" type="COUNTER"/>
+      <value parameter="OSIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive FRGT" name="Gigabit-Ethernet-TL1 Lan Rx FRGT" parmType="" desc="Fragmented Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FRGT" collector="TL1" oid="FRGT" type="COUNTER"/>
+      <value parameter="FRGT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive JABR" name="Gigabit-Ethernet-TL1 Lan Rx JABR" parmType="" desc="Jabber Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="JABR" collector="TL1" oid="JABR" type="COUNTER"/>
+      <value parameter="JABR"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan data.trmt" name="Gigabit-Ethernet-TL1 Tx Lan Data" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Transmit broadcast packets" name="Gigabit-Ethernet-TL1 Tx Broadcast Packets" parmType="" desc="Total number of Broadcast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value parameter="BCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit multicast packets" name="Gigabit-Ethernet-TL1 Tx Multicast Packets" parmType="" desc="Total number of Multicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <value parameter="MCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit OUTUNICAST" name="Gigabit-Ethernet-TL1 Lan Tx OUTUNICAST" parmType="" desc="Output Unicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OUTUNICAST" collector="TL1" oid="OUTUNICAST" type="COUNTER"/>
+      <value parameter="OUTUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Packets transmitted" name="Gigabit-Ethernet-TL1 Lan Tx Packets" parmType="ETH_TX_PACKETS" desc="Total number of packets transmitted on this interface" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OUTUNICAST" collector="TL1" oid="OUTUNICAST" type="COUNTER"/>
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value rpn="OUTUNICAST,MCST-L,+,BCST-L,+"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Packets transmitted per second" name="Gigabit-Ethernet-TL1 Lan Tx Packets per second" parmType="ETH_TX_PPS" desc="Total number of packets transmitted on this interface per second" protocol="TL1" units="pps" conversion-function="PER_SECOND" consolidation-function="AVG" displayType="lineSeries-hist" displayColor="BLUE" min="0">
+      <parameter name="OUTUNICAST" collector="TL1" oid="OUTUNICAST" type="COUNTER"/>
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value rpn="OUTUNICAST,MCST-L,+,BCST-L,+"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit OUTNONUNICAST" name="Gigabit-Ethernet-TL1 Lan Tx OUTNONUNICAST" desc="Output non Unicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OUTNONUNICAST" collector="TL1" oid="OUTNONUNICAST" type="COUNTER"/>
+      <value parameter="OUTNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit octets" name="Gigabit-Ethernet-TL1 Lan Tx Octets" parmType="" desc="Total number of Octets" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OCTETS-L" collector="TL1" oid="OCTETS-L" type="COUNTER"/>
+      <value parameter="OCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit good frames" name="Gigabit-Ethernet-TL1 Tx Good Frames" parmType="" desc="Total number of Good Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FR-L" collector="TL1" oid="FR-L" type="COUNTER"/>
+      <value parameter="FR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit good octets" name="Gigabit-Ethernet-TL1 Tx Good Octets" parmType="ETH_TX_BYTES" desc="Total number of Good Octets" protocol="TL1" units="Bytes" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <value parameter="GDOCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmitted average bits per second" name="Gigabit-Ethernet-TL1 Lan Tx Avg Bits Per Second" parmType="ETH_TX_BANDWIDTH" desc="Average bps transmitted on this interface" protocol="TL1" units="bps" conversion-function="PER_SECOND" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" displayType="lineSeries-hist" displayColor="BLUE" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <value rpn="GDOCTETS-L,8,*"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmitted average utilization" name="Gigabit-Ethernet-TL1 Lan Tx Avg Utilization" parmType="ETH_TX_UTILIZATION" desc="Average percent utilization transmitted on this interface" protocol="TL1" units="%" conversion-function="PER_SECOND" consolidation-function="AVG" location="NEAR_END" direction="TRANSMIT" displayType="lineSeries-hist" displayColor="BLUE" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <parameter name="speed" collector="OBJECT" oid="speed" type="GAUGE" indexed="true"/>
+      <value rpn="GDOCTETS-L,8,*,speed,/,100,*"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit L2CP" name="Gigabit-Ethernet-TL1 Lan Tx L2CP" parmType="" desc="Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="L2CP-L" collector="TL1" oid="L2CP-L" type="COUNTER"/>
+      <value parameter="L2CP-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan discards.rcv" name="Gigabit-Ethernet-TL1 Lan Rx Stats" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Receive discarded packets" name="Gigabit-Ethernet-TL1 Lan Rx Discarded Packets" parmType="ETH_RX_DISCARDS" desc="Good frames discarded due to lack of buffers–LAN" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DISC-L" collector="TL1" oid="DISC-L" type="COUNTER"/>
+      <value parameter="DISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive dropped packets" name="Gigabit-Ethernet-TL1 Lan Rx Dropped Packets" parmType="" desc="Dropped packets–LAN" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DROP-L" collector="TL1" oid="DROP-L" type="COUNTER"/>
+      <value parameter="DROP-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive errored seconds" name="Gigabit-Ethernet-TL1 Lan Rx ES-L" parmType="" desc="Errored Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ES-L" collector="TL1" oid="ES-L" type="COUNTER"/>
+      <value parameter="ES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.AE-L" name="Gigabit-Ethernet-TL1 Lan Rx AE-L" desc="Alignment Errors" parmType="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="AE-L" collector="TL1" oid="AE-L" type="COUNTER"/>
+      <value parameter="AE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive fcs errors" name="Gigabit-Ethernet-TL1 Lan Rx FCSE-L" parmType="" desc="Frame Check Sequence Errors" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FCSE-L" collector="TL1" oid="FCSE-L" type="COUNTER"/>
+      <value parameter="FCSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive fcs-rx errors" name="Gigabit-Ethernet-TL1 Lan Rx FCSE-RX" parmType="" desc="Frame Check Sequence Errors" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FCSE-RX" collector="TL1" oid="FCSE-RX" type="COUNTER"/>
+      <value parameter="FCSE-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive frdr errors" name="Gigabit-Ethernet-TL1 Lan Rx FRDR" parmType="" desc="Discarded Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FRDR" collector="TL1" oid="FRDR" type="COUNTER"/>
+      <value parameter="FRDR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive fragment errors" name="Gigabit-Ethernet-TL1 Lan Rx FRGT-L" parmType="" desc="Fragment packet Errors" protocol="TL1" units="fragments" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FRGT-L" collector="TL1" oid="FRGT-L" type="COUNTER"/>
+      <value parameter="FRGT-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive jabr errors" name="Gigabit-Ethernet-TL1 Lan Rx JABR-L" parmType="" desc="Counts the total number of packets received that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JABR-L" collector="TL1" oid="JABR-L" type="COUNTER"/>
+      <value parameter="JABR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive jabbers errors" name="Gigabit-Ethernet-TL1 Lan Rx JABBERS-L" desc="Counts the total number of packets received that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JABBERS-L" collector="TL1" oid="JABBERS-L" type="COUNTER"/>
+      <value parameter="JABBERS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.SBLE-L" name="Gigabit-Ethernet-TL1-Lan Rx SBLE-L" desc="LAN Stat Symbol Errors" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SBLE-L" collector="TL1" oid="SBLE-L" type="COUNTER" indexed="true"/>
+      <value parameter="SBLE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive jumbo packet discards" name="Gigabit-Ethernet-TL1 Lan Rx JUMBO-L" desc="Frames of size 1519 bytes or over for multiple frame size" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JUMBO-L" collector="TL1" oid="JUMBO-L" type="COUNTER"/>
+      <value parameter="JUMBO-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive oversize frames" name="Gigabit-Ethernet-TL1 Lan Rx OSIZE-L" desc="oversize frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OSIZE-L" collector="TL1" oid="OSIZE-L" type="COUNTER"/>
+      <value parameter="OSIZE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive undersize frames" name="Gigabit-Ethernet-TL1 Lan Rx USIZE-L" desc="oversize frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="USIZE-L" collector="TL1" oid="USIZE-L" type="COUNTER"/>
+      <value parameter="USIZE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive pause frames" name="Gigabit-Ethernet-TL1 Lan Rx PAUSE-L" desc="pause frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PAUSE-L" collector="TL1" oid="PAUSE-L" type="COUNTER"/>
+      <value parameter="PAUSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive inmace frames" name="Gigabit-Ethernet-TL1 Lan Rx INMACE-L" desc="internal MAC error frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INMACE-L" collector="TL1" oid="INMACE-L" type="COUNTER"/>
+      <value parameter="INMACE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive pausef frames" name="Gigabit-Ethernet-TL1 Lan Rx PAUSEF-L" desc="pause frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PAUSEF-L" collector="TL1" oid="PAUSEF-L" type="COUNTER"/>
+      <value parameter="PAUSEF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive packet violations" name="Gigabit-Ethernet-TL1 Lan Rx PV-L" desc="packet violations" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PV-L" collector="TL1" oid="PV-L" type="COUNTER"/>
+      <value parameter="PV-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive severely errored frames" name="Gigabit-Ethernet-TL1 Lan Rx SES-L" desc="severely errored frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SES-L" collector="TL1" oid="SES-L" type="COUNTER"/>
+      <value parameter="SES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive UAS-L" name="Gigabit-Ethernet-TL1 Lan Rx UAS-L" desc="unavailable seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="UAS-L" collector="TL1" oid="UAS-L" type="COUNTER"/>
+      <value parameter="UAS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive L2CPDISC" name="Gigabit-Ethernet-TL1 Lan Rx L2CPDISC" desc="Discarded Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="L2CPDISC-L" collector="TL1" oid="L2CPDISC-L" type="COUNTER"/>
+      <value parameter="L2CPDISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive FTLE" name="Gigabit-Ethernet-TL1 Lan Rx FTLE" desc="Frame Too Long Errors–LAN" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTLE-L" collector="TL1" oid="FTLE-L" type="COUNTER"/>
+      <value parameter="FTLE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive FTSE" name="Gigabit-Ethernet-TL1 Lan Rx FTSE" desc="Frame Too Short Errors–LAN" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTSE-L" collector="TL1" oid="FTSE-L" type="COUNTER"/>
+      <value parameter="FTSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCF-P" name="Gigabit-Ethernet-TL1-Lan Rx TCF-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCF-P" collector="TL1" oid="TCF-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCF-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCFCC-P" name="Gigabit-Ethernet-TL1-Lan Rx TCFCC-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCFCC-P" collector="TL1" oid="TCFCC-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCFCC-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCFEE-P" name="Gigabit-Ethernet-TL1-Lan Rx TCFEE-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCFEE-P" collector="TL1" oid="TCFEE-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCFEE-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TDNCF-P" name="Gigabit-Ethernet-TL1-Lan Rx TDNCF-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TDNCF-P" collector="TL1" oid="TDNCF-P" type="COUNTER" indexed="true"/>
+      <value parameter="TDNCF-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TDFBUFOVER-P" name="Gigabit-Ethernet-TL1-Lan Rx TDFBUFOVER-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TDFBUFOVER-P" collector="TL1" oid="TDFBUFOVER-P" type="COUNTER" indexed="true"/>
+      <value parameter="TDFBUFOVER-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCOCT-P" name="Gigabit-Ethernet-TL1-Lan Rx TCOCT-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCOCT-P" collector="TL1" oid="TCOCT-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCOCT-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TNCOCT-P" name="Gigabit-Ethernet-TL1-Lan Rx TNCOCT-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TNCOCT-P" collector="TL1" oid="TNCOCT-P" type="COUNTER" indexed="true"/>
+      <value parameter="TNCOCT-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TDF-P" name="Gigabit-Ethernet-TL1-Lan Rx TDF-P" desc="" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TDF-P" collector="TL1" oid="TDF-P" type="COUNTER" indexed="true"/>
+      <value parameter="TDF-P"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan discards.trmt" name="Gigabit-Ethernet-TL1 Lan Tx Stats" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Transmit discarded packets" name="Gigabit-Ethernet-TL1 Tx Discarded Packets" parmType="ETH_TX_DISCARDS" desc="Good frames discarded due to lack of buffers–LAN" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DISC-L" collector="TL1" oid="DISC-L" type="COUNTER"/>
+      <value parameter="DISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit dropped packets" name="Gigabit-Ethernet-TL1 Lan Tx Dropped Packets" desc="Dropped packets–LAN" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DROP-L" collector="TL1" oid="DROP-L" type="COUNTER"/>
+      <value parameter="DROP-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit errored seconds" name="Gigabit-Ethernet-TL1 Tx ES-L" desc="Errored Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="ES-L" collector="TL1" oid="ES-L" type="COUNTER"/>
+      <value parameter="ES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit fragment errors" name="Gigabit-Ethernet-TL1 Tx FRGT-L" desc="Fragment packet Errors" protocol="TL1" units="fragments" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FRGT-L" collector="TL1" oid="FRGT-L" type="COUNTER"/>
+      <value parameter="FRGT-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit jumbo packet discards" name="Gigabit-Ethernet-TL1 Tx JUMBO-L" desc="Frames of size 1519 bytes or over for multiple frame size" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="JUMBO-L" collector="TL1" oid="JUMBO-L" type="COUNTER"/>
+      <value parameter="JUMBO-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit packet violations" name="Gigabit-Ethernet-TL1 Tx PV-L" desc="packet violations" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PV-L" collector="TL1" oid="PV-L" type="COUNTER"/>
+      <value parameter="PV-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit severely errored frames" name="Gigabit-Ethernet-TL1 Tx SES-L" desc="severely errored frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SES-L" collector="TL1" oid="SES-L" type="COUNTER"/>
+      <value parameter="SES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit UAS-L" name="Gigabit-Ethernet-TL1 Tx UAS-L" desc="unavailable seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="UAS-L" collector="TL1" oid="UAS-L" type="COUNTER"/>
+      <value parameter="UAS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit undersize frames" name="Gigabit-Ethernet-TL1 Tx USIZE-L" desc="oversize frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="USIZE-L" collector="TL1" oid="USIZE-L" type="COUNTER"/>
+      <value parameter="USIZE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit L2CPDISC" name="Gigabit-Ethernet-TL1 Lan Tx L2CPDISC" desc="Discarded Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="L2CPDISC-L" collector="TL1" oid="L2CPDISC-L" type="COUNTER"/>
+      <value parameter="L2CPDISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit pause frames" name="Gigabit-Ethernet-TL1 Lan Tx PAUSE-L" desc="pause frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PAUSE-L" collector="TL1" oid="PAUSE-L" type="COUNTER"/>
+      <value parameter="PAUSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit inmace frames" name="Gigabit-Ethernet-TL1 Lan Tx INMACE-L" desc="internal MAC error frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="INMACE-L" collector="TL1" oid="INMACE-L" type="COUNTER"/>
+      <value parameter="INMACE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit pausef frames" name="Gigabit-Ethernet-TL1 Lan Tx PAUSEF-L" desc="pause frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PAUSEF-L" collector="TL1" oid="PAUSEF-L" type="COUNTER"/>
+      <value parameter="PAUSEF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit jabr errors" name="Gigabit-Ethernet-TL1 Lan Tx JABR-L" desc="Counts the total number of packets transmitted that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="JABR-L" collector="TL1" oid="JABR-L" type="COUNTER"/>
+      <value parameter="JABR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit jabbers errors" name="Gigabit-Ethernet-TL1 Lan Tx JABBERS-L" desc="Counts the total number of packets transmitted that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="JABBERS-L" collector="TL1" oid="JABBERS-L" type="COUNTER"/>
+      <value parameter="JABBERS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.SCF-L" name="Gigabit-Ethernet-TL1-Lan Tx SCF-L" desc="LAN Single Collision Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SCF-L" collector="TL1" oid="SCF-L" type="COUNTER" indexed="true"/>
+      <value parameter="SCF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.MCF-L" name="Gigabit-Ethernet-TL1-Lan Tx MCF-L" desc="LAN Multiple Collision Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="MCF-L" collector="TL1" oid="MCF-L" type="COUNTER" indexed="true"/>
+      <value parameter="MCF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.LC-L" name="Gigabit-Ethernet-TL1-Lan Tx LC-L" desc="LAN Late Collisions" protocol="TL1" units="collisions" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="LC-L" collector="TL1" oid="LC-L" type="COUNTER" indexed="true"/>
+      <value parameter="LC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.EC-L" name="Gigabit-Ethernet-TL1-Lan Tx EC-L" desc="LAN Excessive Collisions" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="EC-L" collector="TL1" oid="EC-L" type="COUNTER" indexed="true"/>
+      <value parameter="EC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.DTX-L" name="Gigabit-Ethernet-TL1-Lan Tx DTX-L" desc="LAN Deferred Transmission" protocol="TL1" units="messages" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DTX-L" collector="TL1" oid="DTX-L" type="COUNTER" indexed="true"/>
+      <value parameter="DTX-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-octets.trmt" name="Gigabit-Ethernet-TL1 Tx Variable Octets" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIXE64-L" name="Gigabit-Ethernet-TL1 Tx SIXE64-L" desc="64-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIXE64-L" collector="TL1" oid="SIXE64-L" type="COUNTER"/>
+      <value parameter="SIXE64-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE65-127-L" name="Gigabit-Ethernet-TL1 Tx SIZE65-127-L" desc="65- to 127-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE65-127-L" collector="TL1" oid="SIZE65-127-L" type="COUNTER"/>
+      <value parameter="SIZE65-127-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE128-255-L" name="Gigabit-Ethernet-TL1 Tx SIZE128-255-L" desc="128- to 255-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE128-255-L" collector="TL1" oid="SIZE128-255-L" type="COUNTER"/>
+      <value parameter="SIZE128-255-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE256-511-L" name="Gigabit-Ethernet-TL1 Tx SIZE256-511-L" desc="256- to 511-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE256-511-L" collector="TL1" oid="SIZE256-511-L" type="COUNTER"/>
+      <value parameter="SIZE256-511-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE512-1023-L" name="Gigabit-Ethernet-TL1 Tx SIZE512-1023-L" desc="512- to 1023-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE512-1023-L" collector="TL1" oid="SIZE512-1023-L" type="COUNTER"/>
+      <value parameter="SIZE512-1023-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE1024-1518-L" name="Gigabit-Ethernet-TL1 Tx SIZE1024-1518-L" desc="1024- to 1518-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE1024-1518-L" collector="TL1" oid="SIZE1024-1518-L" type="COUNTER"/>
+      <value parameter="SIZE1024-1518-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-octets.rcv" name="Gigabit-Ethernet-TL1 Rx Variable Octets" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIXE64-L" name="Gigabit-Ethernet-TL1 Rx SIXE64-L" desc="64-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIXE64-L" collector="TL1" oid="SIXE64-L" type="COUNTER"/>
+      <value parameter="SIXE64-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE65-127-L" name="Gigabit-Ethernet-TL1 Rx SIZE65-127-L" desc="65- to 127-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE65-127-L" collector="TL1" oid="SIZE65-127-L" type="COUNTER"/>
+      <value parameter="SIZE65-127-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE128-255-L" name="Gigabit-Ethernet-TL1 Rx SIZE128-255-L" desc="128- to 255-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE128-255-L" collector="TL1" oid="SIZE128-255-L" type="COUNTER"/>
+      <value parameter="SIZE128-255-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE256-511-L" name="Gigabit-Ethernet-TL1 Rx SIZE256-511-L" desc="256- to 511-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE256-511-L" collector="TL1" oid="SIZE256-511-L" type="COUNTER"/>
+      <value parameter="SIZE256-511-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE512-1023-L" name="Gigabit-Ethernet-TL1 Rx SIZE512-1023-L" desc="512- to 1023-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE512-1023-L" collector="TL1" oid="SIZE512-1023-L" type="COUNTER"/>
+      <value parameter="SIZE512-1023-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE1024-1518-L" name="Gigabit-Ethernet-TL1 Rx SIZE1024-1518-L" desc="1024- to 1518-octet packets–LAN" protocol="TL1" units="octets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE1024-1518-L" collector="TL1" oid="SIZE1024-1518-L" type="COUNTER"/>
+      <value parameter="SIZE1024-1518-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan stats.rcv" name="Gigabit-Ethernet-TL1 Wan Rx Stats" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan.Receive cmf" name="Gigabit-Ethernet-TL1-Wan Rx CMF-W" desc="Client Management Frames–WAN" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="CMF-W" collector="TL1" oid="CMF-W" type="COUNTER"/>
+      <value parameter="CMF-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive frames" name="Gigabit-Ethernet-TL1-Wan Rx FR-W" desc="Frames received" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FR-W" collector="TL1" oid="FR-W" type="COUNTER"/>
+      <value parameter="FR-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive packet violations" name="Gigabit-Ethernet-TL1-Wan Rx PV-W" desc="Packet violations" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PV-W" collector="TL1" oid="PV-W" type="COUNTER"/>
+      <value parameter="PV-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.receive oversize frames" name="Gigabit-Ethernet-TL1 Wan Rx OSIZE-W" desc="oversize frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OSIZE-W" collector="TL1" oid="OSIZE-W" type="COUNTER"/>
+      <value parameter="OSIZE-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan stats.trmt" name="Gigabit-Ethernet-TL1 Wan Tx Stats" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan.Transmit cmf" name="Gigabit-Ethernet-TL1-Wan Tx CMF-W" desc="Client Management Frames–WAN" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="CMF-W" collector="TL1" oid="CMF-W" type="COUNTER"/>
+      <value parameter="CMF-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit frames" name="Gigabit-Ethernet-TL1-Wan Tx FR-W" desc="Frames transmitted" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FR-W" collector="TL1" oid="FR-W" type="COUNTER"/>
+      <value parameter="FR-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit packet violations" name="Gigabit-Ethernet-TL1-Wan Tx PV-W" desc="Packet violations" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PV-W" collector="TL1" oid="PV-W" type="COUNTER"/>
+      <value parameter="PV-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit oversize frames" name="Gigabit-Ethernet-TL1 Lan Tx OSIZE-W" desc="oversize frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OSIZE-W" collector="TL1" oid="OSIZE-W" type="COUNTER"/>
+      <value parameter="OSIZE-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan errors" name="Gigabit-Ethernet-TL1 Wan Errors" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan.Receive errored seconds" name="Gigabit-Ethernet-TL1-Wan Rx ES-W" desc="Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ES-W" collector="TL1" oid="ES-W" type="COUNTER"/>
+      <value parameter="ES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit errored seconds" name="Gigabit-Ethernet-TL1-Wan tx ES-W" desc="Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ES-W" collector="TL1" oid="ES-W" type="COUNTER"/>
+      <value parameter="ES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive protocol errored seconds" name="Gigabit-Ethernet-TL1-Wan Rx PTCOLES-W" desc="Protocol Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PTCOLES-W" collector="TL1" oid="PTCOLES-W" type="COUNTER"/>
+      <value parameter="PTCOLES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive severely errored seconds" name="Gigabit-Ethernet-TL1-Wan Rx SES-W" desc="Severely Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SES-W" collector="TL1" oid="SES-W" type="COUNTER"/>
+      <value parameter="SES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit severely errored seconds" name="Gigabit-Ethernet-TL1-Wan Tx SES-W" desc="Severely Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SES-W" collector="TL1" oid="SES-W" type="COUNTER"/>
+      <value parameter="SES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive unavailable seconds" name="Gigabit-Ethernet-TL1-Wan Rx UAS-W" desc="Unavailable Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="UAS-W" collector="TL1" oid="UAS-W" type="COUNTER"/>
+      <value parameter="UAS-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit unavailable seconds" name="Gigabit-Ethernet-TL1-Wan Tx UAS-W" desc="Unavailable Seconds–WAN" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="UAS-W" collector="TL1" oid="UAS-W" type="COUNTER"/>
+      <value parameter="UAS-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan Discards" name="Gigabit-Ethernet-TL1 Wan Discards" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-wan.Rx discarded packets" name="Gigabit-Ethernet-TL1 WAN Rx Discarded Packets" desc="Good frames discarded due to lack of buffers" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DISC-W" collector="TL1" oid="DISC-W" type="COUNTER"/>
+      <value parameter="DISC-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Tx discarded packets" name="Gigabit-Ethernet-TL1 WAN Tx Discarded Packets" desc="Good frames discarded due to lack of buffers" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DISC-W" collector="TL1" oid="DISC-W" type="COUNTER"/>
+      <value parameter="DISC-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-loam.rcv" name="Gigabit-Ethernet-TL1 Rx Loam" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-loam.RECEIVE FRDROP" name="Gigabit-Ethernet-TL1-Loam Rx FRDROP" desc="Unsupported received LOAMPDU frames dropped" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FRDROP" collector="TL1" oid="FRDROP" type="COUNTER"/>
+      <value parameter="FRDROP"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.RECEIVE INFOPDU" name="Gigabit-Ethernet-TL1-Loam Rx INFOPDU" desc="Number of received with OAM information code" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INFOPDU" collector="TL1" oid="INFOPDU" type="COUNTER"/>
+      <value parameter="INFOPDU"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.RECEIVE LPBKPDU" name="Gigabit-Ethernet-TL1-Loam Rx LPBKPDU" desc="Number of loopback control code OAMDU received (and passed to the OAM layer)" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="LPBKPDU" collector="TL1" oid="LPBKPDU" type="COUNTER"/>
+      <value parameter="LPBKPDU"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-loam.trmt" name="Gigabit-Ethernet-TL1 Tx  Loam" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-loam.TRANSMIT FRDROP" name="Gigabit-Ethernet-TL1-Loam Tx  FRDROP" desc="Unsupported transmitted LOAMPDU frames dropped" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FRDROP" collector="TL1" oid="FRDROP" type="COUNTER"/>
+      <value parameter="FRDROP"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.TRANSMIT INFOPDU" name="Gigabit-Ethernet-TL1-Loam Tx  INFOPDU" desc="Number of transmitted with OAM information code" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="INFOPDU" collector="TL1" oid="INFOPDU" type="COUNTER"/>
+      <value parameter="INFOPDU"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.TRANSMIT LPBKPDU" name="Gigabit-Ethernet-TL1-Loam Tx  LPBKPDU" desc="Number of loopback control code OAMDU transmitted (and passed to the OAM layer)" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="LPBKPDU" collector="TL1" oid="LPBKPDU" type="COUNTER"/>
+      <value parameter="LPBKPDU"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan stats.na" name="Gigabit-Ethernet-TL1 Wan Rx NA Stats" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WINFR" name="Gigabit-Ethernet-TL1-Wan Na WINFR" desc="WAN Input Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WINFR" collector="TL1" oid="WINFR" type="COUNTER" indexed="true"/>
+      <value parameter="WINFR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WINERR" name="Gigabit-Ethernet-TL1-Wan Na WINERR" desc="WAN Input Frames with Errors" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WINERR" collector="TL1" oid="WINERR" type="COUNTER" indexed="true"/>
+      <value parameter="WINERR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WOVERSIZE" name="Gigabit-Ethernet-TL1-Wan Na WOVERSIZE" desc="WAN Oversize Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WOVERSIZE" collector="TL1" oid="WOVERSIZE" type="COUNTER" indexed="true"/>
+      <value parameter="WOVERSIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WOUTFR" name="Gigabit-Ethernet-TL1-Wan Na WOUTFR" desc="WAN Output Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WOUTFR" collector="TL1" oid="WOUTFR" type="COUNTER" indexed="true"/>
+      <value parameter="WOUTFR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WINJMB" name="Gigabit-Ethernet-TL1-Wan Na WINJMB" desc="WAN Input Jumbo Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WINJMB" collector="TL1" oid="WINJMB" type="COUNTER" indexed="true"/>
+      <value parameter="WINJMB"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WOUTJMB" name="Gigabit-Ethernet-TL1-Wan Na WOUTJMB" desc="WAN Output Jumbo Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WOUTJMB" collector="TL1" oid="WOUTJMB" type="COUNTER" indexed="true"/>
+      <value parameter="WOUTJMB"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.BWCHGSEC" name="Gigabit-Ethernet-TL1-Wan Na BWCHGSEC" desc="Bandwidth Change Seconds" protocol="TL1" units="seconds" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="BWCHGSEC" collector="TL1" oid="BWCHGSEC" type="COUNTER" indexed="true"/>
+      <value parameter="BWCHGSEC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.na oversize frames" name="Gigabit-Ethernet-TL1 Lan NA OSIZE-W" desc="oversize frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OSIZE-W" collector="TL1" oid="OSIZE-W" type="COUNTER"/>
+      <value parameter="OSIZE-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan stats.na" name="Gigabit-Ethernet-TL1 Lan Rx NA Stats" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan stats.na.AE" name="Gigabit-Ethernet-TL1-Lan Na AE" desc="LAN Alignment Errors" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="AE" collector="TL1" oid="AE" type="COUNTER" indexed="true"/>
+      <value parameter="AE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FCSE" name="Gigabit-Ethernet-TL1-Lan Na FCSE" desc="LAN Frame Check Sequence Errors" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FCSE" collector="TL1" oid="FCSE" type="COUNTER" indexed="true"/>
+      <value parameter="FCSE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FTLE" name="Gigabit-Ethernet-TL1-Lan Na FTLE" desc="LAN Frame Too Long Errors" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTLE" collector="TL1" oid="FTLE" type="COUNTER" indexed="true"/>
+      <value parameter="FTLE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SBLE" name="Gigabit-Ethernet-TL1-Lan Na SBLE" desc="LAN Stat Symbol Errors" protocol="TL1" units="errors" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SBLE" collector="TL1" oid="SBLE" type="COUNTER" indexed="true"/>
+      <value parameter="SBLE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INRXMACE" name="Gigabit-Ethernet-TL1-Lan Na INRXMACE" desc="LAN Internal MAC Receive Errors" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INRXMACE" collector="TL1" oid="INRXMACE" type="COUNTER" indexed="true"/>
+      <value parameter="INRXMACE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INTXMACE" name="Gigabit-Ethernet-TL1-Lan Na INTXMACE" desc="LAN Internal MAC Receive Errors" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INTXMACE" collector="TL1" oid="INTXMACE" type="COUNTER" indexed="true"/>
+      <value parameter="INTXMACE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SCF" name="Gigabit-Ethernet-TL1-Lan Na SCF" desc="LAN Single Collision Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SCF" collector="TL1" oid="SCF" type="COUNTER" indexed="true"/>
+      <value parameter="SCF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.MCF" name="Gigabit-Ethernet-TL1-Lan Na MCF" desc="LAN Multiple Collision Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="MCF" collector="TL1" oid="MCF" type="COUNTER" indexed="true"/>
+      <value parameter="MCF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SQETST" name="Gigabit-Ethernet-TL1-Lan Na SQETST" desc="LAN Signal Quality Error Test" protocol="TL1" units="messages" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SQETST" collector="TL1" oid="SQETST" type="COUNTER" indexed="true"/>
+      <value parameter="SQETST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.DTX" name="Gigabit-Ethernet-TL1-Lan Na DTX" desc="LAN Deferred Transmission" protocol="TL1" units="messages" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DTX" collector="TL1" oid="DTX" type="COUNTER" indexed="true"/>
+      <value parameter="DTX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.LC" name="Gigabit-Ethernet-TL1-Lan Na LC" desc="LAN Late Collisions" protocol="TL1" units="collisions" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="LC" collector="TL1" oid="LC" type="COUNTER" indexed="true"/>
+      <value parameter="LC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.EC" name="Gigabit-Ethernet-TL1-Lan Na EC" desc="LAN Excessive Collisions" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="EC" collector="TL1" oid="EC" type="COUNTER" indexed="true"/>
+      <value parameter="EC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.CRE" name="Gigabit-Ethernet-TL1-Lan Na CRE" desc="LAN Cluster Runtime Environment" protocol="TL1" units="attempts" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="CRE" collector="TL1" oid="CRE" type="COUNTER" indexed="true"/>
+      <value parameter="CRE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.IPAUSEF" name="Gigabit-Ethernet-TL1-Lan Na IPAUSEF" desc="LAN Paused Frames Received" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="IPAUSEF" collector="TL1" oid="IPAUSEF" type="COUNTER" indexed="true"/>
+      <value parameter="IPAUSEF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OPAUSEF" name="Gigabit-Ethernet-TL1-Lan Na OPAUSEF" desc="LAN Paused Frames Transmitted" protocol="TL1" units="attempts" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OPAUSEF" collector="TL1" oid="OPAUSEF" type="COUNTER" indexed="true"/>
+      <value parameter="OPAUSEF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INJUMBO" name="Gigabit-Ethernet-TL1-Lan Na INJUMBO" desc="LAN Jumbo Frames Received" protocol="TL1" units="attempts" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INJUMBO" collector="TL1" oid="INJUMBO" type="COUNTER" indexed="true"/>
+      <value parameter="INJUMBO"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTJUMBO" name="Gigabit-Ethernet-TL1-Lan Na OUTJUMBO" desc="LAN Jumbo Frames Transmitted" protocol="TL1" units="attempts" conversion-function="NONE" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTJUMBO" collector="TL1" oid="OUTJUMBO" type="COUNTER" indexed="true"/>
+      <value parameter="OUTJUMBO"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVMSPKT" name="Gigabit-Ethernet-TL1 Lan Na RCVMSPKT" desc="Total number of packets droppted due to lack of resources" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVMSPKT" collector="TL1" oid="RCVMSPKT" type="COUNTER"/>
+      <value parameter="RCVMSPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVBCPKT" name="Gigabit-Ethernet-TL1 Lan Na RCVBCPKT" desc="Total number of Broadcast Packets Received" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVBCPKT" collector="TL1" oid="RCVBCPKT" type="COUNTER"/>
+      <value parameter="RCVBCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVMCPKT" name="Gigabit-Ethernet-TL1 Lan Na RCVMCPKT" desc="Total number of Multicast Packets Received" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVMCPKT" collector="TL1" oid="RCVMCPKT" type="COUNTER"/>
+      <value parameter="RCVMCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVOSPKT" name="Gigabit-Ethernet-TL1 Lan Na RCVOSPKT" desc="Number of packets greather than 1522 bytes" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVOSPKT" collector="TL1" oid="RCVOSPKT" type="COUNTER"/>
+      <value parameter="RCVOSPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVUCPKT" name="Gigabit-Ethernet-TL1 Lan Na RCVUCPKT" desc="Number of non multicast/broadcast packets " protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVUCPKT" collector="TL1" oid="RCVUCPKT" type="COUNTER"/>
+      <value parameter="RCVUCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVFCSERR" name="Gigabit-Ethernet-TL1 Lan Na RCVFCSERR" desc="Number of Number of FCS errors and no aligmnet errors" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVFCSERR" collector="TL1" oid="RCVFCSERR" type="COUNTER"/>
+      <value parameter="RCVFCSERR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTURPKT" name="Gigabit-Ethernet-TL1 Lan Na XMTURPKT" desc="Number of times a packet was not trasmitted due to lack of resources" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTURPKT" collector="TL1" oid="XMTURPKT" type="COUNTER"/>
+      <value parameter="XMTURPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTPKT" name="Gigabit-Ethernet-TL1 Lan Na XMTPKT" desc="Number of packets trasmitted" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTPKT" collector="TL1" oid="XMTPKT" type="COUNTER"/>
+      <value parameter="XMTPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTBCPKT" name="Gigabit-Ethernet-TL1 Lan Na XMTBCPKT" desc="Number of broadcast packets trasmitted" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTBCPKT" collector="TL1" oid="XMTBCPKT" type="COUNTER"/>
+      <value parameter="XMTBCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTPCPKT" name="Gigabit-Ethernet-TL1 Lan Na XMTPCPKT" desc="Total number of Broadcast Packets Transmitted" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTPCPKT" collector="TL1" oid="XMTPCPKT" type="COUNTER"/>
+      <value parameter="XMTPCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTMCPKT" name="Gigabit-Ethernet-TL1 Lan Na XMTMCPKT" desc="Total number of Multicast Packets Transmitted" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTMCPKT" collector="TL1" oid="XMTMCPKT" type="COUNTER"/>
+      <value parameter="XMTMCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTUCPKT" name="Gigabit-Ethernet-TL1 Lan Na XMTUCPKT" desc="Total number of Unicast Packets Transmitted" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTUCPKT" collector="TL1" oid="XMTUCPKT" type="COUNTER"/>
+      <value parameter="XMTUCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVUZPKT" name="Gigabit-Ethernet-TL1 Lan Na RCVUZPKT" desc="Number of undersized packets received" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVUZPKT" collector="TL1" oid="RCVUZPKT" type="COUNTER"/>
+      <value parameter="RCVUZPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVDRPPKTS" name="Gigabit-Ethernet-TL1 Lan Na RCVDRPPKTS" desc="Number of dropped packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVDRPPKTS" collector="TL1" oid="RCVDRPPKTS" type="COUNTER"/>
+      <value parameter="RCVDRPPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVPKTS" name="Gigabit-Ethernet-TL1 Lan Na RCVPKTS" desc="Number of received HDLC packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVPKTS" collector="TL1" oid="RCVPKTS" type="COUNTER"/>
+      <value parameter="RCVPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTPKTS" name="Gigabit-Ethernet-TL1 Lan Na XMTPKTS" desc="Number of transmitted HDLC packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTPKTS" collector="TL1" oid="XMTPKTS" type="COUNTER"/>
+      <value parameter="XMTPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.ERRPKTS" name="Gigabit-Ethernet-TL1 Lan Na ERRPKTS" desc="Number of received error packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ERRPKTS" collector="TL1" oid="ERRPKTS" type="COUNTER"/>
+      <value parameter="ERRPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTDRPPKTS" name="Gigabit-Ethernet-TL1 Lan Na XMTDRPPKTS" desc="Number of transmitted MAC packets dropped" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTDRPPKTS" collector="TL1" oid="XMTDRPPKTS" type="COUNTER"/>
+      <value parameter="XMTDRPPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FTSE" name="Gigabit-Ethernet-TL1 Lan Na FTSE" desc="Frame Too Short Errors" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTSE" collector="TL1" oid="FTSE" type="COUNTER"/>
+      <value parameter="FTSE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTFTLE" name="Gigabit-Ethernet-TL1 Lan Na OUTFTLE" desc="Frame Too Long Errors" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTFTLE" collector="TL1" oid="OUTFTLE" type="COUNTER"/>
+      <value parameter="OUTFTLE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.PRIERRSEC" name="Gigabit-Ethernet-TL1 Lan Na PRIERRSEC" desc="" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PRIERRSEC" collector="TL1" oid="PRIERRSEC" type="COUNTER"/>
+      <value parameter="PRIERRSEC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.JABBERS" name="Gigabit-Ethernet-TL1 Lan Na JABBERS" desc="Counts the total number of packets received that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JABBERS" collector="TL1" oid="JABBERS" type="COUNTER"/>
+      <value parameter="JABBERS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INUNICAST" name="Gigabit-Ethernet-TL1 Lan NA INUNICAST" desc="Input Unicast Packets" protocol="TL1" units="packets" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INUNICAST" collector="TL1" oid="INUNICAST" type="COUNTER"/>
+      <value parameter="INUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INNONUNICAST" name="Gigabit-Ethernet-TL1 Lan NA INNONUNICAST" desc="Input non Unicast Packets" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INNONUNICAST" collector="TL1" oid="INNONUNICAST" type="COUNTER"/>
+      <value parameter="INNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTUNICAST" name="Gigabit-Ethernet-TL1 Lan NA OUTUNICAST" desc="Output Unicast Packets" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTUNICAST" collector="TL1" oid="OUTUNICAST" type="COUNTER"/>
+      <value parameter="OUTUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTNONUNICAST" name="Gigabit-Ethernet-TL1 Lan NA OUTNONUNICAST" desc="Output non Unicast Packets" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTNONUNICAST" collector="TL1" oid="OUTNONUNICAST" type="COUNTER"/>
+      <value parameter="OUTNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE64" name="Gigabit-Ethernet-TL1 Lan NA SIZE64" parmType="" desc="64 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE64" collector="TL1" oid="SIZE64" type="COUNTER"/>
+      <value parameter="SIZE64"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE65-127" name="Gigabit-Ethernet-TL1 Lan NA SIZE65-127" parmType="" desc="65-127 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE65-127" collector="TL1" oid="SIZE65-127" type="COUNTER"/>
+      <value parameter="SIZE65-127"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE128-255" name="Gigabit-Ethernet-TL1 Lan NA SIZE128-255" parmType="" desc="128-255 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE128-255" collector="TL1" oid="SIZE128-255" type="COUNTER"/>
+      <value parameter="SIZE128-255"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE256-511" name="Gigabit-Ethernet-TL1 Lan NA SIZE256-511" parmType="" desc="256-511 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE256-511" collector="TL1" oid="SIZE256-511" type="COUNTER"/>
+      <value parameter="SIZE256-511"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE512-1023" name="Gigabit-Ethernet-TL1 Lan NA SIZE512-1023" parmType="" desc="512-1023 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE512-1023" collector="TL1" oid="SIZE512-1023" type="COUNTER"/>
+      <value parameter="SIZE512-1023"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE1024-1518" name="Gigabit-Ethernet-TL1 Lan NA SIZE1024-1518" parmType="" desc="1024-1518 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE1024-1518" collector="TL1" oid="SIZE1024-1518" type="COUNTER"/>
+      <value parameter="SIZE1024-1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OVER1518" name="Gigabit-Ethernet-TL1 Lan NA OVER1518" parmType="" desc="Over 1518 byte Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OVER1518" collector="TL1" oid="OVER1518" type="COUNTER"/>
+      <value parameter="OVER1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.TBYC-RX" name="Gigabit-Ethernet-TL1 Lan NA TBYC-RX" parmType="" desc="Total Bytes Received" protocol="TL1" units="bytes" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TBYC-RX" collector="TL1" oid="TBYC-RX" type="COUNTER"/>
+      <value parameter="TBYC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.TFRC-RX" name="Gigabit-Ethernet-TL1 Lan NA TFRC-RX" parmType="" desc="Total Frames Received" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFRC-RX" collector="TL1" oid="TFRC-RX" type="COUNTER"/>
+      <value parameter="TFRC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.BCST" name="Gigabit-Ethernet-TL1 Lan NA BCST" parmType="" desc="Broadcast Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="BCST" collector="TL1" oid="BCST" type="COUNTER"/>
+      <value parameter="BCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.MCST" name="Gigabit-Ethernet-TL1 Lan NA MCST" parmType="" desc="Multicast Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="MCST" collector="TL1" oid="MCST" type="COUNTER"/>
+      <value parameter="MCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.USIZE" name="Gigabit-Ethernet-TL1 Lan NA USIZE" parmType="" desc="Undersize Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="USIZE" collector="TL1" oid="USIZE" type="COUNTER"/>
+      <value parameter="USIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OSIZE" name="Gigabit-Ethernet-TL1 Lan NA OSIZE" parmType="" desc="Oversize Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OSIZE" collector="TL1" oid="OSIZE" type="COUNTER"/>
+      <value parameter="OSIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FRGT" name="Gigabit-Ethernet-TL1 Lan NA FRGT" parmType="" desc="Fragmented Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FRGT" collector="TL1" oid="FRGT" type="COUNTER"/>
+      <value parameter="FRGT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.JABR" name="Gigabit-Ethernet-TL1 Lan NA JABR" parmType="" desc="Jabber Frames" protocol="TL1" units="frames" conversion-function="NONE" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="JABR" collector="TL1" oid="JABR" type="COUNTER"/>
+      <value parameter="JABR"/>
+    </metric>
+  </metricGroup>
+  <!--==================================================================================================== -->
+  <!--     For Cumulative Counters, Creating separate metrics because of conversion function               -->
+  <!--==================================================================================================== -->
+  <metricGroup id="gigabit-ethernet-tl1-lan data.rcv-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Lan Data(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Receive broadcast packets-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Broadcast Packets(cumulative)" desc="Total number of Broadcast Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value parameter="BCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive multicast packets-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Multicast Packets(cumulative)" desc="Total number of Multicast Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <value parameter="MCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive octets-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Octets(cumulative)" desc="Total number of Octets" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OCTETS-L" collector="TL1" oid="OCTETS-L" type="COUNTER"/>
+      <value parameter="OCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive good frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Good Frames(cumulative)" desc="Total number of Good Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FR-L" collector="TL1" oid="FR-L" type="COUNTER"/>
+      <value parameter="FR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive good octets-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Good Octets(cumulative)" desc="Total number of Good Octets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <value parameter="GDOCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive L2CP-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx L2CP(cumulative)" desc="Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="L2CP-L" collector="TL1" oid="L2CP-L" type="COUNTER"/>
+      <value parameter="L2CP-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive INUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx INUNICAST(cumulative)" desc="Input Unicast Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INUNICAST" collector="TL1" oid="INUNICAST" type="COUNTER"/>
+      <value parameter="INUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive INNONUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx INNONUNICAST(cumulative)" desc="Input non Unicast Packets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INNONUNICAST" collector="TL1" oid="INNONUNICAST" type="COUNTER"/>
+      <value parameter="INNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive OUTUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx OUTUNICAST(cumulative)" desc="Output Unicast Packets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTUNICAST" collector="TL1" oid="OUTUNICAST" type="COUNTER"/>
+      <value parameter="OUTUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive OUTNONUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx OUTNONUNICAST(cumulative)" desc="Output non Unicast Packets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTNONUNICAST" collector="TL1" oid="OUTNONUNICAST" type="COUNTER"/>
+      <value parameter="OUTNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE64-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SIZE64(cumulative)" parmType="" desc="64 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE64" collector="TL1" oid="SIZE64" type="COUNTER"/>
+      <value parameter="SIZE64"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE65-127-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SIZE65-127(cumulative)" parmType="" desc="65-127 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE65-127" collector="TL1" oid="SIZE65-127" type="COUNTER"/>
+      <value parameter="SIZE65-127"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE128-255-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SIZE128-255(cumulative)" parmType="" desc="128-255 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE128-255" collector="TL1" oid="SIZE128-255" type="COUNTER"/>
+      <value parameter="SIZE128-255"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE256-511-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SIZE256-511(cumulative)" parmType="" desc="256-511 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE256-511" collector="TL1" oid="SIZE256-511" type="COUNTER"/>
+      <value parameter="SIZE256-511"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE512-1023-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SIZE512-1023(cumulative)" parmType="" desc="512-1023 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE512-1023" collector="TL1" oid="SIZE512-1023" type="COUNTER"/>
+      <value parameter="SIZE512-1023"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive SIZE1024-1518-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SIZE1024-1518(cumulative)" parmType="" desc="1024-1518 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE1024-1518" collector="TL1" oid="SIZE1024-1518" type="COUNTER"/>
+      <value parameter="SIZE1024-1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive OVER1518-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx OVER1518(cumulative)" parmType="" desc="Over 1518 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OVER1518" collector="TL1" oid="OVER1518" type="COUNTER"/>
+      <value parameter="OVER1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive TBYC-RX-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx TBYC-RX(cumulative)" parmType="" desc="Total Bytes Received" protocol="TL1" units="bytes" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TBYC-RX" collector="TL1" oid="TBYC-RX" type="COUNTER"/>
+      <value parameter="TBYC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive TFRC-RX-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx TFRC-RX(cumulative)" parmType="" desc="Total Frames Received" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFRC-RX" collector="TL1" oid="TFRC-RX" type="COUNTER"/>
+      <value parameter="TFRC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive BCST-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx BCST(cumulative)" parmType="" desc="Broadcast Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="BCST" collector="TL1" oid="BCST" type="COUNTER"/>
+      <value parameter="BCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive MCST-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx MCST(cumulative)" parmType="" desc="Multicast Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="MCST" collector="TL1" oid="MCST" type="COUNTER"/>
+      <value parameter="MCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive USIZE-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx USIZE(cumulative)" parmType="" desc="Undersize Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="USIZE" collector="TL1" oid="USIZE" type="COUNTER"/>
+      <value parameter="USIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive OSIZE-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx OSIZE(cumulative)" parmType="" desc="Oversize Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OSIZE" collector="TL1" oid="OSIZE" type="COUNTER"/>
+      <value parameter="OSIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive FRGT-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FRGT(cumulative)" parmType="" desc="Fragmented Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FRGT" collector="TL1" oid="FRGT" type="COUNTER"/>
+      <value parameter="FRGT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive JABR-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx JABR(cumulative)" parmType="" desc="Jabber Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="JABR" collector="TL1" oid="JABR" type="COUNTER"/>
+      <value parameter="JABR"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan data.trmt-cumulative" name="Gigabit-Ethernet-TL1 Tx Lan Data(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Transmit broadcast packets-cumulative" name="Gigabit-Ethernet-TL1 Tx Broadcast Packets(cumulative)" desc="Total number of Broadcast Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="BCST-L" collector="TL1" oid="BCST-L" type="COUNTER"/>
+      <value parameter="BCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit multicast packets-cumulative" name="Gigabit-Ethernet-TL1 Tx Multicast Packets(cumulative)" desc="Total number of Multicast Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="MCST-L" collector="TL1" oid="MCST-L" type="COUNTER"/>
+      <value parameter="MCST-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit octets-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx Octets(cumulative)" desc="Total number of Octets" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OCTETS-L" collector="TL1" oid="OCTETS-L" type="COUNTER"/>
+      <value parameter="OCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit good frames-cumulative" name="Gigabit-Ethernet-TL1 Tx Good Frames(cumulative)" desc="Total number of Good Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FR-L" collector="TL1" oid="FR-L" type="COUNTER"/>
+      <value parameter="FR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit good octets-cumulative" name="Gigabit-Ethernet-TL1 Tx Good Octets(cumulative)" desc="Total number of Good Octets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="GDOCTETS-L" collector="TL1" oid="GDOCTETS-L" type="COUNTER"/>
+      <value parameter="GDOCTETS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit L2CP-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx L2CP(cumulative)" desc="Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="L2CP-L" collector="TL1" oid="L2CP-L" type="COUNTER"/>
+      <value parameter="L2CP-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan discards.rcv-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Lan discards(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Receive discarded packets-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Discarded Packets(cumulative)" desc="Good frames discarded due to lack of buffers–LAN" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DISC-L" collector="TL1" oid="DISC-L" type="COUNTER"/>
+      <value parameter="DISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Receive dropped packets-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx Dropped Packets(cumulative)" desc="Dropped packets–LAN" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DROP-L" collector="TL1" oid="DROP-L" type="COUNTER"/>
+      <value parameter="DROP-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive errored seconds-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx ES-L(cumulative)" desc="Errored Seconds" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ES-L" collector="TL1" oid="ES-L" type="COUNTER"/>
+      <value parameter="ES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.AE-L-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx AE-L(cumulative)" desc="Alignment Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="AE-L" collector="TL1" oid="AE-L" type="COUNTER"/>
+      <value parameter="AE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive fcs errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FCSE-L(cumulative)" desc="Frame Check Sequence Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FCSE-L" collector="TL1" oid="FCSE-L" type="COUNTER"/>
+      <value parameter="FCSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive fcs-rx errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FCSE-RX(cumulative)" desc="Frame Check Sequence Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FCSE-RX" collector="TL1" oid="FCSE-RX" type="COUNTER"/>
+      <value parameter="FCSE-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive frdr errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FRDR(cumulative)" desc="Discarded Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FRDR" collector="TL1" oid="FRDR" type="COUNTER"/>
+      <value parameter="FRDR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive fragment errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FRGT-L(cumulative)" desc="Fragment packet Errors" protocol="TL1" units="fragments" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FRGT-L" collector="TL1" oid="FRGT-L" type="COUNTER"/>
+      <value parameter="FRGT-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive jabr errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx JABR-L(cumulative)" desc="Counts the total number of packets received that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JABR-L" collector="TL1" oid="JABR-L" type="COUNTER"/>
+      <value parameter="JABR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive jabbers errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx JABBERS-L(cumulative)" desc="Counts the total number of packets received that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JABBERS-L" collector="TL1" oid="JABBERS-L" type="COUNTER"/>
+      <value parameter="JABBERS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.SBLE-L-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx SBLE-L(cumulative)" desc="LAN Stat Symbol Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SBLE-L" collector="TL1" oid="SBLE-L" type="COUNTER" indexed="true"/>
+      <value parameter="SBLE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive jumbo packet discards-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx JUMBO-L(cumulative)" desc="Frames of size 1519 bytes or over for multiple frame size" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JUMBO-L" collector="TL1" oid="JUMBO-L" type="COUNTER"/>
+      <value parameter="JUMBO-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive oversize frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx OSIZE-L(cumulative)" desc="oversize frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OSIZE-L" collector="TL1" oid="OSIZE-L" type="COUNTER"/>
+      <value parameter="OSIZE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive undersize frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx USIZE-L(cumulative)" desc="oversize frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="USIZE-L" collector="TL1" oid="USIZE-L" type="COUNTER"/>
+      <value parameter="USIZE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive pause frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx PAUSE-L(cumulative)" desc="pause frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PAUSE-L" collector="TL1" oid="PAUSE-L" type="COUNTER"/>
+      <value parameter="PAUSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive inmace frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx INMACE-L(cumulative)" desc="internal MAC error frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INMACE-L" collector="TL1" oid="INMACE-L" type="COUNTER"/>
+      <value parameter="INMACE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive pausef frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx PAUSEF-L(cumulative)" desc="pause frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PAUSEF-L" collector="TL1" oid="PAUSEF-L" type="COUNTER"/>
+      <value parameter="PAUSEF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive packet violations-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx PV-L(cumulative)" desc="packet violations" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PV-L" collector="TL1" oid="PV-L" type="COUNTER"/>
+      <value parameter="PV-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive severely errored frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx SES-L(cumulative)" desc="severely errored frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SES-L" collector="TL1" oid="SES-L" type="COUNTER"/>
+      <value parameter="SES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive UAS-L-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx UAS-L(cumulative)" desc="unavailable seconds" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="UAS-L" collector="TL1" oid="UAS-L" type="COUNTER"/>
+      <value parameter="UAS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive L2CPDISC-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx L2CPDISC(cumulative)" desc="Discarded Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="L2CPDISC-L" collector="TL1" oid="L2CPDISC-L" type="COUNTER"/>
+      <value parameter="L2CPDISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive FTLE-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FTLE(cumulative)" desc="Frame Too Long Errors–LAN" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTLE-L" collector="TL1" oid="FTLE-L" type="COUNTER"/>
+      <value parameter="FTLE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive FTSE-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx FTSE(cumulative)" desc="Frame Too Short Errors–LAN" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTSE-L" collector="TL1" oid="FTSE-L" type="COUNTER"/>
+      <value parameter="FTSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCF-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TCF-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCF-P" collector="TL1" oid="TCF-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCF-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCFCC-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TCFCC-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCFCC-P" collector="TL1" oid="TCFCC-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCFCC-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCFEE-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TCFEE-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCFEE-P" collector="TL1" oid="TCFEE-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCFEE-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TDNCF-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TDNCF-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TDNCF-P" collector="TL1" oid="TDNCF-P" type="COUNTER" indexed="true"/>
+      <value parameter="TDNCF-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TDFBUFOVER-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TDFBUFOVER-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TDFBUFOVER-P" collector="TL1" oid="TDFBUFOVER-P" type="COUNTER" indexed="true"/>
+      <value parameter="TDFBUFOVER-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TCOCT-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TCOCT-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TCOCT-P" collector="TL1" oid="TCOCT-P" type="COUNTER" indexed="true"/>
+      <value parameter="TCOCT-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TNCOCT-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TNCOCT-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TNCOCT-P" collector="TL1" oid="TNCOCT-P" type="COUNTER" indexed="true"/>
+      <value parameter="TNCOCT-P"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.receive.TDF-P-cumulative" name="Gigabit-Ethernet-TL1-Lan Rx TDF-P(cumulative)" desc="" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="TDF-P" collector="TL1" oid="TDF-P" type="COUNTER" indexed="true"/>
+      <value parameter="TDF-P"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan discards.trmt-cumulative" name="Gigabit-Ethernet-TL1 Tx Lan discards(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan.Transmit discarded packets-cumulative" name="Gigabit-Ethernet-TL1 Tx Discarded Packets(cumulative)" desc="Good frames discarded due to lack of buffers–LAN" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DISC-L" collector="TL1" oid="DISC-L" type="COUNTER"/>
+      <value parameter="DISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.Transmit dropped packets-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx Dropped Packets(cumulative)" desc="Dropped packets–LAN" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DROP-L" collector="TL1" oid="DROP-L" type="COUNTER"/>
+      <value parameter="DROP-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit errored seconds-cumulative" name="Gigabit-Ethernet-TL1 Tx ES-L(cumulative)" desc="Errored Seconds" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="ES-L" collector="TL1" oid="ES-L" type="COUNTER"/>
+      <value parameter="ES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit fragment errors-cumulative" name="Gigabit-Ethernet-TL1 Tx FRGT-L(cumulative)" desc="Fragment packet Errors" protocol="TL1" units="fragments" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FRGT-L" collector="TL1" oid="FRGT-L" type="COUNTER"/>
+      <value parameter="FRGT-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit jumbo packet discards-cumulative" name="Gigabit-Ethernet-TL1 Tx JUMBO-L(cumulative)" desc="Frames of size 1519 bytes or over for multiple frame size" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="JUMBO-L" collector="TL1" oid="JUMBO-L" type="COUNTER"/>
+      <value parameter="JUMBO-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit packet violations-cumulative" name="Gigabit-Ethernet-TL1 Tx PV-L(cumulative)" desc="packet violations" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PV-L" collector="TL1" oid="PV-L" type="COUNTER"/>
+      <value parameter="PV-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit severely errored frames-cumulative" name="Gigabit-Ethernet-TL1 Tx SES-L(cumulative)" desc="severely errored frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SES-L" collector="TL1" oid="SES-L" type="COUNTER"/>
+      <value parameter="SES-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit UAS-L-cumulative" name="Gigabit-Ethernet-TL1 Tx UAS-L(cumulative)" desc="unavailable seconds" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="UAS-L" collector="TL1" oid="UAS-L" type="COUNTER"/>
+      <value parameter="UAS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit undersize frames-cumulative" name="Gigabit-Ethernet-TL1 Tx USIZE-L(cumulative)" desc="oversize frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="USIZE-L" collector="TL1" oid="USIZE-L" type="COUNTER"/>
+      <value parameter="USIZE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit L2CPDISC-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx L2CPDISC(cumulative)" desc="Discarded Layer 2 Control (excludes Pause) Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="L2CPDISC-L" collector="TL1" oid="L2CPDISC-L" type="COUNTER"/>
+      <value parameter="L2CPDISC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit pause frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx PAUSE-L(cumulative)" desc="pause frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PAUSE-L" collector="TL1" oid="PAUSE-L" type="COUNTER"/>
+      <value parameter="PAUSE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit inmace frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx INMACE-L(cumulative)" desc="internal MAC error frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="INMACE-L" collector="TL1" oid="INMACE-L" type="COUNTER"/>
+      <value parameter="INMACE-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit pausef frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx PAUSEF-L(cumulative)" desc="pause frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PAUSEF-L" collector="TL1" oid="PAUSEF-L" type="COUNTER"/>
+      <value parameter="PAUSEF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit jabr errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx JABR-L(cumulative)" desc="Counts the total number of packets transmitted that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="JABR-L" collector="TL1" oid="JABR-L" type="COUNTER"/>
+      <value parameter="JABR-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit jabbers errors-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx JABBERS-L(cumulative)" desc="Counts the total number of packets transmitted that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="JABBERS-L" collector="TL1" oid="JABBERS-L" type="COUNTER"/>
+      <value parameter="JABBERS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.SCF-L-cumulative" name="Gigabit-Ethernet-TL1-Lan Tx SCF-L(cumulative)" desc="LAN Single Collision Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SCF-L" collector="TL1" oid="SCF-L" type="COUNTER" indexed="true"/>
+      <value parameter="SCF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.MCF-L-cumulative" name="Gigabit-Ethernet-TL1-Lan Tx MCF-L(cumulative)" desc="LAN Multiple Collision Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="MCF-L" collector="TL1" oid="MCF-L" type="COUNTER" indexed="true"/>
+      <value parameter="MCF-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.LC-L-cumulative" name="Gigabit-Ethernet-TL1-Lan Tx LC-L(cumulative)" desc="LAN Late Collisions" protocol="TL1" units="collisions" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="LC-L" collector="TL1" oid="LC-L" type="COUNTER" indexed="true"/>
+      <value parameter="LC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.EC-L-cumulative" name="Gigabit-Ethernet-TL1-Lan Tx EC-L(cumulative)" desc="LAN Excessive Collisions" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="EC-L" collector="TL1" oid="EC-L" type="COUNTER" indexed="true"/>
+      <value parameter="EC-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit.DTX-L-cumulative" name="Gigabit-Ethernet-TL1-Lan Tx DTX-L(cumulative)" desc="LAN Deferred Transmission" protocol="TL1" units="messages" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="DTX-L" collector="TL1" oid="DTX-L" type="COUNTER" indexed="true"/>
+      <value parameter="DTX-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-octets.trmt-cumulative" name="Gigabit-Ethernet-TL1 Tx Variable Octets(cumulative)" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIXE64-L-cumulative" name="Gigabit-Ethernet-TL1 Tx SIXE64-L(cumulative)" desc="64-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIXE64-L" collector="TL1" oid="SIXE64-L" type="COUNTER"/>
+      <value parameter="SIXE64-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE65-127-L-cumulative" name="Gigabit-Ethernet-TL1 Tx SIZE65-127-L(cumulative)" desc="65- to 127-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE65-127-L" collector="TL1" oid="SIZE65-127-L" type="COUNTER"/>
+      <value parameter="SIZE65-127-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE128-255-L-cumulative" name="Gigabit-Ethernet-TL1 Tx SIZE128-255-L(cumulative)" desc="128- to 255-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE128-255-L" collector="TL1" oid="SIZE128-255-L" type="COUNTER"/>
+      <value parameter="SIZE128-255-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE256-511-L-cumulative" name="Gigabit-Ethernet-TL1 Tx SIZE256-511-L(cumulative)" desc="256- to 511-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE256-511-L" collector="TL1" oid="SIZE256-511-L" type="COUNTER"/>
+      <value parameter="SIZE256-511-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE512-1023-L-cumulative" name="Gigabit-Ethernet-TL1 Tx SIZE512-1023-L(cumulative)" desc="512- to 1023-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE512-1023-L" collector="TL1" oid="SIZE512-1023-L" type="COUNTER"/>
+      <value parameter="SIZE512-1023-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.Transmit SIZE1024-1518-L-cumulative" name="Gigabit-Ethernet-TL1 Tx SIZE1024-1518-L(cumulative)" desc="1024- to 1518-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="SIZE1024-1518-L" collector="TL1" oid="SIZE1024-1518-L" type="COUNTER"/>
+      <value parameter="SIZE1024-1518-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-octets.rcv-cumulative" name="Gigabit-Ethernet-TL1 Rx Variable Octets(cumulative)" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIXE64-L-cumulative" name="Gigabit-Ethernet-TL1 Rx SIXE64-L(cumulative)" desc="64-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIXE64-L" collector="TL1" oid="SIXE64-L" type="COUNTER"/>
+      <value parameter="SIXE64-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE65-127-L-cumulative" name="Gigabit-Ethernet-TL1 Rx SIZE65-127-L(cumulative)" desc="65- to 127-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE65-127-L" collector="TL1" oid="SIZE65-127-L" type="COUNTER"/>
+      <value parameter="SIZE65-127-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE128-255-L-cumulative" name="Gigabit-Ethernet-TL1 Rx SIZE128-255-L(cumulative)" desc="128- to 255-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE128-255-L" collector="TL1" oid="SIZE128-255-L" type="COUNTER"/>
+      <value parameter="SIZE128-255-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE256-511-L-cumulative" name="Gigabit-Ethernet-TL1 Rx SIZE256-511-L(cumulative)" desc="256- to 511-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE256-511-L" collector="TL1" oid="SIZE256-511-L" type="COUNTER"/>
+      <value parameter="SIZE256-511-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE512-1023-L-cumulative" name="Gigabit-Ethernet-TL1 Rx SIZE512-1023-L(cumulative)" desc="512- to 1023-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE512-1023-L" collector="TL1" oid="SIZE512-1023-L" type="COUNTER"/>
+      <value parameter="SIZE512-1023-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-octets.RECEIVE SIZE1024-1518-L-cumulative" name="Gigabit-Ethernet-TL1 Rx SIZE1024-1518-L(cumulative)" desc="1024- to 1518-octet packets–LAN" protocol="TL1" units="octets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SIZE1024-1518-L" collector="TL1" oid="SIZE1024-1518-L" type="COUNTER"/>
+      <value parameter="SIZE1024-1518-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan stats.rcv-cumulative" name="Gigabit-Ethernet-TL1 Wan Rx Stats(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan.Receive cmf-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx CMF-W(cumulative)" desc="Client Management Frames–WAN" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="CMF-W" collector="TL1" oid="CMF-W" type="COUNTER"/>
+      <value parameter="CMF-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive frames-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx FR-W(cumulative)" desc="Frames received" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FR-W" collector="TL1" oid="FR-W" type="COUNTER"/>
+      <value parameter="FR-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive packet violations-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx PV-W(cumulative)" desc="Packet violations" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PV-W" collector="TL1" oid="PV-W" type="COUNTER"/>
+      <value parameter="PV-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan stats.trmt-cumulative" name="Gigabit-Ethernet-TL1 Wan Tx Stats(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan.Transmit cmf-cumulative" name="Gigabit-Ethernet-TL1-Wan Tx CMF-W(cumulative)" desc="Client Management Frames–WAN" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="CMF-W" collector="TL1" oid="CMF-W" type="COUNTER"/>
+      <value parameter="CMF-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit frames-cumulative" name="Gigabit-Ethernet-TL1-Wan Tx FR-W(cumulative)" desc="Frames transmitted" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FR-W" collector="TL1" oid="FR-W" type="COUNTER"/>
+      <value parameter="FR-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit packet violations-cumulative" name="Gigabit-Ethernet-TL1-Wan Tx PV-W(cumulative)" desc="Packet violations" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="PV-W" collector="TL1" oid="PV-W" type="COUNTER"/>
+      <value parameter="PV-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan.transmit oversize frames-cumulative" name="Gigabit-Ethernet-TL1 Lan Tx OSIZE-W(cumulative)" desc="oversize frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="OSIZE-W" collector="TL1" oid="OSIZE-W" type="COUNTER"/>
+      <value parameter="OSIZE-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan errored seconds-cumulative" name="Gigabit-Ethernet-TL1 Wan Rx Errored Seconds(cumulative)" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-wan.Receive errored seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx ES-W(cumulative)" desc="Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ES-W" collector="TL1" oid="ES-W" type="COUNTER"/>
+      <value parameter="ES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit errored seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan tx ES-W(cumulative)" desc="Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ES-W" collector="TL1" oid="ES-W" type="COUNTER"/>
+      <value parameter="ES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive protocol errored seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx PTCOLES-W(cumulative)" desc="Protocol Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PTCOLES-W" collector="TL1" oid="PTCOLES-W" type="COUNTER"/>
+      <value parameter="PTCOLES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive severely errored seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx SES-W(cumulative)" desc="Severely Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SES-W" collector="TL1" oid="SES-W" type="COUNTER"/>
+      <value parameter="SES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit severely errored seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan Tx SES-W(cumulative)" desc="Severely Errored Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SES-W" collector="TL1" oid="SES-W" type="COUNTER"/>
+      <value parameter="SES-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Receive unavailable seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan Rx UAS-W(cumulative)" desc="Unavailable Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="UAS-W" collector="TL1" oid="UAS-W" type="COUNTER"/>
+      <value parameter="UAS-W"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan.Transmit unavailable seconds-cumulative" name="Gigabit-Ethernet-TL1-Wan Tx UAS-W(cumulative)" desc="Unavailable Seconds–WAN" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="UAS-W" collector="TL1" oid="UAS-W" type="COUNTER"/>
+      <value parameter="UAS-W"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-loam.rcv-cumulative" name="Gigabit-Ethernet-TL1 Rx Loam(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-loam.RECEIVE FRDROP-cumulative" name="Gigabit-Ethernet-TL1-Loam Rx FRDROP(cumulative)" desc="Unsupported received LOAMPDU frames dropped" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FRDROP" collector="TL1" oid="FRDROP" type="COUNTER"/>
+      <value parameter="FRDROP"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.RECEIVE INFOPDU-cumulative" name="Gigabit-Ethernet-TL1-Loam Rx INFOPDU(cumulative)" desc="Number of received with OAM information code" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INFOPDU" collector="TL1" oid="INFOPDU" type="COUNTER"/>
+      <value parameter="INFOPDU"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.RECEIVE LPBKPDU-cumulative" name="Gigabit-Ethernet-TL1-Loam Rx LPBKPDU(cumulative)" desc="Number of loopback control code OAMDU received (and passed to the OAM layer)" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="RECEIVE" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="LPBKPDU" collector="TL1" oid="LPBKPDU" type="COUNTER"/>
+      <value parameter="LPBKPDU"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-loam.trmt-cumulative" name="Gigabit-Ethernet-TL1 Tx  Loam(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-loam.TRANSMIT FRDROP-cumulative" name="Gigabit-Ethernet-TL1-Loam Tx  FRDROP-cumulative" desc="Unsupported transmitted LOAMPDU frames dropped" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="FRDROP" collector="TL1" oid="FRDROP" type="COUNTER"/>
+      <value parameter="FRDROP"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.TRANSMIT INFOPDU-cumulative" name="Gigabit-Ethernet-TL1-Loam Tx  INFOPDU(cumulative)" desc="Number of transmitted with OAM information code" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="INFOPDU" collector="TL1" oid="INFOPDU" type="COUNTER"/>
+      <value parameter="INFOPDU"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-loam.TRANSMIT LPBKPDU-cumulative" name="Gigabit-Ethernet-TL1-Loam Tx  LPBKPDU(cumulative)" desc="Number of loopback control code OAMDU transmitted (and passed to the OAM layer)" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="TRANSMIT" displayType="verticalBar-hist" displayColor="BLUE" min="0">
+      <parameter name="LPBKPDU" collector="TL1" oid="LPBKPDU" type="COUNTER"/>
+      <value parameter="LPBKPDU"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-wan stats.na-cumulative" name="Gigabit-Ethernet-TL1 Wan Rx NA Stats(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WINFR-cumulative" name="Gigabit-Ethernet-TL1-Wan Na WINFR-cumulative" desc="WAN Input Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WINFR" collector="TL1" oid="WINFR" type="COUNTER" indexed="true"/>
+      <value parameter="WINFR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WINERR-cumulative" name="Gigabit-Ethernet-TL1-Wan Na WINERR-cumulative" desc="WAN Input Frames with Errors" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WINERR" collector="TL1" oid="WINERR" type="COUNTER" indexed="true"/>
+      <value parameter="WINERR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WOVERSIZE-cumulative" name="Gigabit-Ethernet-TL1-Wan Na WOVERSIZE--cumulative" desc="WAN Oversize Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WOVERSIZE" collector="TL1" oid="WOVERSIZE" type="COUNTER" indexed="true"/>
+      <value parameter="WOVERSIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WOUTFR-cumulative" name="Gigabit-Ethernet-TL1-Wan Na WOUTFR-cumulative" desc="WAN Output Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WOUTFR" collector="TL1" oid="WOUTFR" type="COUNTER" indexed="true"/>
+      <value parameter="WOUTFR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WINJMB-cumulative" name="Gigabit-Ethernet-TL1-Wan Na WINJMB-cumulative" desc="WAN Input Jumbo Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WINJMB" collector="TL1" oid="WINJMB" type="COUNTER" indexed="true"/>
+      <value parameter="WINJMB"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.WOUTJMB-cumulative" name="Gigabit-Ethernet-TL1-Wan Na WOUTJMB-cumulative" desc="WAN Output Jumbo Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="WOUTJMB" collector="TL1" oid="WOUTJMB" type="COUNTER" indexed="true"/>
+      <value parameter="WOUTJMB"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-wan stats.na.BWCHGSEC-cumulative" name="Gigabit-Ethernet-TL1-Wan Na BWCHGSEC-cumulative" desc="Bandwidth Change Seconds" protocol="TL1" units="seconds" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="BWCHGSEC" collector="TL1" oid="BWCHGSEC" type="COUNTER" indexed="true"/>
+      <value parameter="BWCHGSEC"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-lan stats.na-cumulative" name="Gigabit-Ethernet-TL1 Lan Rx NA Stats(cumulative)" protocol="TL1" displayType="Normal">
+    <metric id="gigabit-ethernet-tl1-lan stats.na.AE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na AE-cumulative" desc="LAN Alignment Errors" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="AE" collector="TL1" oid="AE" type="COUNTER" indexed="true"/>
+      <value parameter="AE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FCSE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na FCSE-cumulative" desc="LAN Frame Check Sequence Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FCSE" collector="TL1" oid="FCSE" type="COUNTER" indexed="true"/>
+      <value parameter="FCSE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FTLE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na FTLE-cumulative" desc="LAN Frame Too Long Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTLE" collector="TL1" oid="FTLE" type="COUNTER" indexed="true"/>
+      <value parameter="FTLE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SBLE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na SBLE-cumulative" desc="LAN Stat Symbol Errors" protocol="TL1" units="errors" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SBLE" collector="TL1" oid="SBLE" type="COUNTER" indexed="true"/>
+      <value parameter="SBLE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INRXMACE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na INRXMACE-cumulative" desc="LAN Internal MAC Receive Errors" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INRXMACE" collector="TL1" oid="INRXMACE" type="COUNTER" indexed="true"/>
+      <value parameter="INRXMACE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INTXMACE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na INTXMACE-cumulative" desc="LAN Internal MAC Receive Errors" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INTXMACE" collector="TL1" oid="INTXMACE" type="COUNTER" indexed="true"/>
+      <value parameter="INTXMACE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SCF-cumulative" name="Gigabit-Ethernet-TL1-Lan Na SCF-cumulative" desc="LAN Single Collision Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SCF" collector="TL1" oid="SCF" type="COUNTER" indexed="true"/>
+      <value parameter="SCF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.MCF-cumulative" name="Gigabit-Ethernet-TL1-Lan Na MCF-cumulative" desc="LAN Multiple Collision Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="MCF" collector="TL1" oid="MCF" type="COUNTER" indexed="true"/>
+      <value parameter="MCF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SQETST-cumulative" name="Gigabit-Ethernet-TL1-Lan Na SQETST-cumulative" desc="LAN Signal Quality Error Test" protocol="TL1" units="messages" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="SQETST" collector="TL1" oid="SQETST" type="COUNTER" indexed="true"/>
+      <value parameter="SQETST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.DTX-cumulative" name="Gigabit-Ethernet-TL1-Lan Na DTX-cumulative" desc="LAN Deferred Transmission" protocol="TL1" units="messages" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="DTX" collector="TL1" oid="DTX" type="COUNTER" indexed="true"/>
+      <value parameter="DTX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.LC-cumulative" name="Gigabit-Ethernet-TL1-Lan Na LC-cumulative" desc="LAN Late Collisions" protocol="TL1" units="collisions" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="LC" collector="TL1" oid="LC" type="COUNTER" indexed="true"/>
+      <value parameter="LC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.EC-cumulative" name="Gigabit-Ethernet-TL1-Lan Na EC-cumulative" desc="LAN Excessive Collisions" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="EC" collector="TL1" oid="EC" type="COUNTER" indexed="true"/>
+      <value parameter="EC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.CRE-cumulative" name="Gigabit-Ethernet-TL1-Lan Na CRE-cumulative" desc="LAN Cluster Runtime Environment" protocol="TL1" units="attempts" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="CRE" collector="TL1" oid="CRE" type="COUNTER" indexed="true"/>
+      <value parameter="CRE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.IPAUSEF-cumulative" name="Gigabit-Ethernet-TL1-Lan Na IPAUSEF-cumulative" desc="LAN Paused Frames Received" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="IPAUSEF" collector="TL1" oid="IPAUSEF" type="COUNTER" indexed="true"/>
+      <value parameter="IPAUSEF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OPAUSEF-cumulative" name="Gigabit-Ethernet-TL1-Lan Na OPAUSEF-cumulative" desc="LAN Paused Frames Transmitted" protocol="TL1" units="attempts" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OPAUSEF" collector="TL1" oid="OPAUSEF" type="COUNTER" indexed="true"/>
+      <value parameter="OPAUSEF"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INJUMBO-cumulative" name="Gigabit-Ethernet-TL1-Lan Na INJUMBO-cumulative" desc="LAN Jumbo Frames Received" protocol="TL1" units="attempts" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INJUMBO" collector="TL1" oid="INJUMBO" type="COUNTER" indexed="true"/>
+      <value parameter="INJUMBO"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTJUMBO-cumulative" name="Gigabit-Ethernet-TL1-Lan Na OUTJUMBO-cumulative" desc="LAN Jumbo Frames Transmitted" protocol="TL1" units="attempts" conversion-function="PER_PERIOD" consolidation-function="SUM" direction="NA" location="NEAR_END" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTJUMBO" collector="TL1" oid="OUTJUMBO" type="COUNTER" indexed="true"/>
+      <value parameter="OUTJUMBO"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVMSPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVMSPKT-cumulative" desc="Total number of packets droppted due to lack of resources" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVMSPKT" collector="TL1" oid="RCVMSPKT" type="COUNTER"/>
+      <value parameter="RCVMSPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVBCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVBCPKT-cumulative" desc="Total number of Broadcast Packets Received" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVBCPKT" collector="TL1" oid="RCVBCPKT" type="COUNTER"/>
+      <value parameter="RCVBCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVMCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVMCPKT-cumulative" desc="Total number of Multicast Packets Received" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVMCPKT" collector="TL1" oid="RCVMCPKT" type="COUNTER"/>
+      <value parameter="RCVMCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVOSPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVOSPKT-cumulative" desc="Number of packets greather than 1522 bytes" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVOSPKT" collector="TL1" oid="RCVOSPKT" type="COUNTER"/>
+      <value parameter="RCVOSPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVUCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVUCPKT-cumulative" desc="Number of non multicast/broadcast packets " protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVUCPKT" collector="TL1" oid="RCVUCPKT" type="COUNTER"/>
+      <value parameter="RCVUCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVFCSERR-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVFCSERR-cumulative" desc="Number of Number of FCS errors and no aligmnet errors" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVFCSERR" collector="TL1" oid="RCVFCSERR" type="COUNTER"/>
+      <value parameter="RCVFCSERR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTURPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTURPKT-cumulative" desc="Number of times a packet was not trasmitted due to lack of resources" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTURPKT" collector="TL1" oid="XMTURPKT" type="COUNTER"/>
+      <value parameter="XMTURPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTPKT-cumulative" desc="Number of packets trasmitted" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTPKT" collector="TL1" oid="XMTPKT" type="COUNTER"/>
+      <value parameter="XMTPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTBCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTBCPKT-cumulative" desc="Number of broadcast packets trasmitted" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTBCPKT" collector="TL1" oid="XMTBCPKT" type="COUNTER"/>
+      <value parameter="XMTBCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTPCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTPCPKT-cumulative" desc="Total number of Broadcast Packets Transmitted" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTPCPKT" collector="TL1" oid="XMTPCPKT" type="COUNTER"/>
+      <value parameter="XMTPCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTMCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTMCPKT-cumulative" desc="Total number of Multicast Packets Transmitted" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTMCPKT" collector="TL1" oid="XMTMCPKT" type="COUNTER"/>
+      <value parameter="XMTMCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTUCPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTUCPKT-cumulative" desc="Total number of Unicast Packets Transmitted" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTUCPKT" collector="TL1" oid="XMTUCPKT" type="COUNTER"/>
+      <value parameter="XMTUCPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVUZPKT-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVUZPKT-cumulative" desc="Number of undersized packets received" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVUZPKT" collector="TL1" oid="RCVUZPKT" type="COUNTER"/>
+      <value parameter="RCVUZPKT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVDRPPKTS-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVDRPPKTS-cumulative" desc="Number of dropped packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVDRPPKTS" collector="TL1" oid="RCVDRPPKTS" type="COUNTER"/>
+      <value parameter="RCVDRPPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.RCVPKTS-cumulative" name="Gigabit-Ethernet-TL1 Lan Na RCVPKTS-cumulative" desc="Number of received HDLC packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="RCVPKTS" collector="TL1" oid="RCVPKTS" type="COUNTER"/>
+      <value parameter="RCVPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTPKTS-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTPKTS-cumulative" desc="Number of transmitted HDLC packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTPKTS" collector="TL1" oid="XMTPKTS" type="COUNTER"/>
+      <value parameter="XMTPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.ERRPKTS-cumulative" name="Gigabit-Ethernet-TL1 Lan Na ERRPKTS-cumulative" desc="Number of received error packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="ERRPKTS" collector="TL1" oid="ERRPKTS" type="COUNTER"/>
+      <value parameter="ERRPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.XMTDRPPKTS-cumulative" name="Gigabit-Ethernet-TL1 Lan Na XMTDRPPKTS-cumulative" desc="Number of transmitted MAC packets dropped" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="XMTDRPPKTS" collector="TL1" oid="XMTDRPPKTS" type="COUNTER"/>
+      <value parameter="XMTDRPPKTS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FTSE-cumulative" name="Gigabit-Ethernet-TL1 Lan Na FTSE-cumulative" desc="Frame Too Short Errors" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="FTSE" collector="TL1" oid="FTSE" type="COUNTER"/>
+      <value parameter="FTSE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTFTLE-cumulative" name="Gigabit-Ethernet-TL1 Lan Na OUTFTLE-cumulative" desc="Frame Too Long Errors" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTFTLE" collector="TL1" oid="OUTFTLE" type="COUNTER"/>
+      <value parameter="OUTFTLE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.PRIERRSEC-cumulative" name="Gigabit-Ethernet-TL1 Lan Na PRIERRSEC-cumulative" desc="" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="PRIERRSEC" collector="TL1" oid="PRIERRSEC" type="COUNTER"/>
+      <value parameter="PRIERRSEC"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.JABBERS-cumulative" name="Gigabit-Ethernet-TL1 Lan Na JABBERS-cumulative" desc="Counts the total number of packets received that were longer than 1518 octets, excluding framing bits but including FCS octets, and were not an integral number of octets in length or had a bad FCS value." protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="JABBERS" collector="TL1" oid="JABBERS" type="COUNTER"/>
+      <value parameter="JABBERS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan NA INUNICAST-cumulative" desc="Input Unicast Packets" protocol="TL1" units="packets" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INUNICAST" collector="TL1" oid="INUNICAST" type="COUNTER"/>
+      <value parameter="INUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.INNONUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan NA INNONUNICAST-cumulative" desc="Input non Unicast Packets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="INNONUNICAST" collector="TL1" oid="INNONUNICAST" type="COUNTER"/>
+      <value parameter="INNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan NA OUTUNICAST-cumulative" desc="Output Unicast Packets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTUNICAST" collector="TL1" oid="OUTUNICAST" type="COUNTER"/>
+      <value parameter="OUTUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OUTNONUNICAST-cumulative" name="Gigabit-Ethernet-TL1 Lan NA OUTNONUNICAST-cumulative" desc="Output non Unicast Packets" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" displayType="verticalBar-hist" displayColor="DARK_GREEN" min="0">
+      <parameter name="OUTNONUNICAST" collector="TL1" oid="OUTNONUNICAST" type="COUNTER"/>
+      <value parameter="OUTNONUNICAST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE64-cumulative" name="Gigabit-Ethernet-TL1 Lan NA SIZE64-cumulative" parmType="" desc="64 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE64" collector="TL1" oid="SIZE64" type="COUNTER"/>
+      <value parameter="SIZE64"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE65-127-cumulative" name="Gigabit-Ethernet-TL1 Lan NA SIZE65-127-cumulative" parmType="" desc="65-127 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE65-127" collector="TL1" oid="SIZE65-127" type="COUNTER"/>
+      <value parameter="SIZE65-127"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE128-255-cumulative" name="Gigabit-Ethernet-TL1 Lan NA SIZE128-255-cumulative" parmType="" desc="128-255 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE128-255" collector="TL1" oid="SIZE128-255" type="COUNTER"/>
+      <value parameter="SIZE128-255"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE256-511-cumulative" name="Gigabit-Ethernet-TL1 Lan NA SIZE256-511-cumulative" parmType="" desc="256-511 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE256-511" collector="TL1" oid="SIZE256-511" type="COUNTER"/>
+      <value parameter="SIZE256-511"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE512-1023-cumulative" name="Gigabit-Ethernet-TL1 Lan NA SIZE512-1023-cumulative" parmType="" desc="512-1023 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE512-1023" collector="TL1" oid="SIZE512-1023" type="COUNTER"/>
+      <value parameter="SIZE512-1023"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.SIZE1024-1518-cumulative" name="Gigabit-Ethernet-TL1 Lan NA SIZE1024-1518-cumulative" parmType="" desc="1024-1518 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE1024-1518" collector="TL1" oid="SIZE1024-1518" type="COUNTER"/>
+      <value parameter="SIZE1024-1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OVER1518-cumulative" name="Gigabit-Ethernet-TL1 Lan NA OVER1518-cumulative" parmType="" desc="Over 1518 byte Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OVER1518" collector="TL1" oid="OVER1518" type="COUNTER"/>
+      <value parameter="OVER1518"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.TBYC-RX-cumulative" name="Gigabit-Ethernet-TL1 Lan NA TBYC-RX-cumulative" parmType="" desc="Total Bytes Received" protocol="TL1" units="bytes" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TBYC-RX" collector="TL1" oid="TBYC-RX" type="COUNTER"/>
+      <value parameter="TBYC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.TFRC-RX-cumulative" name="Gigabit-Ethernet-TL1 Lan NA TFRC-RX-cumulative" parmType="" desc="Total Frames Received" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="TFRC-RX" collector="TL1" oid="TFRC-RX" type="COUNTER"/>
+      <value parameter="TFRC-RX"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.BCST-cumulative" name="Gigabit-Ethernet-TL1 Lan NA BCST-cumulative" parmType="" desc="Broadcast Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="BCST" collector="TL1" oid="BCST" type="COUNTER"/>
+      <value parameter="BCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.MCST-cumulative" name="Gigabit-Ethernet-TL1 Lan NA MCST-cumulative" parmType="" desc="Multicast Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="MCST" collector="TL1" oid="MCST" type="COUNTER"/>
+      <value parameter="MCST"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.USIZE-cumulative" name="Gigabit-Ethernet-TL1 Lan NA USIZE-cumulative" parmType="" desc="Undersize Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="USIZE" collector="TL1" oid="USIZE" type="COUNTER"/>
+      <value parameter="USIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.OSIZE-cumulative" name="Gigabit-Ethernet-TL1 Lan NA OSIZE-cumulative" parmType="" desc="Oversize Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="OSIZE" collector="TL1" oid="OSIZE" type="COUNTER"/>
+      <value parameter="OSIZE"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.FRGT-cumulative" name="Gigabit-Ethernet-TL1 Lan NA FRGT-cumulative" parmType="" desc="Fragmented Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="FRGT" collector="TL1" oid="FRGT" type="COUNTER"/>
+      <value parameter="FRGT"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-lan stats.na.JABR-cumulative" name="Gigabit-Ethernet-TL1 Lan NA JABR-cumulative" parmType="" desc="Jabber Frames" protocol="TL1" units="frames" conversion-function="PER_PERIOD" consolidation-function="SUM" location="NEAR_END" direction="NA" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="JABR" collector="TL1" oid="JABR" type="COUNTER"/>
+      <value parameter="JABR"/>
+    </metric>
+  </metricGroup>
+  <!--
+   new metric
+-->
+  <metricGroup id="gigabit-ethernet-tl1-lfs" name="Gigabit-Ethernet-TL1 LFS" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-rx-lfs" name="Gigabit-Ethernet-TL1-RX-LFS" desc="LFS" protocol="TL1" units="LFS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="LFS" collector="TL1" oid="LFS" type="COUNTER"/>
+      <value parameter="LFS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-tx-lfs" name="Gigabit-Ethernet-TL1-TX-LFS" desc="LFS" protocol="TL1" units="LFS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="LFS" collector="TL1" oid="LFS" type="COUNTER"/>
+      <value parameter="LFS"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-pkts-l" name="Gigabit-Ethernet-TL1 PKTS-L" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-rx-pkts-l" name="Gigabit-Ethernet-TL1-RX-PKTS-L" desc="PKTS-L" protocol="TL1" units="PKTS-L" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="PKTS-L" collector="TL1" oid="PKTS-L" type="COUNTER"/>
+      <value parameter="PKTS-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-tx-pkts-l" name="Gigabit-Ethernet-TL1-TX-PKTS-L" desc="PKTS-L" protocol="TL1" units="PKTS-L" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="PKTS-L" collector="TL1" oid="PKTS-L" type="COUNTER"/>
+      <value parameter="PKTS-L"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-rfs" name="Gigabit-Ethernet-TL1 RFS" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-rx-rfs" name="Gigabit-Ethernet-TL1-RX-RFS" desc="RFS" protocol="TL1" units="RFS" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RFS" collector="TL1" oid="RFS" type="COUNTER"/>
+      <value parameter="RFS"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-tx-rfs" name="Gigabit-Ethernet-TL1-TX-RFS" desc="RFS" protocol="TL1" units="RFS" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="FAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="RFS" collector="TL1" oid="RFS" type="COUNTER"/>
+      <value parameter="RFS"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-rxerr-txerr" name="Gigabit-Ethernet-TL1 RXERR TXERR" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-rx-rxerr" name="Gigabit-Ethernet-TL1-RX-RXERR" desc="RXERR" protocol="TL1" units="RXERR" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="RXERR" collector="TL1" oid="RXERR" type="COUNTER"/>
+      <value parameter="RXERR"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-tx-txerr" name="Gigabit-Ethernet-TL1-TX-TXERR" desc="TXERR" protocol="TL1" units="TXERR" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="TXERR" collector="TL1" oid="TXERR" type="COUNTER"/>
+      <value parameter="TXERR"/>
+    </metric>
+  </metricGroup>
+  <metricGroup id="gigabit-ethernet-tl1-size64-l" name="Gigabit-Ethernet-TL1 SIZE64-L" protocol="TL1" displayType="Composite">
+    <metric id="gigabit-ethernet-tl1-rx-size64-l" name="Gigabit-Ethernet-TL1-RX-SIZE64-L" desc="SIZE64-L" protocol="TL1" units="SIZE64-L" conversion-function="NONE" consolidation-function="SUM" direction="RECEIVE" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="DARK_GREEN">
+      <parameter name="SIZE64-L" collector="TL1" oid="SIZE64-L" type="COUNTER"/>
+      <value parameter="SIZE64-L"/>
+    </metric>
+    <metric id="gigabit-ethernet-tl1-tx-size64-l" name="Gigabit-Ethernet-TL1-TX-SIZE64-L" desc="SIZE64-L" protocol="TL1" units="SIZE64-L" conversion-function="NONE" consolidation-function="SUM" direction="TRANSMIT" location="NEAR_END" min="0" displayType="verticalBar-hist" displayColor="BLUE">
+      <parameter name="SIZE64-L" collector="TL1" oid="SIZE64-L" type="COUNTER"/>
+      <value parameter="SIZE64-L"/>
+    </metric>
+  </metricGroup>
+</pmProfile>
